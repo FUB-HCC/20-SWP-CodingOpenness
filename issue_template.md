@@ -9,8 +9,8 @@
 3. Size the bounty in accordance to how much work you assume it will need. We propose to use T-shirt sizes according to table below. Bounties should regularly not exceed size M, consider splitting them into smaller sizes.
 
 # Bounty sizes
-XS ~2h
-S  ~3h
+XS ~3h
+S  ~5h
 M  ~8h
 L  ~13h
 
