@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
-}
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-view {
   display: flex;
-  flex-direction: column;
+  height: 112px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.top-view .top-view-hcc {
+  display: flex;
+  height: 112px;
+  align-items: center;
+  margin: 10px;
+}
+
+.navbar-menu {
+  background-color: #6b9e1f;
+  margin-top: 20;
+}
+
+.hcc-button {
+  background-color: #6b9e1f !important;
+  outline: none;
+}
+
+.navbar-button {
+  padding: 17px;
+  color: white !important;
+}
+
+.navbar-button-content:focus {
+  background-color: grey !important;
+}
+
+.navbar-button .bp3-icon {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
