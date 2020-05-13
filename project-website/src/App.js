@@ -1,4 +1,6 @@
 import React from "react";
+import Home from "./Components/Home/Home";
+import Groups from "./Components/Groups/Groups";
 import { Navbar, Button, Alignment, Icon } from "@blueprintjs/core";
 import "./App.css";
 
@@ -60,20 +62,20 @@ class App extends React.Component {
               active={this.state.activeContent === Content.GROUPS}
               onClick={() => this.handleNavbarClick(Content.GROUPS)}
             />
-            <Button
+            {/* <Button
               className="bp3-minimal navbar-button navbar-button-content"
               text="Meeting Protocols"
               active={this.state.activeContent === Content.PROTOCOLS}
               onClick={() => this.handleNavbarClick(Content.PROTOCOLS)}
-            />
+            /> */}
           </Navbar.Group>
         </Navbar>
         <div>
-          {this.state.activeContent === Content.HOME && <div>Home Page</div>}
-          {this.state.activeContent === Content.GROUPS && <div>Group Page</div>}
-          {this.state.activeContent === Content.PROTOCOLS && (
+          {this.state.activeContent === Content.HOME && <Home />}
+          {this.state.activeContent === Content.GROUPS && <Groups />}
+          {/* {this.state.activeContent === Content.PROTOCOLS && (
             <div>Meeting Protocol Page</div>
-          )}
+          )} */}
         </div>
       </>
     );
