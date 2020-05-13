@@ -3,8 +3,8 @@
 ## Inhaltsverzeichnis
 
 - [Workflow](#workflow)
-- [Bounties][bounty]
-  - [Work on Bounty][#work-on-bounty]
+- [Bounties](#bounty)
+  - [Work on Bounty](#work-on-bounty)
 
 ### Workflow
 
