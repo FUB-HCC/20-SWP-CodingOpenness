@@ -31,9 +31,8 @@ Probleme:
    - Bearbeiter schließen Issue mit pull request ab -> review anfragen
    - Review von jemanden  der Issue nicht bearbeitet hat  
    - **Next Steps** 
-        - code of conduct hinzufügen, der dem Berlin CoC folgt
-        - Wiki Organisation --> Wie kann History getrakct werden? // Wie könnte eine inhaltlich Struktur aussehen? (pull requests nicht )
-        - Discord-Channel anlegen https://discord.com/invite/RaN4PZ
+        - Wiki Organisation --> Wie kann History getrackt werden? // Wie könnte eine inhaltliche Struktur aussehen? (pull requests nicht möglich)
+        - Discord-Channel anlegen
 
 > Nice to know: Schätzung des Issue-Aufwands basiert auf Fibonacci-Reihe
 
@@ -84,7 +83,7 @@ Probleme:
    - Push/ poll
    - Verschlüsselung
    - etc.
-   - Vergleich Privatsphäre un Transparenz
+   - Vergleich Privatsphäre und Transparenz
    - Technisch und nicht-technisch
    - wie lange werden Daten gespeichert
    - wer entscheidet über Datenübertragung
