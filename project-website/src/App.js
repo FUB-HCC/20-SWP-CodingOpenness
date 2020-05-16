@@ -3,11 +3,13 @@ import Home from "./Components/Home/Home";
 import Groups from "./Components/Groups/Groups";
 import { Navbar, Button, Alignment, Icon } from "@blueprintjs/core";
 import "./App.css";
+import Vergleich from "./Components/Vergleich/Vergleich";
 
 export const Content = {
   HOME: "HOME",
+  ABOUT: "ABOUT",
   GROUPS: "GROUPS",
-  PROTOCOLS: "PROTOCOLS",
+  VERGLEICH: "VERGLEICH",
 };
 
 class App extends React.Component {
@@ -58,16 +60,22 @@ class App extends React.Component {
             <Navbar.Divider style={{ height: 30 }} />
             <Button
               className="bp3-minimal navbar-button navbar-button-content"
-              text={"Groups"}
+              text={"Gruppen"}
               active={this.state.activeContent === Content.GROUPS}
               onClick={() => this.handleNavbarClick(Content.GROUPS)}
             />
-            {/* <Button
+            <Button
               className="bp3-minimal navbar-button navbar-button-content"
-              text="Meeting Protocols"
-              active={this.state.activeContent === Content.PROTOCOLS}
-              onClick={() => this.handleNavbarClick(Content.PROTOCOLS)}
-            /> */}
+              text={"Vergleich der Ansätze"}
+              active={this.state.activeContent === Content.VERGLEICH}
+              onClick={() => this.handleNavbarClick(Content.VERGLEICH)}
+            />
+            <Button
+              className="bp3-minimal navbar-button navbar-button-content"
+              text="Über uns"
+              active={this.state.activeContent === Content.ABOUT}
+              onClick={() => this.handleNavbarClick(Content.ABOUT)}
+            />
           </Navbar.Group>
         </Navbar>
         <div>
@@ -75,9 +83,7 @@ class App extends React.Component {
             <Home moveToGroups={() => this.handleNavbarClick(Content.GROUPS)} />
           )}
           {this.state.activeContent === Content.GROUPS && <Groups />}
-          {/* {this.state.activeContent === Content.PROTOCOLS && (
-            <div>Meeting Protocol Page</div>
-          )} */}
+          {this.state.activeContent === Content.VERGLEICH && <Vergleich />}
         </div>
       </>
     );
