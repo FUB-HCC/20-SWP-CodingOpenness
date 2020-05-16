@@ -1,3 +1,16 @@
-.home {
-  font-size: 80px;
+p {
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+h4 {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+.paragraph {
+  width: 75%;
+  border: 5px solid #6b9e1f;
+  padding: 30px;
+  margin: 20px auto;
 }
