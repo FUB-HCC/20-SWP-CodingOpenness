@@ -6,7 +6,7 @@ class Home extends React.Component {
   render() {
     return (
       <div style={{ marginTop: 100 }}>
-        <p className={"paragraph"}>
+        <div className={"paragraph"}>
           <h4>
             Das Ziel unseres Open-Source Softwareprojekt im Sommersemester 2020
             ist es, uns an der Entwicklung der Corona-App zu beteiligen.
@@ -40,16 +40,18 @@ class Home extends React.Component {
             </li>
             <li>Digital Contact Tracing Service (DCTS)</li>
           </ul>
-          Mehr Informationen Finden Sie{" "}
-          <Button
-            minimal
-            intent={"primary"}
-            style={{ padding: 0 }}
-            onClick={() => this.props.moveToGroups()}
-          >
-            hier
-          </Button>
-        </p>
+          <span style={{ display: "flex", alignItems: "center" }}>
+            Mehr Informationen Finden Sie
+            <Button
+              minimal
+              intent={"primary"}
+              style={{ padding: 0 }}
+              onClick={() => this.props.moveToGroups()}
+            >
+              hier
+            </Button>
+          </span>
+        </div>
       </div>
     );
   }
