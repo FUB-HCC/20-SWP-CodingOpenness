@@ -1,11 +1,15 @@
 .groups {
   font-size: 20px;
-
 }
+.project-title {
+  display: flex;
+  align-items: center;
+}
+
 p {
-    font-size: 1rem;
-    font-family: sans-serif;
-    margin: 30px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  margin: 30px;
 }
 
 h2 {
@@ -17,7 +21,7 @@ h2 {
 
 h3 {
   margin: 30px;
-  display:inline-block;
+  display: inline-block;
 }
 
 h4 {
@@ -52,16 +56,13 @@ h4 {
   color: white;
 }
 
-
 .overview-table {
   padding-top: 60px;
   padding-bottom: 60px;
-  
 }
 
-
 .DP-3T {
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -71,30 +72,28 @@ h4 {
   padding-bottom: 30px;
 }
 
-
 .DCTS {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .img-responsive {
-  width:30px;
-  height:30px;
-  border:0;
+  width: 30px;
+  height: 30px;
+  border: 0;
 }
 
 .diagram {
   max-width: 75%;
   height: auto;
-  object-fit: contain; 
+  object-fit: contain;
   padding: 50px;
-
 }
 
-.graphic { 
-  width:auto; 
-  text-align:center; 
-  padding:20px; 
+.graphic {
+  width: auto;
+  text-align: center;
+  padding: 20px;
 }
 
 .paragraph {
@@ -102,10 +101,9 @@ h4 {
   border: 5px solid #6b9e1f;
   padding: 50px;
   margin: 0 auto;
-
 }
 
-#member{
+#member {
   padding: 50px;
 }
 
@@ -116,10 +114,11 @@ table {
   padding: 50px;
   margin: 0 auto;
   table-layout: fixed;
-  
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid lightgray;
 }
 
@@ -130,8 +129,11 @@ th {
   color: white;
 }
 
-th, td {
+th,
+td {
   padding: 15px;
 }
 
-tr:nth-child(even) {background-color: #F5F5F5;}
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
