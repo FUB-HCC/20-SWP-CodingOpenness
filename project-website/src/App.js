@@ -71,7 +71,9 @@ class App extends React.Component {
           </Navbar.Group>
         </Navbar>
         <div>
-          {this.state.activeContent === Content.HOME && <Home />}
+          {this.state.activeContent === Content.HOME && (
+            <Home moveToGroups={() => this.handleNavbarClick(Content.GROUPS)} />
+          )}
           {this.state.activeContent === Content.GROUPS && <Groups />}
           {/* {this.state.activeContent === Content.PROTOCOLS && (
             <div>Meeting Protocol Page</div>
