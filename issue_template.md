@@ -1,5 +1,33 @@
 <!--
 # How to create a new bounty?
+Check Comment below.
+Bitte beachte die [Contribution Guidelines](https://github.com/FUB-HCC/20-SWP-CodingOpenness/blob/master/CONTRIBUTION.md)
+-->
+# Bounty
+
+## Scope
+
+-
+
+## Deliverables
+
+-
+
+## Gain for the project
+
+-
+
+## Roles
+
+bounty worker: @username
+bounty reviewer: @username
+
+## Issue creation checklist
+
+- [x] I have attached one of the `size-` labels to this bounty
+- [x] I have added this bounty to bounty board here https://github.com/FUB-HCC/20-SWP-CodingOpenness/projects/1
+
+<!--
 
 1. Create an issue with bounty description and bounty and draft tags in an appropriate repository.
    If the bounty spans across multiple repositories, consider splitting it in a smaller per-repo bounties if possible.
@@ -29,27 +57,3 @@ S  ~5h
 M  ~8h
 L  ~13h
 -->
-
-# Bounty / Aufgabe
-
-## Scope / Umfang
-
--
-
-## Deliverables
-
--
-
-## Gain for the project / Nutzen für das Projekt
-
--
-
-## Roles / Rollen
-
-bounty worker: @username
-bounty reviewer: @username
-
-## Gardener checklist
-
-- [x] I have attached one of the `size-` labels to this bounty
-- [x] I have added this bounty to bounty board here https://github.com/FUB-HCC/20-SWP-CodingOpenness/projects/1
