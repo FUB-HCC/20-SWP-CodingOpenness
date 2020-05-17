@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./Components/Home/Home";
 import Groups from "./Components/Groups/Groups";
+import About from "./Components/About/About";
 import { Navbar, Button, Alignment, Icon } from "@blueprintjs/core";
 import "./App.css";
 import Vergleich from "./Components/Vergleich/Vergleich";
@@ -84,6 +85,7 @@ class App extends React.Component {
           )}
           {this.state.activeContent === Content.GROUPS && <Groups />}
           {this.state.activeContent === Content.VERGLEICH && <Vergleich />}
+          {this.state.activeContent === Content.ABOUT && <About />}
         </div>
       </>
     );
