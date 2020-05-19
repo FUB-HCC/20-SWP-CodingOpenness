@@ -51,5 +51,7 @@ bounty reviewer: @username
 
 ## Gardener checklist
 
+- [x] I have attached one of the team labels `Fragebogen`, `Technik`, `Projektwebseite`, `Vergleich`, `Organisation` to this bounty
+- [x] I have attached one of the priority labels `Blocker`, `High`, `Medium`, `Low` to this bounty
 - [x] I have attached one of the `size-` labels to this bounty
 - [x] I have added this bounty to bounty board here https://github.com/FUB-HCC/20-SWP-CodingOpenness/projects/1
