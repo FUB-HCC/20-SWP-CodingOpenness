@@ -1,16 +1,16 @@
 Please remember the / Bitte beachte die [Contribution Guidelines](https://github.com/FUB-HCC/20-SWP-CodingOpenness/blob/master/CONTRIBUTION.md) :heart:
 
-## What does this PR do? / Was macht dieser PR?
+## What does this PR do?
 
 -
 
 <!-- Concise description of what this PR achieves, including any context. -->
 
-## Recommendations for testing / Empfehlungen zum Testen
+## Recommendations for testing
 
 <!-- Tips for testing this PR, or anything you want to bring special attention to. -->
 
-## Links to relevant issues or information / Links zu relevanten Issues oder Informationen
+## Links to relevant issues or information
 
 Closes
 
