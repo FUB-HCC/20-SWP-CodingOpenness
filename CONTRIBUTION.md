@@ -82,6 +82,15 @@ Artifacts produced as the result of this bounty. Something that could be verifie
 
 The person responsible for the bounty.
 
+### Priority
+
+Priority defines the importance of a bounty in relation to the other bounties. Additionally it helps to the users to determine which bounties should be completed first.
+
+- Blocker: This task will block progress
+- High: Serious task that could block progress
+- Medium: Has the potential to affect progress
+- Low: Minor problem
+
 ### Size
 
 Size of the bounty.
