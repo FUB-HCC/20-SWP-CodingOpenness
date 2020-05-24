@@ -1,8 +1,8 @@
 import React from "react";
-import "./Groups.css";
+import "./Ansaetze.css";
 import { Button } from "@blueprintjs/core";
 
-class Groups extends React.Component {
+class Ansaetze extends React.Component {
   getGroupMemberList(members) {
     return members.map((member) => <li>{member}</li>);
   }
@@ -238,4 +238,4 @@ class Groups extends React.Component {
   }
 }
 
-export default Groups;
+export default Ansaetze;

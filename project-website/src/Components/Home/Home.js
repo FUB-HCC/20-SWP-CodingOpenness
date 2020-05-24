@@ -46,7 +46,7 @@ class Home extends React.Component {
               minimal
               intent={"primary"}
               style={{ padding: 0 }}
-              onClick={() => this.props.moveToGroups()}
+              onClick={() => this.props.moveToAnsaetze()}
             >
               hier
             </Button>
