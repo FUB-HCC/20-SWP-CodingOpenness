@@ -1,0 +1,40 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+.top-view {
+  display: flex;
+  height: 112px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-view .top-view-hcc {
+  display: flex;
+  height: 112px;
+  align-items: center;
+  margin: 10px;
+}
+
+.navbar-menu {
+  background-color: #6b9e1f;
+  margin-top: 20;
+}
+
+.hcc-button {
+  background-color: #6b9e1f !important;
+  outline: none;
+}
+
+.navbar-button {
+  padding: 17px;
+  color: white !important;
+}
+
+.navbar-button-content:focus {
+  background-color: grey !important;
+}
+
+.navbar-button .bp3-icon {
+  color: white;
+}
