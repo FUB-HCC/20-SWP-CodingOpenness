@@ -6,7 +6,7 @@ Node.js version 10+ (node -v)
 
 ## Usage
 
-after cloning this repository;
+after cloning this repository:
 ```
 cd /project-website
 npm i
