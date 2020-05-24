@@ -5,8 +5,11 @@
 - [Workflow](#workflow)
 - [Bounties](#bounty)
   - [Work on Bounty](#work-on-bounty)
+- [Project structure](#project-structure)
 
 ### Workflow
+
+The project follows [Git-flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow for the codebase maintenance and release lifecycle. 
 
 1. Fork and clone the repository
 
@@ -16,7 +19,7 @@
 
 1. Create a branch in the fork
 
-   The branch should be based on the `master` branch in the master repository. Prepend the correct [type](#type) to your branch.
+   The branch should be based on the `develop` branch in the master repository. Prepend the correct [type](#type) to your branch.
 
    ```sh
    git checkout -b TYPE/my-feature-or-bugfix master
@@ -38,9 +41,13 @@
 
 1. Create a Pull Request
 
-   In the Github UI of your fork, create a Pull Request to the `master` branch of the master repository.
+   In the Github UI of your fork, create always a Pull Request to the backend or frontend `develop` branch of the master repository. Pull requests to the `master` branch will be closed.
 
-   If the branch has merge conflicts or has been outdated, please do a rebase against the `master` branch.
+   If the branch has merge conflicts or has been outdated, please do a rebase against the backend or frontend `develop` branch.
+
+1. Review a Pull Request
+
+   The application development team will review the pull request by going through the single commits. If the pull request is acceptable, they merge the pull request in the codebase.
 
 ### <a name="commit"></a> Commit message guidelines
 
@@ -81,6 +88,15 @@ Artifacts produced as the result of this bounty. Something that could be verifie
 ### Bounty owner/gardener
 
 The person responsible for the bounty.
+
+### Priority
+
+Priority defines the importance of a bounty in relation to the other bounties. Additionally it helps to the users to determine which bounties should be completed first.
+
+- Blocker: This task will block progress
+- High: Serious task that could block progress
+- Medium: Has the potential to affect progress
+- Low: Minor problem
 
 ### Size
 
@@ -154,3 +170,32 @@ Gardener/Worker/Reviewer roles may be taken over by other people in a certain si
 ### Challenging worker and reviewer
 
 If worker or reviewer are not publishing any updates for the bounty for 2 working days, then anyone can challenge him and take over the worker role. Updates for worker role can be in any form, most notably: commits to WIP Pull Request, updates on product artifact (hackmd, presentation, diagram etc), review comments or updates in form of github comments.
+
+## Project structure
+
+We identify 3 separate applications that will have their release lifecycle independently of each other. These applications are:
+
+- Frontend: User facing application. It might be a web application or a mobile native application.
+- Backend: Server side application storing and managing user data and main business logic.
+- Project website: Webpage with project foundation and design details.
+
+These applications will leverage Continuous Integration and Continuous Deployment capabilities available from GitHub Actions. Each application will have its tech stack and therefore its build, test, and release processes. We recognize then the need for enabling the applications to be extended and enhanced without conflicting with the independent development lifecycles and versioning of the other components. to achieve this we then created 3 orphan main branches.
+
+- **frontend/master**, for frontend development
+- **backend/master**, for backend development
+- **gh-pages**, for the project website
+
+These branches will behave as a regular master branch, protected from direct changes on the branch, and only updated when a pull request is approved by a reviewer. Additionally, we can configure separate CI/CD pipelines based on the branch name simplifying maintenance.
+The master branches will contain the latest production versions of each one of the applications and therefore the team should aim to keep the codebase of this branch stable and clean. 
+From theses branches we created the development branches for each of the applications:
+
+- **frontend/develop**
+- **backend/develop**
+
+These branches will serve as an integration branch of multiple feature branches and will contain the development version of the applications, meaning probably unstable and available for quality assurance. Every feature branch should be eventually merged to develop and when a stable version is reached develop will be merged to master, triggering the release of a new application version.
+All of the features branches should maintain the application name as its prefix. For example:
+
+- backend/feat/login: this branch is for the development of the login feature for the backend application.
+- frontend/fix/style: this branch is for a fix on the style for the frontend application.
+
+The goal is to apply the git-flow workflow to our development lifecycle and to simplify the maintenance of each application that belongs to this project.
