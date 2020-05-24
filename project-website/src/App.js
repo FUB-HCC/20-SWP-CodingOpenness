@@ -5,12 +5,14 @@ import About from "./Components/About/About";
 import { Navbar, Button, Alignment, Icon } from "@blueprintjs/core";
 import "./App.css";
 import Vergleich from "./Components/Vergleich/Vergleich";
+import Contact from "./Components/Contact/Contact";
 
 export const Content = {
   HOME: "HOME",
   ABOUT: "ABOUT",
   GROUPS: "GROUPS",
   VERGLEICH: "VERGLEICH",
+  CONTACT: "CONTACT",
 };
 
 class App extends React.Component {
@@ -77,6 +79,12 @@ class App extends React.Component {
               active={this.state.activeContent === Content.ABOUT}
               onClick={() => this.handleNavbarClick(Content.ABOUT)}
             />
+            <Button
+              className="bp3-minimal navbar-button navbar-button-content"
+              text="Kontakt"
+              active={this.state.activeContent === Content.CONTACT}
+              onClick={() => this.handleNavbarClick(Content.CONTACT)}
+            />
           </Navbar.Group>
         </Navbar>
         <div>
@@ -86,6 +94,7 @@ class App extends React.Component {
           {this.state.activeContent === Content.GROUPS && <Groups />}
           {this.state.activeContent === Content.VERGLEICH && <Vergleich />}
           {this.state.activeContent === Content.ABOUT && <About />}
+          {this.state.activeContent === Content.CONTACT && <Contact />}
         </div>
       </>
     );
