@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99090cc4d93fd4646d08e6539c1c8251",
+    "revision": "7c890fde002a1ac849a879b69ce27e6b",
     "url": "/20-SWP-CodingOpenness/index.html"
   },
   {
-    "revision": "a4c855a0c6022fe062ea",
+    "revision": "48b42706f72c10f2f220",
     "url": "/20-SWP-CodingOpenness/static/css/2.75c2aa79.chunk.css"
   },
   {
-    "revision": "d8001687a3641e8f3cf2",
-    "url": "/20-SWP-CodingOpenness/static/css/main.151d4de2.chunk.css"
+    "revision": "40ef5e003b9542788455",
+    "url": "/20-SWP-CodingOpenness/static/css/main.b0706b0e.chunk.css"
   },
   {
-    "revision": "a4c855a0c6022fe062ea",
-    "url": "/20-SWP-CodingOpenness/static/js/2.5653f54e.chunk.js"
+    "revision": "48b42706f72c10f2f220",
+    "url": "/20-SWP-CodingOpenness/static/js/2.a273086f.chunk.js"
   },
   {
     "revision": "e18637604789af6a40503615de5bd745",
-    "url": "/20-SWP-CodingOpenness/static/js/2.5653f54e.chunk.js.LICENSE.txt"
+    "url": "/20-SWP-CodingOpenness/static/js/2.a273086f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d8001687a3641e8f3cf2",
-    "url": "/20-SWP-CodingOpenness/static/js/main.d602ddb1.chunk.js"
+    "revision": "40ef5e003b9542788455",
+    "url": "/20-SWP-CodingOpenness/static/js/main.eee3f582.chunk.js"
   },
   {
     "revision": "fc223838ad78f9650572",
     "url": "/20-SWP-CodingOpenness/static/js/runtime-main.e005725f.js"
   },
   {
-    "revision": "04ae295d0d68cc4075828460986d9ee9",
-    "url": "/20-SWP-CodingOpenness/static/media/Vergleich.04ae295d.md"
+    "revision": "0bf429ef74a9cdc3bf051d202348302a",
+    "url": "/20-SWP-CodingOpenness/static/media/Vergleich.0bf429ef.md"
   },
   {
     "revision": "a0f38bb70c408f82d56108c47978274c",
