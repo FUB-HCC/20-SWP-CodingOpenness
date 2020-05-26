@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from "@blueprintjs/core";
+import Kontakt from "../Kontakt/Kontakt";
 
 class About extends React.Component {
   render() {
@@ -53,6 +54,7 @@ Head of the group: Prof. Dr. Claudia Müller-Birn`}</p>
             </strong>
           </div>
         </div>
+        <Kontakt />
       </div>
     );
   }
