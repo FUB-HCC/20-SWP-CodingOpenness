@@ -8,7 +8,6 @@ Node.js version 10+ (node -v)
 
 after cloning this repository:
 ```
-cd /project-website
 npm i
 npm start
 ```
