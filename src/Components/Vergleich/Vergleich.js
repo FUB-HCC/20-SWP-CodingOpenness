@@ -62,7 +62,7 @@ class Vergleich extends React.Component {
 
   render() {
     return (
-      <div style={{ padding: 30 }}>
+      <div>
         <div class="topnav" id="topnav">
           <Button
               className="bp3-minimal navbar-button navbar-button-content"
@@ -101,8 +101,9 @@ class Vergleich extends React.Component {
               onClick={() => this.handleNavbarClick(VergleichContent.CORONAWARNAPP)}
             />
         </div>
-
-        <Markdown children={this.state.markdown} />
+        <div style={{ padding: 30 }}>
+          <Markdown children={this.state.markdown} />
+        </div>
       </div>
     );
   }

@@ -12,7 +12,8 @@ Weiterführende Informationen:
 ----------------------------------------------
 Architekturdiagram
 
-![Architekturdiagram](https://user-images.githubusercontent.com/1636532/81082424-94087200-8ef3-11ea-8dc8-cc556f2705ea.png)
+![Architekturdiagram](../../public/pepp-pt-architecture.png)
+
 Kommunikationsdiagram
 
 ![Kommunikationsdiagram](https://user-images.githubusercontent.com/1636532/80861428-cd7c7b80-8c6e-11ea-9222-cc9deae3f7ef.png)
