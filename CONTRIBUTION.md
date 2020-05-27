@@ -104,10 +104,10 @@ Size of the bounty.
 
 We use t-shirt sizes:
 
+- size-XXS: 2h
 - size-XS: 3h
 - size-S: 5h
 - size-M: 8h
-- size-L: 13h
 
 ## How to create a new bounty
 
