@@ -1,29 +1,28 @@
 import React from "react";
 import "./Kontakt.css";
-import { Button } from "@blueprintjs/core";
+import emailjs from "emailjs-com";
 
-class Kontakt extends React.Component {
-  getInfoButton = () => (
-    <a
-      href="https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Button small minimal icon={"info-sign"} />
-    </a>
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "gmailtratond01",
+    "contact_form",
+    e.target,
+    "user_jsdd62Zisg1rCwqroKZeF"
   );
 
+  alert("Thank you for your feedback!");
+  document.getElementById("contact-form").reset();
+}
+
+class Kontakt extends React.Component {
   render() {
     return (
-      <div
-        style={{
-          paddignBottom: 20,
-        }}
-      >
-        <h3 style={{ textDecoration: "underline" }}>Kontakt:</h3>
-        <p style={{ fontWeight: 800 }}>
-          {"Wir würden uns über Rückmeldungen von Ihnen freuen."}
-        </p>
+      <div style={{ padding: 20 }}>
+        <h1 style={{ fontWeight: 800, padding: 20 }}>
+          Treten Sie in Kontakt mit uns
+        </h1>
         <p>
           {`Falls Sie Fragen, Anmerkungen oder Ergänzungen bezüglich unserer Website
         haben, freuen wir uns sehr über eine Rückmeldung von Ihnen.`}
@@ -50,6 +49,44 @@ class Kontakt extends React.Component {
 
           {` eine anschauliche Anleitung.`}
         </p>
+        <p style={{ paddingTop: 40 }}>
+          {`Sie können uns auch per E-Mail über das folgende Formular erreichen.`}
+        </p>
+        <div className="formular">
+          <form className="contact-form" id="contact-form" onSubmit={sendEmail}>
+            <input type="hidden" name="contact_number" />
+
+            <div>
+              <label style={{ fontWeight: 700, paddingRight: 50 }}>Name</label>
+              <input
+                type="text"
+                name="user_name"
+                style={{ height: 20, width: 200 }}
+              />
+            </div>
+            <div>
+              <label style={{ fontWeight: 700, paddingRight: 50 }}>Email</label>
+              <input
+                type="email"
+                name="user_email"
+                style={{ height: 20, width: 200 }}
+              />
+            </div>
+
+            <div style={{ display: "flex" }}>
+              <label style={{ fontWeight: 700, paddingRight: 25 }}>
+                Nachricht
+              </label>
+              <textarea
+                type="message"
+                placeholder="Bitte beschreiben Sie Ihr Anlegen im Detail"
+                style={{ height: 100, width: 500 }}
+              />
+            </div>
+
+            <input style={{ marginTop: 20 }} type="submit" value="Send" />
+          </form>
+        </div>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./Components/Home/Home";
 import Ansaetze from "./Components/Ansaetze/Ansaetze";
 import About from "./Components/About/About";
+import Kontakt from "./Components/Kontakt/Kontakt";
 import { Navbar, Button, Alignment, Icon } from "@blueprintjs/core";
 import "./App.css";
 import Vergleich from "./Components/Vergleich/Vergleich";
@@ -11,6 +12,7 @@ export const Content = {
   ABOUT: "ABOUT",
   ANSAETZE: "ANSAETZE",
   VERGLEICH: "VERGLEICH",
+  KONTAKT: "KONTAKT",
 };
 
 class App extends React.Component {
@@ -77,6 +79,12 @@ class App extends React.Component {
               active={this.state.activeContent === Content.ABOUT}
               onClick={() => this.handleNavbarClick(Content.ABOUT)}
             />
+            <Button
+              className="bp3-minimal navbar-button navbar-button-content"
+              text="Kontakt"
+              active={this.state.activeContent === Content.KONTAKT}
+              onClick={() => this.handleNavbarClick(Content.KONTAKT)}
+            />
           </Navbar.Group>
         </Navbar>
         <div>
@@ -88,6 +96,7 @@ class App extends React.Component {
           {this.state.activeContent === Content.ANSAETZE && <Ansaetze />}
           {this.state.activeContent === Content.VERGLEICH && <Vergleich />}
           {this.state.activeContent === Content.ABOUT && <About />}
+          {this.state.activeContent === Content.KONTAKT && <Kontakt />}
         </div>
       </>
     );
