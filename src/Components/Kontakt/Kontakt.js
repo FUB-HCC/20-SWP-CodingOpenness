@@ -1,105 +1,95 @@
 import React from "react";
 import "./Kontakt.css";
-import emailjs from 'emailjs-com';
-
+import emailjs from "emailjs-com";
 
 function sendEmail(e) {
   e.preventDefault();
 
-  emailjs.sendForm('gmailtratond01', 'contact_form', e.target, 'user_jsdd62Zisg1rCwqroKZeF')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
-    
-    alert("Thank you for your feedback!"); 
-    document.getElementById("contact-form").reset();
+  emailjs.sendForm(
+    "gmailtratond01",
+    "contact_form",
+    e.target,
+    "user_jsdd62Zisg1rCwqroKZeF"
+  );
 
+  alert("Thank you for your feedback!");
+  document.getElementById("contact-form").reset();
 }
 
-
 class Kontakt extends React.Component {
-
-
   render() {
     return (
-      <div>
-        <div>
-        <h1>Contact Us</h1>
-        </div>
-
-        <div class="intern">
-          <p>Contact from inside the course, please create an new issue or edit an existing issue on our Github Issue page.
-            <a
+      <div style={{ padding: 20 }}>
+        <h1 style={{ fontWeight: 800, padding: 20 }}>
+          Treten Sie in Kontakt mit uns
+        </h1>
+        <p>
+          {`Falls Sie Fragen, Anmerkungen oder Ergänzungen bezüglich unserer Website
+        haben, freuen wir uns sehr über eine Rückmeldung von Ihnen.`}
+        </p>
+        <p>
+          {`Erstellen Sie dafür einfach ein Issue in unserem Github-Repository: `}
+          <a
             href="https://github.com/FUB-HCC/20-SWP-CodingOpenness/issues"
             target="_blank"
             rel="noopener noreferrer"
-            >
-            <img
-              className="img-responsive"
-              src={
-                "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-              }
-              alt="Github Link"
-            />
-            </a>
-          </p>
-            
-        </div>
-
-        <div class="info">
-          <p>For contact from outside, please fill out the following form.<br />
-          <br />
-          Your input will either be reflected on our website in due course, or we will soon get in contact with you using the provided email.<br />
-          <br />
-          You can also view our Issue page for existing work in progress. 
-          <a
-          href="https://github.com/FUB-HCC/20-SWP-CodingOpenness/issues"
-          target="_blank"
-          rel="noopener noreferrer"
           >
-          <img
-            className="img-responsive"
-            src={
-              "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-            }
-            alt="Github Link"
-          />
+            20-SWP-CodingOpenness
           </a>
-          
-          </p>
+        </p>
+        <p>
+          {`Benötigen Sie Hilfe diesbezüglich, finden Sie unter `}
+          <a
+            href="https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue
+          </a>
 
-        </div>
-
+          {` eine anschauliche Anleitung.`}
+        </p>
+        <p style={{ paddingTop: 40 }}>
+          {`Sie können uns auch per E-Mail über das folgende Formular erreichen.`}
+        </p>
         <div className="formular">
           <form className="contact-form" id="contact-form" onSubmit={sendEmail}>
-
             <input type="hidden" name="contact_number" />
 
-            <label>Name</label>
-            <input type="text" name="user_name" />
+            <div>
+              <label style={{ fontWeight: 700, paddingRight: 50 }}>Name</label>
+              <input
+                type="text"
+                name="user_name"
+                style={{ height: 20, width: 200 }}
+              />
+            </div>
+            <div>
+              <label style={{ fontWeight: 700, paddingRight: 50 }}>Email</label>
+              <input
+                type="email"
+                name="user_email"
+                style={{ height: 20, width: 200 }}
+              />
+            </div>
 
-            <label>Email</label>
-            <input type="email" name="user_email" />
+            <div style={{ display: "flex" }}>
+              <label style={{ fontWeight: 700, paddingRight: 25 }}>
+                Nachricht
+              </label>
+              <textarea
+                type="message"
+                placeholder="Bitte beschreiben Sie Ihr Anlegen im Detail"
+                style={{ height: 100, width: 500 }}
+              />
+            </div>
 
-            <label>Message</label>
-            <textarea name="message" placeholder="Please describe your or issue in detail, and reference to the page and piece of information in question"/>
-
-            <input type="submit" value="Send" />
-
+            <input style={{ marginTop: 20 }} type="submit" value="Send" />
           </form>
         </div>
-
-        <div>
-          
-        </div>
-
-
       </div>
     );
   }
-
 }
 
 export default Kontakt;

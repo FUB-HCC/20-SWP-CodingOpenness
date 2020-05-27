@@ -1,8 +1,3 @@
-
-.kontakt-form {
-  font-size: large;
-}
-
 p {
   font-size: 1rem;
   font-family: sans-serif;
@@ -16,15 +11,7 @@ h1 {
   text-align: center;
 }
 
-
 .info {
-  width: 75%;
-  padding: 50px;
-  margin: 0 auto;
-}
-
-.intern {
-  background-color: #e8e8e8;
   width: 75%;
   padding: 50px;
   margin: 0 auto;
@@ -32,12 +19,13 @@ h1 {
 
 .formular {
   width: 75%;
-  padding: 50px;
-  margin: 0 auto;
+  padding: 30px;
 }
 
-
-input[type=text],input[type=email], select, textarea {
+input[type="text"],
+input[type="email"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -47,7 +35,7 @@ input[type=text],input[type=email], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-input[type=submit] {
+input[type="submit"] {
   background-color: #6b9e1f;
   color: white;
   padding: 12px 20px;
@@ -55,11 +43,6 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #6b9e1f;
-}
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
 }
