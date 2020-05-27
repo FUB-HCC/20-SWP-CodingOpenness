@@ -21,11 +21,9 @@ class Kontakt extends React.Component {
         }}
       >
         <h3 style={{ textDecoration: "underline" }}>Kontakt:</h3>
-        <br />
         <p style={{ fontWeight: 800 }}>
           {"Wir würden uns über Rückmeldungen von Ihnen freuen."}
         </p>
-        <br />
         <p>
           {`Falls Sie Fragen, Anmerkungen oder Ergänzungen bezüglich unserer Website
         haben, freuen wir uns sehr über eine Rückmeldung von Ihnen.`}
