@@ -25,7 +25,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Navbar className={"navbar-menu"} fixedToTop>
+        <Navbar id={"navbar-menu"} className={"navbar-menu"} fixedToTop>
           <Navbar.Group
             style={{
               height: "inherit",
