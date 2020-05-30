@@ -34,10 +34,10 @@ Head of the group: Prof. Dr. Claudia Müller-Birn`}</p>
               href="https://github.com/FUB-HCC/20-SWP-CodingOpenness"
             >
               <Icon icon="link" />
+              <strong style={{ color: "black", paddingLeft: 2 }}>
+                {"20-SWP-CodingOpenness official GitHub Repository"}
+              </strong>
             </a>
-            <strong>
-              {"20-SWP-CodingOpenness official GitHub Repository"}
-            </strong>
           </div>
           <div style={{ margin: "0px 30px 10px 30px" }}>
             <a
@@ -47,10 +47,10 @@ Head of the group: Prof. Dr. Claudia Müller-Birn`}</p>
               href="https://www.fu-berlin.de/campusleben/forschen/2020/200512-corona-interview-mueller-birn/index.html"
             >
               <Icon icon="link" />
+              <strong style={{ color: "black", paddingLeft: 2 }}>
+                {"Interview with Prof. Claudia Müller Birn on the tracing app"}
+              </strong>
             </a>
-            <strong>
-              {"Interview with Prof. Claudia Müller Birn on the tracing app"}
-            </strong>
           </div>
         </div>
       </div>
