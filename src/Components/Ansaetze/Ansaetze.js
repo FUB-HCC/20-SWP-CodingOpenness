@@ -8,7 +8,7 @@ class Ansaetze extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ paddingTop: 70 }}>
         <div class="topnav" id="topnav">
           <a href="#PEPP-PT">PEPP-PT</a>
           <a href="#DP-3T">DP-3T</a>
@@ -82,16 +82,16 @@ class Ansaetze extends React.Component {
           </div>
 
           <div class="graphic">
-            <p id="pepp-pt-diagram">
+            <div id="pepp-pt-diagram">
               <img
                 class="diagram"
                 src="https://user-images.githubusercontent.com/1636532/81082424-94087200-8ef3-11ea-8dc8-cc556f2705ea.png"
                 alt="pepp-pt-diagram"
               />
-            </p>
+            </div>
           </div>
 
-          <p id="member">
+          <div id="member">
             <h4>Group Members:</h4>
             <ul>
               {this.getGroupMemberList([
@@ -106,7 +106,7 @@ class Ansaetze extends React.Component {
                 "Di Wang",
               ])}
             </ul>
-          </p>
+          </div>
           <a href="#topnav" style={{ marginLeft: 50 }}>
             <Button icon={"arrow-up"} minimal />
           </a>
@@ -153,15 +153,15 @@ class Ansaetze extends React.Component {
           </div>
 
           <div class="graphic">
-            <p id="dp-3t-diagram">
+            <div id="dp-3t-diagram">
               <img
                 class="diagram"
                 src="https://camo.githubusercontent.com/4e9a39c556271e269c0fe4f43f3709c2b4a5d1dd/68747470733a2f2f692e696d6775722e636f6d2f73316932546d312e706e67"
                 alt="dp-3t-diagram"
               />
-            </p>
+            </div>
           </div>
-          <p id="member">
+          <div id="member">
             <h4>Group Members:</h4>
             <ul>
               {this.getGroupMemberList([
@@ -176,7 +176,7 @@ class Ansaetze extends React.Component {
                 "Julia Zimmermann",
               ])}
             </ul>
-          </p>
+          </div>
           <a href="#topnav" style={{ marginLeft: 50 }}>
             <Button icon={"arrow-up"} minimal />
           </a>
@@ -193,16 +193,16 @@ class Ansaetze extends React.Component {
           </div>
 
           <div class="graphic">
-            <p id="dp-3t-diagram">
+            <div id="dp-3t-diagram">
               <img
                 class="diagram"
                 src="https://user-images.githubusercontent.com/4459428/80650567-87f45e80-8a74-11ea-950a-8a833e935226.png"
                 alt="dp-3t-diagram"
               />
-            </p>
+            </div>
           </div>
 
-          <p id="member">
+          <div id="member">
             <h4>Group Members:</h4>
             <ul>
               {this.getGroupMemberList([
@@ -216,7 +216,7 @@ class Ansaetze extends React.Component {
                 "Raphael Wagner",
               ])}
             </ul>
-          </p>
+          </div>
           <a href="#topnav" style={{ marginLeft: 50 }}>
             <Button icon={"arrow-up"} minimal />
           </a>

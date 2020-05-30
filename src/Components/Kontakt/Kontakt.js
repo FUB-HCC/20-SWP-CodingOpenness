@@ -19,10 +19,8 @@ function sendEmail(e) {
 class Kontakt extends React.Component {
   render() {
     return (
-      <div style={{ padding: 20 }}>
-        <h1 style={{ fontWeight: 800, padding: 20 }}>
-          Treten Sie in Kontakt mit uns
-        </h1>
+      <div style={{ padding: "70px 20px" }}>
+        <h1 style={{ fontSize: 28 }}>Treten Sie in Kontakt mit uns</h1>
         <p>
           {`Falls Sie Fragen, Anmerkungen oder Ergänzungen bezüglich unserer Website
         haben, freuen wir uns sehr über eine Rückmeldung von Ihnen.`}

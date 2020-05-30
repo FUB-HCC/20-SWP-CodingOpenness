@@ -4,7 +4,7 @@ import { Icon } from "@blueprintjs/core";
 class About extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ paddingTop: 150 }}>
         <div style={{ display: "flex", padding: "0 20px 0 20px" }}>
           <img
             style={{ height: 300 }}
@@ -24,7 +24,7 @@ Head of the group: Prof. Dr. Claudia Müller-Birn`}</p>
         <div>
           <h3 style={{ marginTop: 60, textDecoration: "underline" }}>
             {"Links:"}
-          </h3>{" "}
+          </h3>
           <br />
           <div style={{ margin: "0px 30px 10px 30px" }}>
             <a

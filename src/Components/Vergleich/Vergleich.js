@@ -15,7 +15,7 @@ class Vergleich extends React.Component {
 
   render() {
     return (
-      <div style={{ padding: 30 }}>
+      <div style={{ padding: "70px 30px" }}>
         <Markdown children={this.state.markdown} />
       </div>
     );
