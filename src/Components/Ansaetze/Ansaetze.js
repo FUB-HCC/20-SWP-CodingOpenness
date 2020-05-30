@@ -56,20 +56,6 @@ class Ansaetze extends React.Component {
           <div class="paragraph">
             <div className={"project-title"}>
               <h3>Pan European Privacy Preserving Proximity Tracing</h3>
-
-              <a
-                href="https://github.com/FUB-HCC/20-SWP-CodingOpenness/wiki/Pan-European-Privacy-Preserving-Proximity-Tracing-%28PEPP-PT%29"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="img-responsive"
-                  src={
-                    "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                  }
-                  alt="Github Link"
-                />
-              </a>
             </div>
 
             <p>
@@ -80,6 +66,19 @@ class Ansaetze extends React.Component {
               am 31. März 2020 mehr als 130 Mitglieder in acht europäischen
               Ländern zählt.
             </p>
+            <a
+              href="https://github.com/pepp-pt"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ paddingLeft: 25, display: "flex", alignItems: "center" }}
+            >
+              <img
+                className="img-responsive"
+                src={require("../../Assets/github.svg")}
+                alt="Github Link"
+              />
+              PEPP-PT's GitHub Repository
+            </a>
           </div>
 
           <div class="graphic">
@@ -121,18 +120,6 @@ class Ansaetze extends React.Component {
               <h3>
                 Decentralized Privacy Preserving Proximity Tracing protocol{" "}
               </h3>
-
-              <a
-                href="https://github.com/FUB-HCC/20-SWP-CodingOpenness/wiki/Decentralized-Privacy-Preserving-Proximity-Tracing-protocol-(DP-3T) "
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="img-responsive"
-                  src={require("../../Assets/github.svg")}
-                  alt="Github Link"
-                />
-              </a>
             </div>
 
             <p>
@@ -149,6 +136,20 @@ class Ansaetze extends React.Component {
               Einzelpersonen und Gemeinschaften, indem es ein Höchstmaß an
               Datenschutz gewährleistet.
             </p>
+
+            <a
+              href="https://github.com/DP-3T"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ paddingLeft: 25, display: "flex", alignItems: "center" }}
+            >
+              <img
+                className="img-responsive"
+                src={require("../../Assets/github.svg")}
+                alt="Github Link"
+              />
+              DP-3T's GitHub Repository
+            </a>
           </div>
 
           <div class="graphic">
@@ -187,20 +188,7 @@ class Ansaetze extends React.Component {
           <div class="paragraph">
             <div className={"project-title"}>
               <h3>Digital Contact Tracing Service</h3>
-
-              <a
-                href="https://github.com/FUB-HCC/20-SWP-CodingOpenness/wiki/Digital-Contact-Tracing-Service-(DCTS)"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="img-responsive"
-                  src={require("../../Assets/github.svg")}
-                  alt="Github Link"
-                />
-              </a>
             </div>
-
             <p>Kontaktverfolgungsdienst von der TU München.</p>
           </div>
 
