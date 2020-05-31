@@ -26,7 +26,11 @@ class App extends React.Component {
     activeContent: Content.HOME,
   };
 
-  handleNavbarClick = (activeContent) => this.setState({ activeContent });
+  handleNavbarClick = (activeContent) =>
+  {
+     this.setState({ activeContent });
+     history.push(activeContent);
+  }
 
   render() {
     return (
