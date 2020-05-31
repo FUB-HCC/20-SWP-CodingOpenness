@@ -9,7 +9,8 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "emailjs-com": "^2.4.1",
-    "markdown-to-jsx": "^6.11.1",
+    "history": "^4.10.1",
+    "markdown-to-jsx": "^6.11.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"

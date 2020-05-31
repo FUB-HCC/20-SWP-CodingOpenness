@@ -1,11 +1,14 @@
 import React from "react";
+import history from "./history";
+
 import Home from "./Components/Home/Home";
 import Ansaetze from "./Components/Ansaetze/Ansaetze";
 import About from "./Components/About/About";
 import Kontakt from "./Components/Kontakt/Kontakt";
+import Vergleich from "./Components/Vergleich/Vergleich";
+
 import { Navbar, Button, Alignment } from "@blueprintjs/core";
 import "./App.css";
-import Vergleich from "./Components/Vergleich/Vergleich";
 
 export const Content = {
   HOME: "HOME",
