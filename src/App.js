@@ -1,5 +1,6 @@
 import React from "react";
 import history from "./history";
+import { Router, Route, Switch } from "react-router-dom";
 
 import Home from "./Components/Home/Home";
 import Ansaetze from "./Components/Ansaetze/Ansaetze";
@@ -10,12 +11,13 @@ import Vergleich from "./Components/Vergleich/Vergleich";
 import { Navbar, Button, Alignment } from "@blueprintjs/core";
 import "./App.css";
 
+//content values are used as the URLs for routing
 export const Content = {
-  HOME: "HOME",
-  ABOUT: "ABOUT",
-  ANSAETZE: "ANSAETZE",
-  VERGLEICH: "VERGLEICH",
-  KONTAKT: "KONTAKT",
+  HOME: "/",
+  ABOUT: "/about",
+  ANSAETZE: "/approaches",
+  VERGLEICH: "/comparison",
+  KONTAKT: "/contact",
 };
 
 class App extends React.Component {
@@ -27,7 +29,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <Router history={history}>
         <Navbar id={"navbar-menu"} className={"navbar-menu"} fixedToTop>
           <Navbar.Group
             style={{
@@ -77,6 +79,14 @@ class App extends React.Component {
             </div>
           </Navbar.Group>
         </Navbar>
+        <Switch>
+          <Route path={Content.HOME} exact component={Home} />
+          <Route path={Content.ANSAETZE} exact component={Ansaetze} />
+          <Route path={Content.VERGLEICH} exact component={Vergleich} />
+          <Route path={Content.ABOUT} exact component={About} />
+          <Route path={Content.KONTAKT} exact component={Kontakt} />
+        </Switch>
+        {/*}
         <div>
           {this.state.activeContent === Content.HOME && (
             <Home
@@ -88,7 +98,8 @@ class App extends React.Component {
           {this.state.activeContent === Content.ABOUT && <About />}
           {this.state.activeContent === Content.KONTAKT && <Kontakt />}
         </div>
-      </>
+          */}
+      </Router>
     );
   }
 }
