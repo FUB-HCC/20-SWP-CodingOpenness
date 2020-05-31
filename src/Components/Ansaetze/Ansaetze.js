@@ -3,9 +3,6 @@ import "./Ansaetze.css";
 import { Button } from "@blueprintjs/core";
 
 class Ansaetze extends React.Component {
-  getGroupMemberList(members) {
-    return members.map((member) => <li>{member}</li>);
-  }
   render() {
     return (
       <div style={{ paddingTop: 70 }}>
@@ -13,41 +10,6 @@ class Ansaetze extends React.Component {
           <a href="#PEPP-PT">PEPP-PT</a>
           <a href="#DP-3T">DP-3T</a>
           <a href="#DCTS">DCTS</a>
-        </div>
-
-        <div class="overview-table">
-          <table>
-            <tr>
-              <th>Kriterium</th>
-              <th>PEPP-PT </th>
-              <th>DP3T </th>
-              <th>DCTS </th>
-            </tr>
-            <tr>
-              <td>Zugrundeliegendes Prinzip</td>
-              <td>Zentral</td>
-              <td>Dezentral</td>
-              <td>Dezentral</td>
-            </tr>
-            <tr>
-              <td>Ort der Speicherung der IDs</td>
-              <td>Server</td>
-              <td>Smartphone</td>
-              <td>Smartphone</td>
-            </tr>
-            <tr>
-              <td>Ort der Berechnung</td>
-              <td>Server</td>
-              <td>Smartphone</td>
-              <td>Smartphone</td>
-            </tr>
-            <tr>
-              <td>Verfahren bei Aktualisierungen</td>
-              <td>Broadcast an alle Geräte</td>
-              <td>Pull je Gerät</td>
-              <td>Pull je Gerät</td>
-            </tr>
-          </table>
         </div>
 
         <div class="PEPP-PT" id="PEPP-PT">
@@ -84,6 +46,7 @@ class Ansaetze extends React.Component {
           <div class="graphic">
             <div id="pepp-pt-diagram">
               <img
+                style={{ width: "55%" }}
                 class="diagram"
                 src="https://user-images.githubusercontent.com/1636532/81082424-94087200-8ef3-11ea-8dc8-cc556f2705ea.png"
                 alt="pepp-pt-diagram"
@@ -91,25 +54,12 @@ class Ansaetze extends React.Component {
             </div>
           </div>
 
-          <div id="member">
-            <h4>Group Members:</h4>
-            <ul>
-              {this.getGroupMemberList([
-                "Basel Almohamad",
-                "Johannes Brose",
-                "Long Dang Pham Hoang",
-                "Linus Helfmann",
-                "Viktoriya Kraleva",
-                "David Paulini",
-                "Felix Sekul",
-                "Ingrid Gancia Tchilibou Boudjeka",
-                "Di Wang",
-              ])}
-            </ul>
-          </div>
-          <a href="#topnav" style={{ marginLeft: 50 }}>
-            <Button icon={"arrow-up"} minimal />
-          </a>
+          <Button
+            style={{ marginLeft: 50 }}
+            icon={"arrow-up"}
+            minimal
+            onClick={() => window.scrollTo(0, 0)}
+          />
         </div>
 
         <div class="DP-3T" id="DP-3T">
@@ -156,30 +106,18 @@ class Ansaetze extends React.Component {
             <div id="dp-3t-diagram">
               <img
                 class="diagram"
-                src="https://camo.githubusercontent.com/4e9a39c556271e269c0fe4f43f3709c2b4a5d1dd/68747470733a2f2f692e696d6775722e636f6d2f73316932546d312e706e67"
+                src={require("../../Assets/a.png")}
                 alt="dp-3t-diagram"
               />
             </div>
           </div>
-          <div id="member">
-            <h4>Group Members:</h4>
-            <ul>
-              {this.getGroupMemberList([
-                "Oussama Bouanani",
-                "Keno Wilhelm Budde",
-                "Son Tung Duong",
-                "Omer Hod",
-                "Dennis Nikolaus Natusch",
-                "Adriana Pinto Diaz Luz",
-                "Pascal Sigmund",
-                "Juri Torhoff",
-                "Julia Zimmermann",
-              ])}
-            </ul>
-          </div>
-          <a href="#topnav" style={{ marginLeft: 50 }}>
-            <Button icon={"arrow-up"} minimal />
-          </a>
+
+          <Button
+            style={{ marginLeft: 50 }}
+            icon={"arrow-up"}
+            minimal
+            onClick={() => window.scrollTo(0, 0)}
+          />
         </div>
 
         <div class="DCTS" id="DCTS">
@@ -202,24 +140,12 @@ class Ansaetze extends React.Component {
             </div>
           </div>
 
-          <div id="member">
-            <h4>Group Members:</h4>
-            <ul>
-              {this.getGroupMemberList([
-                "Julius Brose",
-                "Matthias Cichon",
-                "Claas Frederic Fandré",
-                "Torben Jörg Knaak",
-                "Elen Niedermeyer",
-                "Bernd Sahre",
-                "Piyush Soni",
-                "Raphael Wagner",
-              ])}
-            </ul>
-          </div>
-          <a href="#topnav" style={{ marginLeft: 50 }}>
-            <Button icon={"arrow-up"} minimal />
-          </a>
+          <Button
+            style={{ marginLeft: 50 }}
+            icon={"arrow-up"}
+            minimal
+            onClick={() => window.scrollTo(0, 0)}
+          />
         </div>
       </div>
     );

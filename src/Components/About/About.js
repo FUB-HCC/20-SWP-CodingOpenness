@@ -1,56 +1,119 @@
 import React from "react";
 import { Icon } from "@blueprintjs/core";
+import "./About.css";
 
 class About extends React.Component {
+  getGroupMemberList(members) {
+    return members.map((member) => <li>{member}</li>);
+  }
   render() {
     return (
-      <div style={{ paddingTop: 150 }}>
-        <div style={{ display: "flex", padding: "0 20px 0 20px" }}>
-          <img
-            style={{ height: 300 }}
-            src={require("../../Assets/hcc-logo.png")}
-            alt={"hcc"}
-          />
-          <p
-            style={{ whiteSpace: "pre-line", padding: 20 }}
-          >{`The Human-Centered Computing (HCC) Lab is a research group at the Institute of Computer Science at FU Berlin. In our projects, we deal with web-based knowledge generation and digital learning especially in the context of peer production communities and online scientific communities. A particular focus is on existing interdependencies between people's participation processes (the social system), the employed software (the technical system) and the collectively created artifact (the knowledge system).
-
-The HCC.lab's mission is to design computational systems that enable and augment collaboration between humans and machines. 
-
-In our software development practice, we focus on user-centered design processes and a major concern is software usability. Since our research work is interdisciplinary, we consider insights from fields such as visual and interaction design, web technologies, semantic technologies, and the social sciences. We apply quantitative (e.g., network analysis) and qualitative research (e.g. field interviews) methods in our projects.
-
-Head of the group: Prof. Dr. Claudia Müller-Birn`}</p>
-        </div>
-        <div>
-          <h3 style={{ marginTop: 60, textDecoration: "underline" }}>
-            {"Links:"}
-          </h3>
-          <br />
-          <div style={{ margin: "0px 30px 10px 30px" }}>
-            <a
-              style={{ margin: 5, color: "#6b9e1f" }}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/FUB-HCC/20-SWP-CodingOpenness"
+      <div style={{ padding: 70 }}>
+        <div style={{ display: "flex", padding: 150 }}>
+          <div style={{ fontSize: "medium", width: "50%", padding: 40 }}>
+            <div
+              style={{ fontSize: 50, fontWeight: 800 }}
+              className={"abschnitt"}
             >
-              <Icon icon="link" />
-              <strong style={{ color: "black", paddingLeft: 2 }}>
-                {"20-SWP-CodingOpenness official GitHub Repository"}
+              Wer sind wir
+            </div>
+            <div className={"abschnitt"}>
+              {`Wir sind Studenten am Institut für Informatik an der Freien Universität Berlin und beschäftigen uns im 
+            Modul Softwareprojekt - Coding Openness mit der deutschen Corona App.`}
+            </div>
+            <div className={"abschnitt"}>
+              {`Im Rahmen des Softwareprojekts führen wir notwendige Befragungen durch und untersuchen die Tracing-App.`}
+            </div>
+            <div className={"abschnitt"}>
+              {`Letztlich besteht die Hoffnung, dass wir die Möglichkeit erhalten, die deutsche Corona App zu installieren und 
+              zu erweitern. Zur Umsetzung haben wir uns in Folgende Teams aufgeteilt.`}
+            </div>
+            <div className={"abschnitt"} style={{ fontWeight: 10 }}>
+              <strong style={{ textDecoration: "underline" }}>
+                {"Links:"}
               </strong>
-            </a>
+              <br />
+              <div>
+                <a
+                  style={{ margin: 5, color: "#6b9e1f" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/FUB-HCC/20-SWP-CodingOpenness"
+                >
+                  <Icon icon="link" />
+                  <span style={{ color: "black", paddingLeft: 2 }}>
+                    {"20-SWP-CodingOpenness official GitHub Repository"}
+                  </span>
+                </a>
+              </div>
+              <div>
+                <a
+                  style={{ margin: 5, color: "#6b9e1f" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.fu-berlin.de/campusleben/forschen/2020/200512-corona-interview-mueller-birn/index.html"
+                >
+                  <Icon icon="link" />
+                  <span style={{ color: "black", paddingLeft: 2 }}>
+                    {
+                      "Interview with Prof. Claudia Müller Birn on the tracing app"
+                    }
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
-          <div style={{ margin: "0px 30px 10px 30px" }}>
-            <a
-              style={{ margin: 5, color: "#6b9e1f" }}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.fu-berlin.de/campusleben/forschen/2020/200512-corona-interview-mueller-birn/index.html"
-            >
-              <Icon icon="link" />
-              <strong style={{ color: "black", paddingLeft: 2 }}>
-                {"Interview with Prof. Claudia Müller Birn on the tracing app"}
-              </strong>
-            </a>
+          <div style={{ display: "flex" }}>
+            <div className={"team"}>
+              <div className={"team-title"}>{"Team Technik"}</div>
+              <ul>
+                {this.getGroupMemberList([
+                  "Julius Brose",
+                  "Long Dang Pham Hoang",
+                  "Dennis Nikolaus Natusch",
+                  "Johannes Brose",
+                ])}
+              </ul>
+              <div className={"team-title"}>{"Team Organisation"}</div>
+              <ul>
+                {this.getGroupMemberList([
+                  "Keno Wilhelm Budde",
+                  "Adriana Pinto Diaz Luz",
+                ])}
+              </ul>
+            </div>
+            <div className={"team"}>
+              <div className={"team-title"}>{"Team Webseite"}</div>
+              <ul>
+                {this.getGroupMemberList([
+                  "Di Wang",
+                  "Oussama Bouanani",
+                  "Son Tung Duong",
+                  "Omer Hod",
+                ])}
+              </ul>
+              <div className={"team-title"}>{"Team Fragenbogen"}</div>
+              <ul>
+                {this.getGroupMemberList([
+                  "Ingrid Tchilibou",
+                  "Felix Sekul",
+                  "David Paulini",
+                  "Torben Knaak",
+                ])}
+              </ul>
+            </div>
+            <div className={"team"}>
+              <div className={"team-title"}>{"Team Vergleich"}</div>
+              <ul>
+                {this.getGroupMemberList([
+                  "Claas Fandre",
+                  "Linus Helfmann",
+                  "Bernd Sahre",
+                  "Viktoriya Kraleva",
+                  "Julia Zimmermann",
+                ])}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
