@@ -7,6 +7,7 @@ import Ansaetze from "./Components/Ansaetze/Ansaetze";
 import About from "./Components/About/About";
 import Kontakt from "./Components/Kontakt/Kontakt";
 import Vergleich from "./Components/Vergleich/Vergleich";
+import BadRoute from "./Components/BadRoute/BadRoute";
 
 import { Navbar, Button, Alignment } from "@blueprintjs/core";
 import "./App.css";
@@ -85,6 +86,7 @@ class App extends React.Component {
           <Route path={Content.VERGLEICH} exact component={Vergleich} />
           <Route path={Content.ABOUT} exact component={About} />
           <Route path={Content.KONTAKT} exact component={Kontakt} />
+          <Route path="/" component={BadRoute} />
         </Switch>
         {/*}
         <div>
