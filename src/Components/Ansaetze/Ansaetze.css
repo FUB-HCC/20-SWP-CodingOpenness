@@ -8,13 +8,11 @@
 
 p {
   font-size: 1rem;
-  font-family: sans-serif;
   margin: 30px;
 }
 
 h2 {
   font-size: 1.5rem;
-  font-family: sans-serif;
   margin: 50px;
   text-align: center;
 }
@@ -26,7 +24,6 @@ h3 {
 
 h4 {
   font-size: 1rem;
-  font-family: sans-serif;
 }
 
 .topnav {
@@ -98,7 +95,6 @@ h4 {
 
 .paragraph {
   width: 75%;
-  border: 5px solid #6b9e1f;
   padding: 50px;
   margin: 0 auto;
 }

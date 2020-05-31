@@ -1,16 +1,16 @@
-p {
-    font-size: 1rem;
-    font-family: sans-serif;
-    margin: 30px;
+.hcc-home p {
+  font-size: medium;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", "Icons16",
+    sans-serif;
 }
 
-h4 {
-  font-size: 1rem;
-  font-family: sans-serif;
+.hcc-home ul {
+  list-style: none;
 }
-.paragraph {
-  width: 75%;
-  border: 5px solid #6b9e1f;
-  padding: 30px;
-  margin: 20px auto;
+
+.hcc-home li::before {
+  color: #6b9e1f;
+  content: "\2022";
+  padding: 10px;
 }

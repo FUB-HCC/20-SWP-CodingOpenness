@@ -18,7 +18,9 @@
 
 .navbar-menu {
   background-color: #6b9e1f;
-  margin-top: 20;
+  height: 70px;
+  display: flex;
+  align-items: center;
 }
 
 .hcc-button {
@@ -27,7 +29,8 @@
 }
 
 .navbar-button {
-  padding: 17px;
+  font-size: large;
+  padding: 25px;
   color: white !important;
 }
 
