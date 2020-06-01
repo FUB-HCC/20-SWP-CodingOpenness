@@ -14,4 +14,6 @@ In dem Softwareprojekt wollen wir uns vor allem auf Erklärungsmechanismen fokus
 
 Eine fortlaufende Dokumentation des Stands unserer Arbeit erfolgt im [Wiki](https://github.com/FUB-HCC/20-SWP-CodingOpenness/wiki). Es sind bereits erste Inhalte hinterlegt und diese Inhalte werden kontinuierlich ergänzt. 
 
-Weitere Informationen zum Softwareprojekt befindet sich der [Webseite](https://www.mi.fu-berlin.de/en/inf/groups/hcc/teaching/summer-term-2020/swp-coding-openness.html).
+Informationen zu aktuellen Arbeitsergebnissen sowie Details zu Projektteilnehmern befindet sich auf [Website unseres Projekts](https://fub-hcc.github.io/20-SWP-CodingOpenness/).
+
+Weitere Informationen zur Lehrveranstaltung Softwareprojekt befindet sich der [Webseite](https://www.mi.fu-berlin.de/en/inf/groups/hcc/teaching/summer-term-2020/swp-coding-openness.html).
