@@ -6,7 +6,7 @@ function sendEmail(e) {
   e.preventDefault();
 
   emailjs.sendForm(
-    "gmailtratond01",
+    "gmail20swp",
     "contact_form",
     e.target,
     "user_jsdd62Zisg1rCwqroKZeF"
