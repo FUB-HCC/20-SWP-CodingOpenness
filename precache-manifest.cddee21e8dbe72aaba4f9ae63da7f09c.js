@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1209c99931d65d8433ddb5d005c331b1",
+    "revision": "59cf345f97637fe5311d98ac04f32a16",
     "url": "/20-SWP-CodingOpenness/index.html"
   },
   {
-    "revision": "48b42706f72c10f2f220",
+    "revision": "3b3fde62348b187b4454",
     "url": "/20-SWP-CodingOpenness/static/css/2.75c2aa79.chunk.css"
   },
   {
-    "revision": "43b38d4171ab9cd7b5a9",
-    "url": "/20-SWP-CodingOpenness/static/css/main.b0706b0e.chunk.css"
+    "revision": "d0a9fad58a3c60030414",
+    "url": "/20-SWP-CodingOpenness/static/css/main.0d8fb224.chunk.css"
   },
   {
-    "revision": "48b42706f72c10f2f220",
-    "url": "/20-SWP-CodingOpenness/static/js/2.a273086f.chunk.js"
+    "revision": "3b3fde62348b187b4454",
+    "url": "/20-SWP-CodingOpenness/static/js/2.ebc10443.chunk.js"
   },
   {
-    "revision": "e18637604789af6a40503615de5bd745",
-    "url": "/20-SWP-CodingOpenness/static/js/2.a273086f.chunk.js.LICENSE.txt"
+    "revision": "b578178f33e8b4baed76c7b8f7ce2e07",
+    "url": "/20-SWP-CodingOpenness/static/js/2.ebc10443.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "43b38d4171ab9cd7b5a9",
-    "url": "/20-SWP-CodingOpenness/static/js/main.c750542d.chunk.js"
+    "revision": "d0a9fad58a3c60030414",
+    "url": "/20-SWP-CodingOpenness/static/js/main.eb08390e.chunk.js"
   },
   {
     "revision": "fc223838ad78f9650572",
@@ -32,6 +32,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/20-SWP-CodingOpenness/static/media/Vergleich.0bf429ef.md"
   },
   {
+    "revision": "0047a2e41687ebc5211228569fdaa29f",
+    "url": "/20-SWP-CodingOpenness/static/media/a.0047a2e4.png"
+  },
+  {
     "revision": "a0f38bb70c408f82d56108c47978274c",
     "url": "/20-SWP-CodingOpenness/static/media/fu-logo.a0f38bb7.png"
   },
@@ -40,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/20-SWP-CodingOpenness/static/media/github.9407832c.svg"
   },
   {
-    "revision": "9f9845e81f2761fb62e4176597cc628c",
-    "url": "/20-SWP-CodingOpenness/static/media/hcc-logo.9f9845e8.png"
+    "revision": "ce8e4a5295db4434da663f4462a0a413",
+    "url": "/20-SWP-CodingOpenness/static/media/hcc-logo-white.ce8e4a52.png"
   },
   {
     "revision": "05f1cdadfe476395f60e233b15c22155",

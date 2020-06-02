@@ -1,30 +1,31 @@
 {
   "files": {
-    "main.css": "/20-SWP-CodingOpenness/static/css/main.b0706b0e.chunk.css",
-    "main.js": "/20-SWP-CodingOpenness/static/js/main.c750542d.chunk.js",
-    "main.js.map": "/20-SWP-CodingOpenness/static/js/main.c750542d.chunk.js.map",
+    "main.css": "/20-SWP-CodingOpenness/static/css/main.0d8fb224.chunk.css",
+    "main.js": "/20-SWP-CodingOpenness/static/js/main.eb08390e.chunk.js",
+    "main.js.map": "/20-SWP-CodingOpenness/static/js/main.eb08390e.chunk.js.map",
     "runtime-main.js": "/20-SWP-CodingOpenness/static/js/runtime-main.e005725f.js",
     "runtime-main.js.map": "/20-SWP-CodingOpenness/static/js/runtime-main.e005725f.js.map",
     "static/css/2.75c2aa79.chunk.css": "/20-SWP-CodingOpenness/static/css/2.75c2aa79.chunk.css",
-    "static/js/2.a273086f.chunk.js": "/20-SWP-CodingOpenness/static/js/2.a273086f.chunk.js",
-    "static/js/2.a273086f.chunk.js.map": "/20-SWP-CodingOpenness/static/js/2.a273086f.chunk.js.map",
+    "static/js/2.ebc10443.chunk.js": "/20-SWP-CodingOpenness/static/js/2.ebc10443.chunk.js",
+    "static/js/2.ebc10443.chunk.js.map": "/20-SWP-CodingOpenness/static/js/2.ebc10443.chunk.js.map",
     "index.html": "/20-SWP-CodingOpenness/index.html",
-    "precache-manifest.4bd436a0d85d594b71beac07fbf5dfb6.js": "/20-SWP-CodingOpenness/precache-manifest.4bd436a0d85d594b71beac07fbf5dfb6.js",
+    "precache-manifest.cddee21e8dbe72aaba4f9ae63da7f09c.js": "/20-SWP-CodingOpenness/precache-manifest.cddee21e8dbe72aaba4f9ae63da7f09c.js",
     "service-worker.js": "/20-SWP-CodingOpenness/service-worker.js",
     "static/css/2.75c2aa79.chunk.css.map": "/20-SWP-CodingOpenness/static/css/2.75c2aa79.chunk.css.map",
-    "static/css/main.b0706b0e.chunk.css.map": "/20-SWP-CodingOpenness/static/css/main.b0706b0e.chunk.css.map",
-    "static/js/2.a273086f.chunk.js.LICENSE.txt": "/20-SWP-CodingOpenness/static/js/2.a273086f.chunk.js.LICENSE.txt",
+    "static/css/main.0d8fb224.chunk.css.map": "/20-SWP-CodingOpenness/static/css/main.0d8fb224.chunk.css.map",
+    "static/js/2.ebc10443.chunk.js.LICENSE.txt": "/20-SWP-CodingOpenness/static/js/2.ebc10443.chunk.js.LICENSE.txt",
     "static/media/Vergleich.md": "/20-SWP-CodingOpenness/static/media/Vergleich.0bf429ef.md",
+    "static/media/a.png": "/20-SWP-CodingOpenness/static/media/a.0047a2e4.png",
     "static/media/fu-logo.png": "/20-SWP-CodingOpenness/static/media/fu-logo.a0f38bb7.png",
     "static/media/github.svg": "/20-SWP-CodingOpenness/static/media/github.9407832c.svg",
-    "static/media/hcc-logo.png": "/20-SWP-CodingOpenness/static/media/hcc-logo.9f9845e8.png",
+    "static/media/hcc-logo-white.png": "/20-SWP-CodingOpenness/static/media/hcc-logo-white.ce8e4a52.png",
     "static/media/App.css": "/20-SWP-CodingOpenness/static/media/icons-20.cef8cdbb.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.e005725f.js",
     "static/css/2.75c2aa79.chunk.css",
-    "static/js/2.a273086f.chunk.js",
-    "static/css/main.b0706b0e.chunk.css",
-    "static/js/main.c750542d.chunk.js"
+    "static/js/2.ebc10443.chunk.js",
+    "static/css/main.0d8fb224.chunk.css",
+    "static/js/main.eb08390e.chunk.js"
   ]
 }
