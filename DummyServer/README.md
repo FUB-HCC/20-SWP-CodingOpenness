@@ -1,4 +1,4 @@
-###Dummy Server for the example app
+### Dummy Server for the example app
 start the server with  
 >mvn spring-boot:run  
 
