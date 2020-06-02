@@ -26,11 +26,10 @@ class App extends React.Component {
     activeContent: Content.HOME,
   };
 
-  handleNavbarClick = (activeContent) =>
-  {
-     this.setState({ activeContent });
-     history.push(activeContent);
-  }
+  handleNavbarClick = (activeContent) => {
+    this.setState({ activeContent });
+    history.push(activeContent);
+  };
 
   render() {
     return (
@@ -56,7 +55,7 @@ class App extends React.Component {
               />
               {"Coding Openness"}
             </Button>
-            <div>
+            <div className={"menu-button-group"}>
               <Button
                 className="bp3-minimal navbar-button navbar-button-content"
                 text={"Ansätze"}
@@ -85,26 +84,43 @@ class App extends React.Component {
           </Navbar.Group>
         </Navbar>
         <Switch>
-          <Route path={Content.HOME} exact component={Home} />
-          <Route path={Content.ANSAETZE} exact component={Ansaetze} />
-          <Route path={Content.VERGLEICH} exact component={Vergleich} />
-          <Route path={Content.ABOUT} exact component={About} />
-          <Route path={Content.KONTAKT} exact component={Kontakt} />
+          <Route path={Content.HOME} exact>
+            <Home
+              handleNavbarClick={() =>
+                this.setState({ activeContent: Content.HOME })
+              }
+            />
+          </Route>
+          <Route path={Content.ANSAETZE} exact>
+            <Ansaetze
+              handleNavbarClick={() =>
+                this.setState({ activeContent: Content.ANSAETZE })
+              }
+            />
+          </Route>
+          <Route path={Content.VERGLEICH} exact>
+            <Vergleich
+              handleNavbarClick={() =>
+                this.setState({ activeContent: Content.VERGLEICH })
+              }
+            />
+          </Route>
+          <Route path={Content.ABOUT} exact>
+            <About
+              handleNavbarClick={() =>
+                this.setState({ activeContent: Content.ABOUT })
+              }
+            />
+          </Route>
+          <Route path={Content.KONTAKT} exact>
+            <Kontakt
+              handleNavbarClick={() =>
+                this.setState({ activeContent: Content.KONTAKT })
+              }
+            />
+          </Route>
           <Route path="/" component={BadRoute} />
         </Switch>
-        {/*}
-        <div>
-          {this.state.activeContent === Content.HOME && (
-            <Home
-              moveToAnsaetze={() => this.handleNavbarClick(Content.ANSAETZE)}
-            />
-          )}
-          {this.state.activeContent === Content.ANSAETZE && <Ansaetze />}
-          {this.state.activeContent === Content.VERGLEICH && <Vergleich />}
-          {this.state.activeContent === Content.ABOUT && <About />}
-          {this.state.activeContent === Content.KONTAKT && <Kontakt />}
-        </div>
-          */}
       </Router>
     );
   }

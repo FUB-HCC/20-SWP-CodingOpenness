@@ -3,19 +3,25 @@ import "./Ansaetze.css";
 import { Button } from "@blueprintjs/core";
 
 class Ansaetze extends React.Component {
+  componentDidMount() {
+    if (this.props.handleNavbarClick != null) {
+      this.props.handleNavbarClick();
+    }
+  }
+
   render() {
     return (
       <div style={{ paddingTop: 70 }}>
-        <div class="topnav" id="topnav">
+        <div className="topnav" id="topnav">
           <a href="#PEPP-PT">PEPP-PT</a>
           <a href="#DP-3T">DP-3T</a>
           <a href="#DCTS">DCTS</a>
         </div>
 
-        <div class="PEPP-PT" id="PEPP-PT">
+        <div className="PEPP-PT" id="PEPP-PT">
           <h2>PEPP-PT</h2>
 
-          <div class="paragraph">
+          <div className="paragraph">
             <div className={"project-title"}>
               <h3>Pan European Privacy Preserving Proximity Tracing</h3>
             </div>
@@ -43,11 +49,11 @@ class Ansaetze extends React.Component {
             </a>
           </div>
 
-          <div class="graphic">
+          <div className="graphic">
             <div id="pepp-pt-diagram">
               <img
                 style={{ width: "55%" }}
-                class="diagram"
+                className="diagram"
                 src="https://user-images.githubusercontent.com/1636532/81082424-94087200-8ef3-11ea-8dc8-cc556f2705ea.png"
                 alt="pepp-pt-diagram"
               />
@@ -62,10 +68,10 @@ class Ansaetze extends React.Component {
           />
         </div>
 
-        <div class="DP-3T" id="DP-3T">
+        <div className="DP-3T" id="DP-3T">
           <h2>DP-3T</h2>
 
-          <div class="paragraph">
+          <div className="paragraph">
             <div className={"project-title"}>
               <h3>
                 Decentralized Privacy Preserving Proximity Tracing protocol{" "}
@@ -102,10 +108,10 @@ class Ansaetze extends React.Component {
             </a>
           </div>
 
-          <div class="graphic">
+          <div className="graphic">
             <div id="dp-3t-diagram">
               <img
-                class="diagram"
+                className="diagram"
                 src={require("../../Assets/a.png")}
                 alt="dp-3t-diagram"
               />
@@ -120,20 +126,20 @@ class Ansaetze extends React.Component {
           />
         </div>
 
-        <div class="DCTS" id="DCTS">
+        <div className="DCTS" id="DCTS">
           <h2>DCTS</h2>
 
-          <div class="paragraph">
+          <div className="paragraph">
             <div className={"project-title"}>
               <h3>Digital Contact Tracing Service</h3>
             </div>
             <p>Kontaktverfolgungsdienst von der TU München.</p>
           </div>
 
-          <div class="graphic">
+          <div className="graphic">
             <div id="dp-3t-diagram">
               <img
-                class="diagram"
+                className="diagram"
                 src="https://user-images.githubusercontent.com/4459428/80650567-87f45e80-8a74-11ea-950a-8a833e935226.png"
                 alt="dp-3t-diagram"
               />

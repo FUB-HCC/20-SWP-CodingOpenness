@@ -17,6 +17,12 @@ function sendEmail(e) {
 }
 
 class Kontakt extends React.Component {
+  componentDidMount() {
+    if (this.props.handleNavbarClick != null) {
+      this.props.handleNavbarClick();
+    }
+  }
+
   render() {
     return (
       <div style={{ padding: "70px 20px" }}>
