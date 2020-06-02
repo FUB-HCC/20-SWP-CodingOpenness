@@ -49,7 +49,7 @@ class Kontakt extends React.Component {
               className={"kontakt-links"}
               target="_blank"
               rel="noopener noreferrer"
-              href="mailto: clmb@inf.fu-berlin.dem"
+              href="mailto: clmb@inf.fu-berlin.de"
             >
               {`E-Mail `}
             </a>
