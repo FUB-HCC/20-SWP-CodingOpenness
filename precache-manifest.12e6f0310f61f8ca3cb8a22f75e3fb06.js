@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f16076d790ed111439d75eead4836ad",
+    "revision": "334a437e805e30daf20fee57a461a1a3",
     "url": "/20-SWP-CodingOpenness/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/20-SWP-CodingOpenness/static/css/2.75c2aa79.chunk.css"
   },
   {
-    "revision": "33cac5a09f233f0a1c8d",
+    "revision": "1a70a01245d9f444881c",
     "url": "/20-SWP-CodingOpenness/static/css/main.0d8fb224.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/20-SWP-CodingOpenness/static/js/2.eff372b3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "33cac5a09f233f0a1c8d",
-    "url": "/20-SWP-CodingOpenness/static/js/main.b6f570fc.chunk.js"
+    "revision": "1a70a01245d9f444881c",
+    "url": "/20-SWP-CodingOpenness/static/js/main.c113acf4.chunk.js"
   },
   {
     "revision": "fc223838ad78f9650572",
