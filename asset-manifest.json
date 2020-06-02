@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/20-SWP-CodingOpenness/static/css/main.0d8fb224.chunk.css",
-    "main.js": "/20-SWP-CodingOpenness/static/js/main.eb08390e.chunk.js",
-    "main.js.map": "/20-SWP-CodingOpenness/static/js/main.eb08390e.chunk.js.map",
+    "main.js": "/20-SWP-CodingOpenness/static/js/main.b6f570fc.chunk.js",
+    "main.js.map": "/20-SWP-CodingOpenness/static/js/main.b6f570fc.chunk.js.map",
     "runtime-main.js": "/20-SWP-CodingOpenness/static/js/runtime-main.e005725f.js",
     "runtime-main.js.map": "/20-SWP-CodingOpenness/static/js/runtime-main.e005725f.js.map",
     "static/css/2.75c2aa79.chunk.css": "/20-SWP-CodingOpenness/static/css/2.75c2aa79.chunk.css",
-    "static/js/2.ebc10443.chunk.js": "/20-SWP-CodingOpenness/static/js/2.ebc10443.chunk.js",
-    "static/js/2.ebc10443.chunk.js.map": "/20-SWP-CodingOpenness/static/js/2.ebc10443.chunk.js.map",
+    "static/js/2.eff372b3.chunk.js": "/20-SWP-CodingOpenness/static/js/2.eff372b3.chunk.js",
+    "static/js/2.eff372b3.chunk.js.map": "/20-SWP-CodingOpenness/static/js/2.eff372b3.chunk.js.map",
     "index.html": "/20-SWP-CodingOpenness/index.html",
-    "precache-manifest.cddee21e8dbe72aaba4f9ae63da7f09c.js": "/20-SWP-CodingOpenness/precache-manifest.cddee21e8dbe72aaba4f9ae63da7f09c.js",
+    "precache-manifest.0fa30059bf554a018b042dfbc2d267ab.js": "/20-SWP-CodingOpenness/precache-manifest.0fa30059bf554a018b042dfbc2d267ab.js",
     "service-worker.js": "/20-SWP-CodingOpenness/service-worker.js",
     "static/css/2.75c2aa79.chunk.css.map": "/20-SWP-CodingOpenness/static/css/2.75c2aa79.chunk.css.map",
     "static/css/main.0d8fb224.chunk.css.map": "/20-SWP-CodingOpenness/static/css/main.0d8fb224.chunk.css.map",
-    "static/js/2.ebc10443.chunk.js.LICENSE.txt": "/20-SWP-CodingOpenness/static/js/2.ebc10443.chunk.js.LICENSE.txt",
+    "static/js/2.eff372b3.chunk.js.LICENSE.txt": "/20-SWP-CodingOpenness/static/js/2.eff372b3.chunk.js.LICENSE.txt",
     "static/media/Vergleich.md": "/20-SWP-CodingOpenness/static/media/Vergleich.0bf429ef.md",
     "static/media/a.png": "/20-SWP-CodingOpenness/static/media/a.0047a2e4.png",
     "static/media/fu-logo.png": "/20-SWP-CodingOpenness/static/media/fu-logo.a0f38bb7.png",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.e005725f.js",
     "static/css/2.75c2aa79.chunk.css",
-    "static/js/2.ebc10443.chunk.js",
+    "static/js/2.eff372b3.chunk.js",
     "static/css/main.0d8fb224.chunk.css",
-    "static/js/main.eb08390e.chunk.js"
+    "static/js/main.b6f570fc.chunk.js"
   ]
 }
