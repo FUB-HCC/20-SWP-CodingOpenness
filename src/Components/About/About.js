@@ -3,8 +3,14 @@ import { Icon } from "@blueprintjs/core";
 import "./About.css";
 
 class About extends React.Component {
+  componentDidMount() {
+    if (this.props.handleNavbarClick != null) {
+      this.props.handleNavbarClick();
+    }
+  }
+
   getGroupMemberList(members) {
-    return members.map((member) => <li>{member}</li>);
+    return members.map((member) => <li key={member}>{member}</li>);
   }
   render() {
     return (

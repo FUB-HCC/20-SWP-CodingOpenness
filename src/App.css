@@ -34,7 +34,7 @@
   color: white !important;
 }
 
-.navbar-button-content:focus {
+.menu-button-group .bp3-active {
   background-color: grey !important;
 }
 

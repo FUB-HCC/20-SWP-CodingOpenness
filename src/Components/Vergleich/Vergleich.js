@@ -8,6 +8,9 @@ class Vergleich extends React.Component {
   };
 
   async componentDidMount() {
+    if (this.props.handleNavbarClick != null) {
+      this.props.handleNavbarClick();
+    }
     const response = await fetch(VergleichMarkdown);
     const markdown = await response.text();
     this.setState({ markdown });

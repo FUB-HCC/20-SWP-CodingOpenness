@@ -3,6 +3,12 @@ import "./Home.css";
 import { Button } from "@blueprintjs/core";
 
 class Home extends React.Component {
+  componentDidMount() {
+    if (this.props.handleNavbarClick != null) {
+      this.props.handleNavbarClick();
+    }
+  }
+
   render() {
     return (
       <>
