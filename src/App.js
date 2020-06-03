@@ -8,7 +8,7 @@ import About from "./Components/About/About";
 import Kontakt from "./Components/Kontakt/Kontakt";
 import Vergleich from "./Components/Vergleich/Vergleich";
 
-import { Navbar, Button, Alignment } from "@blueprintjs/core";
+import { Navbar, Button } from "@blueprintjs/core";
 import "./App.css";
 
 //content values are used as the URLs for routing
@@ -40,7 +40,6 @@ class App extends React.Component {
               width: "inherit",
               placeContent: "space-between",
             }}
-            align={Alignment.RIGHT}
           >
             <Button
               className={"bp3-minimal navbar-button hcc-button"}
@@ -48,8 +47,8 @@ class App extends React.Component {
               onClick={() => this.handleNavbarClick(Content.HOME)}
             >
               <img
+                className={"menu-hcc-logo"}
                 alt="hcc"
-                style={{ width: 17, marginRight: 10 }}
                 src={require("./Assets/hcc-logo-white.png")}
               />
               {"Coding Openness"}

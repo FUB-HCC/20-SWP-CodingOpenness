@@ -1,6 +1,7 @@
 import VergleichMarkdown from "../../Markdown/Vergleich.md";
 import React from "react";
 import Markdown from "markdown-to-jsx";
+import "./Vergleich.css";
 
 class Vergleich extends React.Component {
   state = {
@@ -18,7 +19,7 @@ class Vergleich extends React.Component {
 
   render() {
     return (
-      <div style={{ padding: "70px 30px" }}>
+      <div className={"vergleich-container"}>
         <Markdown children={this.state.markdown} />
       </div>
     );

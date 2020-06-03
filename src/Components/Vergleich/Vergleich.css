@@ -1,0 +1,32 @@
+.vergleich-container {
+  padding: 70px 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .vergleich-container {
+    padding: 70px 20px;
+  }
+  .vergleich-container p {
+    margin: 0;
+  }
+  .vergleich-container table {
+    width: 100%;
+  }
+  .vergleich-container td {
+    padding: 2px;
+    font-size: smaller;
+  }
+  .vergleich-container th {
+    font-size: small;
+    padding: 2px;
+  }
+  .vergleich-container summary {
+    font-size: smaller;
+  }
+  .vergleich-container b {
+    font-size: smaller;
+  }
+  b > p {
+    font-size: smaller;
+  }
+}

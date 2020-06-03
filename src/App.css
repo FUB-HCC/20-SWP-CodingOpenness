@@ -23,6 +23,11 @@
   align-items: center;
 }
 
+.menu-hcc-logo {
+  width: 17px;
+  margin-right: 10px;
+}
+
 .hcc-button {
   background-color: #6b9e1f !important;
   outline: none;
@@ -40,4 +45,18 @@
 
 .navbar-button .bp3-icon {
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-button {
+    font-size: small;
+    padding: 2px;
+  }
+  .menu-hcc-logo {
+    margin-right: 10px;
+  }
+  .hcc-button {
+    width: 80px;
+    margin: 30px;
+  }
 }

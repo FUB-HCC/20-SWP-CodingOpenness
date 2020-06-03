@@ -14,9 +14,9 @@ class About extends React.Component {
   }
   render() {
     return (
-      <div style={{ padding: 70 }}>
-        <div style={{ display: "flex", padding: 150 }}>
-          <div style={{ fontSize: "medium", width: "50%", padding: 40 }}>
+      <div className={"about-container"}>
+        <div className={"about-second-container"}>
+          <div className={"about-main"}>
             <div
               style={{ fontSize: 50, fontWeight: 800 }}
               className={"abschnitt"}

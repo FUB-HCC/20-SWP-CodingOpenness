@@ -10,7 +10,7 @@ class Kontakt extends React.Component {
 
   render() {
     return (
-      <div style={{ padding: 280, display: "flex" }}>
+      <div className={"kontakt-container"}>
         <div style={{ fontSize: 50, fontWeight: 800 }}>
           Treten Sie in Kontakt mit uns
         </div>

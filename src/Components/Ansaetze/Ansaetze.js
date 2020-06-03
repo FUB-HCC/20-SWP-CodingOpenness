@@ -11,7 +11,7 @@ class Ansaetze extends React.Component {
 
   render() {
     return (
-      <div style={{ paddingTop: 70 }}>
+      <div className={"ansaetze-container"}>
         <div className="topnav" id="topnav">
           <a href="#PEPP-PT">PEPP-PT</a>
           <a href="#DP-3T">DP-3T</a>
@@ -38,7 +38,7 @@ class Ansaetze extends React.Component {
               href="https://github.com/pepp-pt"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ paddingLeft: 25, display: "flex", alignItems: "center" }}
+              className={"ansaetze-github-link"}
             >
               <img
                 className="img-responsive"
@@ -94,10 +94,10 @@ class Ansaetze extends React.Component {
             </p>
 
             <a
+              className={"ansaetze-github-link"}
               href="https://github.com/DP-3T"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ paddingLeft: 25, display: "flex", alignItems: "center" }}
             >
               <img
                 className="img-responsive"
