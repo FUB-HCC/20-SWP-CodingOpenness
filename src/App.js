@@ -1,20 +1,19 @@
 import React from "react";
 import history from "./history";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 import Home from "./Components/Home/Home";
 import Ansaetze from "./Components/Ansaetze/Ansaetze";
 import About from "./Components/About/About";
 import Kontakt from "./Components/Kontakt/Kontakt";
 import Vergleich from "./Components/Vergleich/Vergleich";
-import BadRoute from "./Components/BadRoute/BadRoute";
 
 import { Navbar, Button, Alignment } from "@blueprintjs/core";
 import "./App.css";
 
 //content values are used as the URLs for routing
 export const Content = {
-  HOME: "/",
+  HOME: "/20-SWP-CodingOpenness",
   ABOUT: "/about",
   ANSAETZE: "/approaches",
   VERGLEICH: "/comparison",
@@ -119,7 +118,7 @@ class App extends React.Component {
               }
             />
           </Route>
-          <Route path="/" component={BadRoute} />
+          <Redirect from="/" to="/20-SWP-CodingOpenness" />
         </Switch>
       </Router>
     );

@@ -12,7 +12,7 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <div style={{ margin: "15%", display: "flex" }}>
+        <div style={{ margin: "15% 15% 5% 15%", display: "flex" }}>
           <div style={{ width: "-webkit-fill-available" }}>
             <div style={{ fontWeight: 800, fontSize: 50 }}>
               Coding Openness -
