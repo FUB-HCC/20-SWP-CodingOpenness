@@ -1,6 +1,5 @@
 import React from "react";
 import "./Ansaetze.css";
-import { Button } from "@blueprintjs/core";
 
 class Ansaetze extends React.Component {
   componentDidMount() {
@@ -58,13 +57,6 @@ class Ansaetze extends React.Component {
               />
             </div>
           </div>
-
-          <Button
-            style={{ marginLeft: 50 }}
-            icon={"arrow-up"}
-            minimal
-            onClick={() => window.scrollTo(0, 0)}
-          />
         </div>
 
         <div className="DP-3T" id="DP-3T">
@@ -116,13 +108,6 @@ class Ansaetze extends React.Component {
               />
             </div>
           </div>
-
-          <Button
-            style={{ marginLeft: 50 }}
-            icon={"arrow-up"}
-            minimal
-            onClick={() => window.scrollTo(0, 0)}
-          />
         </div>
 
         <div className="DCTS" id="DCTS">
@@ -144,13 +129,6 @@ class Ansaetze extends React.Component {
               />
             </div>
           </div>
-
-          <Button
-            style={{ marginLeft: 50 }}
-            icon={"arrow-up"}
-            minimal
-            onClick={() => window.scrollTo(0, 0)}
-          />
         </div>
       </div>
     );

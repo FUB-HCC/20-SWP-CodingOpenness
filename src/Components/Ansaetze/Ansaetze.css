@@ -30,9 +30,13 @@ h4 {
 }
 
 .topnav {
+  position: fixed;
+  display: flex;
   background-color: #333;
   overflow: hidden;
-}
+  width: 100%;
+ }
+ 
 
 /* Style the links inside the navigation bar */
 .topnav a {
