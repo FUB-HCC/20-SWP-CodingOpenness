@@ -7,6 +7,7 @@ import Ansaetze from "./Components/Ansaetze/Ansaetze";
 import About from "./Components/About/About";
 import Kontakt from "./Components/Kontakt/Kontakt";
 import Vergleich from "./Components/Vergleich/Vergleich";
+import Fragebogen from "./Components/Fragebogen/Fragebogen";
 
 import { Navbar, Button } from "@blueprintjs/core";
 import "./App.css";
@@ -18,6 +19,7 @@ export const Content = {
   ANSAETZE: "/approaches",
   VERGLEICH: "/comparison",
   KONTAKT: "/contact",
+  FRAGENBOGEN: "/fragebogen",
 };
 
 class App extends React.Component {
@@ -68,6 +70,12 @@ class App extends React.Component {
               />
               <Button
                 className="bp3-minimal navbar-button navbar-button-content"
+                text="Fragebogen"
+                active={this.state.activeContent === Content.FRAGENBOGEN}
+                onClick={() => this.handleNavbarClick(Content.FRAGENBOGEN)}
+              />
+              <Button
+                className="bp3-minimal navbar-button navbar-button-content"
                 text="Über uns"
                 active={this.state.activeContent === Content.ABOUT}
                 onClick={() => this.handleNavbarClick(Content.ABOUT)}
@@ -114,6 +122,13 @@ class App extends React.Component {
             <Kontakt
               handleNavbarClick={() =>
                 this.setState({ activeContent: Content.KONTAKT })
+              }
+            />
+          </Route>
+          <Route path={Content.FRAGENBOGEN} exact>
+            <Fragebogen
+              handleNavbarClick={() =>
+                this.setState({ activeContent: Content.FRAGENBOGEN })
               }
             />
           </Route>

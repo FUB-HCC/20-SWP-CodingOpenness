@@ -36,21 +36,13 @@ class Home extends React.Component {
               identifizieren, zu vergleichen und zu bewerten.
             </p>
             <p>
-              Letztlich besteht die Hoffnung, dass wir im Sommersemester die
-              M&ouml;glichkeit erhalten, die eine oder andere App zu
-              installieren und zu erweitern.
-            </p>
-            <p>
               In dem Softwareprojekt wollen wir uns vor allem auf
               Erklärungsmechanismen fokussieren. Das primäre Ziel besteht darin,
               dass Bürger|innen vom App-Betreiber|innen genügend Informationen
               erhalten, um die Ursachen eines Ereignisses oder einer
               Entscheidung zu verstehen.
             </p>
-            <p>
-              Im Rahmen des Softwareprojekts fokussieren wir vor allem auf
-              Vorschläge aus Deutschland:
-            </p>
+            <p>Wir fokussieren uns vor allem auf Vorschläge aus Deutschland:</p>
             <div className={"home-ansaetze-list"}>
               <ul>
                 <li>
@@ -62,6 +54,20 @@ class Home extends React.Component {
                 </li>
                 <li>Digital Contact Tracing Service (DCTS)</li>
               </ul>
+            </div>
+            <div className={"home-fragebogen"}>
+              Außerdem führen wir im Rahmen des Softwareprojekts notwendige
+              Befragungen durch und untersuchen die Tracing-App. Um die
+              Perspektive von Nutzer|innen an einer solchen App zu
+              berücksichtigen haben wir einen
+              <a
+                className={"home-fragebogen-link"}
+                href="/fragebogen"
+                rel="noopener noreferrer"
+              >
+                Fragebogen
+              </a>
+              erstellt.
             </div>
           </div>
         </div>
