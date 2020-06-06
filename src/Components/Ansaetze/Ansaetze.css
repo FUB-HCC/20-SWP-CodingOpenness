@@ -143,6 +143,10 @@ tr:nth-child(even) {
   align-items: center;
 }
 
+.pepp-pt-diagram {
+  width: 55%;
+}
+
 @media only screen and (max-width: 768px) {
   .paragraph {
     padding: 0;
@@ -160,5 +164,8 @@ tr:nth-child(even) {
   .diagram {
     padding: 0;
     max-width: 100%;
+  }
+  .pepp-pt-diagram {
+    width: 100%;
   }
 }

@@ -52,8 +52,7 @@ class Ansaetze extends React.Component {
           <div className="graphic">
             <div id="pepp-pt-diagram">
               <img
-                style={{ width: "55%" }}
-                className="diagram"
+                className={"diagram pepp-pt-diagram"}
                 src="https://user-images.githubusercontent.com/1636532/81082424-94087200-8ef3-11ea-8dc8-cc556f2705ea.png"
                 alt="pepp-pt-diagram"
               />

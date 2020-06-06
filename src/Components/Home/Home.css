@@ -37,4 +37,7 @@
   .home-ansaetze-list {
     padding: 0;
   }
+  .home-ansaetze-list ul {
+    padding: 0;
+  }
 }
