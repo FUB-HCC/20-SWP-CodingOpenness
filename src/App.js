@@ -8,6 +8,8 @@ import About from "./Components/About/About";
 import Kontakt from "./Components/Kontakt/Kontakt";
 import Vergleich from "./Components/Vergleich/Vergleich";
 
+import Footer from "./Components/Template/Footer";
+
 import { Navbar, Button } from "@blueprintjs/core";
 import "./App.css";
 
@@ -81,6 +83,7 @@ class App extends React.Component {
             </div>
           </Navbar.Group>
         </Navbar>
+
         <Switch>
           <Route path={Content.HOME} exact>
             <Home
@@ -119,6 +122,8 @@ class App extends React.Component {
           </Route>
           <Redirect from="/" to="/20-SWP-CodingOpenness" />
         </Switch>
+
+        <Footer />
       </Router>
     );
   }
