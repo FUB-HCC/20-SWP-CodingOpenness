@@ -20,6 +20,12 @@ class Footer extends React.Component {
             <div className="footer-text">
                 © 2020 - Human-Ceneterd Computing - FU Berlin
             </div>
+            <div className="footer-logo">
+            <img
+                src={require("../../Assets/fu_berlin_logo.png")}
+                alt={"fu-berlin-logo"}
+            />
+            </div>
         </div>
       </>
     );
