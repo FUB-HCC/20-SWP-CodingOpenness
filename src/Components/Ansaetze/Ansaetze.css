@@ -65,17 +65,18 @@ h4 {
 }
 
 .DP-3T {
-  background-color: #e8e8e8;
   padding-top: 100px;
   padding-bottom: 30px;
 }
 
 .PEPP-PT {
+  background-color: #e8e8e8;
   padding-top: 100px;
   padding-bottom: 30px;
 }
 
 .DCTS {
+  background-color: #e8e8e8;
   padding-top: 100px;
   padding-bottom: 30px;
 }
@@ -150,6 +151,15 @@ tr:nth-child(even) {
   width: 55%;
 }
 
+.ansaetze-intro {
+  padding: 220px 280px 200px 280px;
+  display: flex;
+}
+.ansaetze-vergleich {
+  font-size: medium;
+  padding-left: 30px;
+}
+
 @media only screen and (max-width: 768px) {
   .paragraph {
     padding: 0;
@@ -184,5 +194,15 @@ tr:nth-child(even) {
   .DCTS {
     padding-top: 0;
     padding-bottom: 240px;
+  }
+  .ansaetze-intro {
+    padding: 80px 20px;
+    display: block;
+  }
+  .ansaetze-intro p {
+    margin: 5px 0;
+  }
+  .ansaetze-vergleich {
+    padding: 0;
   }
 }

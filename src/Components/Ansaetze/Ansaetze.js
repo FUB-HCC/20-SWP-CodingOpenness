@@ -17,6 +17,40 @@ class Ansaetze extends React.Component {
           <a href="#DCTS">DCTS</a>
         </div>
 
+        <div className={"ansaetze-intro"}>
+          <div style={{ fontSize: 50, fontWeight: 800 }}>
+            <span style={{ color: "#6b9e1f" }}>Ansätze</span> der
+            Corona-Tracing-App
+          </div>
+          <div>
+            <p>
+              Es gibt mittlerweile eine Vielzahl von Ansätzen, wie eine solche
+              Corona-App umgesetzt werden kann.
+            </p>
+            <p>
+              Nach Wochen der Diskussion scheint sich die Bundesregierung für
+              den dezentralen Ansatz entschieden zu haben.
+            </p>
+            <p>
+              Im Folgenden sehen Sie eine Auswahl der Ansätze für die Corona-App
+              die wir recherchiert und technisch analysiert. Um ihre
+              Funktionalitäten zu verstehen haben wir Diagramme zur
+              Visualisierung erstellt. Hier unten finden Sie eine Übersicht der
+              Ansätze angeschaut haben.
+            </p>
+            <div className={"ansaetze-vergleich"}>
+              Einen detaillierten Vergleich der Ansätze finden Sie unter dem
+              <a
+                className={"home-fragebogen-link"}
+                href="/comparison"
+                rel="noopener noreferrer"
+              >
+                Vergleich der Ansätze Tab
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="PEPP-PT" id="PEPP-PT">
           <h2>PEPP-PT</h2>
 
@@ -52,7 +86,7 @@ class Ansaetze extends React.Component {
             <div id="pepp-pt-diagram">
               <img
                 className={"diagram pepp-pt-diagram"}
-                src="https://user-images.githubusercontent.com/1636532/81082424-94087200-8ef3-11ea-8dc8-cc556f2705ea.png"
+                src={require("../../Assets/pepp-pt.png")}
                 alt="pepp-pt-diagram"
               />
             </div>
@@ -124,7 +158,7 @@ class Ansaetze extends React.Component {
             <div id="dp-3t-diagram">
               <img
                 className="diagram"
-                src="https://user-images.githubusercontent.com/4459428/80650567-87f45e80-8a74-11ea-950a-8a833e935226.png"
+                src={require("../../Assets/dcts.png")}
                 alt="dp-3t-diagram"
               />
             </div>

@@ -11,8 +11,9 @@ class Fragebogen extends React.Component {
     return (
       <div className={"fragebogen-container"}>
         <div style={{ fontSize: 50, fontWeight: 800 }}>
-          Nehmen Sie an unserer{" "}
-          <span style={{ color: "#6b9e1f" }}>Umfrage</span> teil
+          Nehmen Sie an unserer
+          <br className={"fragebogen-break"} />
+          <span className={"fragebogen-umfrage-span"}>Umfrage</span> teil
         </div>
         <div>
           <p>

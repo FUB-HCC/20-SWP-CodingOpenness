@@ -8,6 +8,13 @@
   font-size: medium;
   color: #6b9e1f;
 }
+.fragebogen-break {
+  display: none;
+}
+.fragebogen-umfrage-span {
+  margin-left: 10px;
+  color: #6b9e1f;
+}
 
 @media only screen and (max-width: 768px) {
   .fragebogen-container {
@@ -18,6 +25,12 @@
     margin: 10px 0;
   }
   .fragebogen-link {
+    margin-left: 0;
+  }
+  .fragebogen-break {
+    display: inline;
+  }
+  .fragebogen-umfrage-span {
     margin-left: 0;
   }
 }

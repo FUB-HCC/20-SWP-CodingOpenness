@@ -25,6 +25,10 @@
 .home-ansaetze-list ul {
   padding: 0;
 }
+.ansatz-link {
+  color: rgb(107, 158, 31);
+  margin-left: 3px;
+}
 .home-fragebogen {
   padding-left: 30px;
 }

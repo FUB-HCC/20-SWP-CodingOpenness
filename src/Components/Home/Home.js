@@ -46,13 +46,23 @@ class Home extends React.Component {
             <div className={"home-ansaetze-list"}>
               <ul>
                 <li>
-                  Pan European Privacy Preserving Proximity Tracing (PEPP-PT)
+                  Pan European Privacy Preserving Proximity Tracing -
+                  <a className={"ansatz-link"} href={"/approaches#PEPP-PT"}>
+                    PEPP-PT
+                  </a>
                 </li>
                 <li>
-                  Decentralized Privacy Preserving Proximity Tracing protocol
-                  (DP3T)
+                  Decentralized Privacy Preserving Proximity Tracing protocol -
+                  <a className={"ansatz-link"} href={"/approaches#DP-3T"}>
+                    DP3T
+                  </a>
                 </li>
-                <li>Digital Contact Tracing Service (DCTS)</li>
+                <li>
+                  Digital Contact Tracing Service -
+                  <a className={"ansatz-link"} href={"/approaches#DCTS"}>
+                    DCTS
+                  </a>
+                </li>
               </ul>
             </div>
             <div className={"home-fragebogen"}>

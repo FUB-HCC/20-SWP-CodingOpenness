@@ -6,7 +6,7 @@ Auf dieser Seite werden die drei Ansätze **PEPP-PT, DP3T und DCTS**  und die [o
 
 Die Kriterien eines Themenbereiches werden schließlich kurz beschrieben und anschließen in einer Tabelle gegenübergestellt.
 
-**Hinweis**: Alle Tabellen sind interaktiv, wobei sich die Detailbeschreibungen durch Klick auf das Dreieck &#9656; aus- bzw. &#9662; einklappen lassen.
+**Hinweis**: Alle Tabellen sind interaktiv, wobei sich die Detailbeschreibungen durch Klick auf das Dreieck aus- bzw. einklappen lassen.
 
 ### Abkürzungen
 **User-ID:** permanente ID die zu einem User zugeordnet ist (nur PEPP-PT)
