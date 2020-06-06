@@ -65,13 +65,6 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <img
-            style={{ marginRight: 30 }}
-            src={require("../../Assets/fu-logo.png")}
-            alt={"fu-logo"}
-          />
-        </div>
       </>
     );
   }
