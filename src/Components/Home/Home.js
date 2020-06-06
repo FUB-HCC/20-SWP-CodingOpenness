@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import { Button } from "@blueprintjs/core";
 
 class Home extends React.Component {
   componentDidMount() {
@@ -12,7 +11,7 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <div style={{ margin: "15% 15% 5% 15%", display: "flex" }}>
+        <div className={"home-page-container"}>
           <div style={{ width: "-webkit-fill-available" }}>
             <div style={{ fontWeight: 800, fontSize: 50 }}>
               Coding Openness -
@@ -52,7 +51,7 @@ class Home extends React.Component {
               Im Rahmen des Softwareprojekts fokussieren wir vor allem auf
               Vorschläge aus Deutschland:
             </p>
-            <div style={{ paddingLeft: 40 }}>
+            <div className={"home-ansaetze-list"}>
               <ul>
                 <li>
                   Pan European Privacy Preserving Proximity Tracing (PEPP-PT)
@@ -63,19 +62,6 @@ class Home extends React.Component {
                 </li>
                 <li>Digital Contact Tracing Service (DCTS)</li>
               </ul>
-            </div>
-            <div
-              style={{ display: "flex", alignItems: "center", paddingLeft: 30 }}
-            >
-              Mehr Informationen Finden Sie
-              <Button
-                minimal
-                intent={"success"}
-                style={{ padding: 5 }}
-                onClick={() => this.props.moveToAnsaetze()}
-              >
-                <div style={{ fontSize: "medium" }}>hier</div>
-              </Button>
             </div>
           </div>
         </div>
