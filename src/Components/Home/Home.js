@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import Footer from "../Footer/Footer";
 
 class Home extends React.Component {
   componentDidMount() {
@@ -65,13 +66,7 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <img
-            style={{ marginRight: 30 }}
-            src={require("../../Assets/fu-logo.png")}
-            alt={"fu-logo"}
-          />
-        </div>
+        <Footer position={"absolute"} />
       </>
     );
   }

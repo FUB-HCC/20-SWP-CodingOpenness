@@ -81,6 +81,7 @@ class App extends React.Component {
             </div>
           </Navbar.Group>
         </Navbar>
+
         <Switch>
           <Route path={Content.HOME} exact>
             <Home
@@ -119,6 +120,8 @@ class App extends React.Component {
           </Route>
           <Redirect from="/" to="/20-SWP-CodingOpenness" />
         </Switch>
+
+        {/* <Footer /> */}
       </Router>
     );
   }
