@@ -9,24 +9,16 @@
   align-items: center;
 }
 
-p {
-  font-size: 1rem;
-  margin: 30px;
-}
-
-h2 {
+.approach-title {
   font-size: 1.5rem;
   margin: 50px;
   text-align: center;
+  align-items: center;
 }
 
-h3 {
+.approach-name {
   margin: 30px;
   display: inline-block;
-}
-
-h4 {
-  font-size: 1rem;
 }
 
 .topnav {
