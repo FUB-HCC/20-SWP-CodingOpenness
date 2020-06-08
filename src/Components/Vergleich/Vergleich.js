@@ -2,6 +2,7 @@ import VergleichMarkdown from "../../Markdown/Vergleich.md";
 import React from "react";
 import Markdown from "markdown-to-jsx";
 import "./Vergleich.css";
+import Footer from "../Footer/Footer";
 
 class Vergleich extends React.Component {
   state = {
@@ -19,9 +20,12 @@ class Vergleich extends React.Component {
 
   render() {
     return (
-      <div className={"vergleich-container"}>
-        <Markdown children={this.state.markdown} />
-      </div>
+      <>
+        <div className={"vergleich-container"}>
+          <Markdown children={this.state.markdown} />
+        </div>
+        <Footer />
+      </>
     );
   }
 }
