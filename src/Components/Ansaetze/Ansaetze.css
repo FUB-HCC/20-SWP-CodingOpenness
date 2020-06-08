@@ -29,7 +29,6 @@
   width: 100%;
  }
  
-
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -51,11 +50,6 @@
   background-color: #6b9e1f;
   color: white;
 }
-
-/*.overview-table {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}*/
 
 .DP-3T {
   background-color: #e8e8e8;
@@ -101,37 +95,6 @@
 #member {
   padding: 50px;
 }
-
-/*table {
-  border-collapse: collapse;
-  width: 70%;
-  text-align: center;
-  padding: 50px;
-  margin: 0 auto;
-  table-layout: fixed;
-}
-
-table,
-th,
-td {
-  border: 1px solid lightgray;
-}
-
-th {
-  font-size: large;
-  height: 50px;
-  background-color: #6b9e1f;
-  color: white;
-}
-
-th,
-td {
-  padding: 15px;
-}
-
-tr:nth-child(even) {
-  background-color: #f5f5f5;
-}*/
 
 .ansaetze-github-link {
   padding-left: 25px;
