@@ -1,27 +1,25 @@
-name: Deploy to github pages
+name: Build and Deploy
 on:
-    push:
-        branches:
-            - website/master
+  push:
+    branches:
+      - master
 jobs:
-    deploy:
-        name: Deploying to gh-pages
-        runs-on: ubuntu-latest
-        steps:
-            - name: Setup Node.js for use with actions
-              uses: actions/setup-node@v1
-              with:
-                version:  12.x
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false 
 
-            - name: Checkout branch
-              uses: actions/checkout@v2
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run-script build
 
-            - name: Install NPM dependencies
-              run: npm ci --dev
-
-            - name: Run deploy script
-              env:
-                GITHUB_TOKEN: ${{ secrets.GH_PAGES_GITHUB_TOKEN }}
-              run: |
-                git config --global user.name ${{ secrets.GH_PAGES_USER }} && git config --global user.email ${{ secrets.GH_PAGES_MAIL }}
-                npm run deploy
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GH_PAGES_GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
