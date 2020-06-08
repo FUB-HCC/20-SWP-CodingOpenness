@@ -23,4 +23,5 @@ jobs:
               env:
                 GITHUB_TOKEN: ${{ secrets.GH_PAGES_GITHUB_TOKEN }}
               run: |
+                git config --global user.name ${{ secrets.GH_PAGES_USER }} && git config --global user.email ${{ secrets.GH_PAGES_MAIL }}
                 npm run deploy
