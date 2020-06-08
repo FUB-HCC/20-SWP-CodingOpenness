@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and deploy gh-pages
 on:
   push:
     branches:
@@ -7,17 +7,17 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout repository 🛎️
         uses: actions/checkout@v2
         with:
           persist-credentials: false 
 
-      - name: Install and Build 🔧
+      - name: Install dependencies and build 🔧
         run: |
           npm ci
           npm run-script build
 
-      - name: Deploy 🚀
+      - name: Deploy to gh-pages branch 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GH_PAGES_GITHUB_TOKEN }}
