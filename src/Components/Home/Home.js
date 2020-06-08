@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import Footer from "../Footer/Footer";
 
 class Home extends React.Component {
   componentDidMount() {
@@ -65,6 +66,7 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
+        <Footer position={"absolute"} />
       </>
     );
   }

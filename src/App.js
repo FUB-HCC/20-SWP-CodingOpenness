@@ -8,8 +8,6 @@ import About from "./Components/About/About";
 import Kontakt from "./Components/Kontakt/Kontakt";
 import Vergleich from "./Components/Vergleich/Vergleich";
 
-import Footer from "./Components/Template/Footer";
-
 import { Navbar, Button } from "@blueprintjs/core";
 import "./App.css";
 
@@ -123,7 +121,7 @@ class App extends React.Component {
           <Redirect from="/" to="/20-SWP-CodingOpenness" />
         </Switch>
 
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     );
   }
