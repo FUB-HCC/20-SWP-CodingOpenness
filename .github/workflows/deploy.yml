@@ -20,7 +20,7 @@ jobs:
               run: npm ci --dev
 
             - name: Run deploy script
-              with:
+              env:
                 GITHUB_TOKEN: ${{ secrets.GH_PAGES_GITHUB_TOKEN }}
               run: |
                 npm run deploy
