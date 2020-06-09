@@ -1,6 +1,9 @@
 .vergleich-container {
   padding: 70px 30px;
 }
+.vergleich-container table {
+  width: 97%;
+}
 
 @media only screen and (max-width: 768px) {
   .vergleich-container {

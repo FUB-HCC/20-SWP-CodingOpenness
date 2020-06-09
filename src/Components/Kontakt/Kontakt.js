@@ -14,7 +14,8 @@ class Kontakt extends React.Component {
       <>
         <div className={"kontakt-container"}>
           <div style={{ fontSize: 50, fontWeight: 800 }}>
-            Treten Sie in Kontakt mit uns
+            Treten Sie in <span style={{ color: "#6b9e1f" }}>Kontakt</span> mit
+            uns
           </div>
           <div>
             <p>
