@@ -1,5 +1,5 @@
 .kontakt-container {
-  padding: 280px;
+  padding: 280px 280px 400px 280px;
   display: flex;
 }
 p {
@@ -24,7 +24,7 @@ h1 {
 }
 @media only screen and (max-width: 768px) {
   .kontakt-container {
-    padding: 80px 20px;
+    padding: 80px 20px 120px;
     display: block;
   }
   .kontakt-container p {
