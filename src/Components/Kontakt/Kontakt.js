@@ -60,7 +60,6 @@ class Kontakt extends React.Component {
             </p>
           </div>
         </div>
-        <Footer position={"absolute"} />
       </>
     );
   }

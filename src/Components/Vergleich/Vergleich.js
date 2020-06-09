@@ -24,7 +24,6 @@ class Vergleich extends React.Component {
         <div className={"vergleich-container"}>
           <Markdown children={this.state.markdown} />
         </div>
-        <Footer />
       </>
     );
   }

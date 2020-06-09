@@ -39,7 +39,6 @@ class Fragebogen extends React.Component {
             </a>
           </div>
         </div>
-        <Footer position={"absolute"} />
       </>
     );
   }

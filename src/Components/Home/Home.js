@@ -14,7 +14,9 @@ class Home extends React.Component {
     return (
       <>
         <div className={"home-page-container"}>
-          <div style={{ width: "-webkit-fill-available" }}>
+          <div
+            style={{ width: "-webkit-fill-available", width: "-moz-available" }}
+          >
             <div style={{ fontWeight: 800, fontSize: 50 }}>
               Coding Openness -
               <br />
@@ -79,7 +81,6 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-        <Footer position={"absolute"} />
       </>
     );
   }

@@ -164,7 +164,6 @@ class Ansaetze extends React.Component {
             </div>
           </div>
         </div>
-        <Footer position={"relative"} />
       </>
     );
   }
