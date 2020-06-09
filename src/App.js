@@ -11,7 +11,6 @@ import Fragebogen from "./Components/Fragebogen/Fragebogen";
 
 import { Navbar, Button } from "@blueprintjs/core";
 import "./App.css";
-import Footer from "./Components/Footer/Footer";
 
 //content values are used as the URLs for routing
 export const Content = {
@@ -136,7 +135,6 @@ class App extends React.Component {
           </Route>
           <Redirect from="/" to="/20-SWP-CodingOpenness" />
         </Switch>
-        <Footer />
       </Router>
     );
   }

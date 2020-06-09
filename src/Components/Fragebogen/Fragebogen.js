@@ -1,6 +1,5 @@
 import React from "react";
 import "./Fragebogen.css";
-import Footer from "../Footer/Footer";
 
 class Fragebogen extends React.Component {
   componentDidMount() {

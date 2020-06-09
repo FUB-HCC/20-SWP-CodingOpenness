@@ -2,7 +2,6 @@ import VergleichMarkdown from "../../Markdown/Vergleich.md";
 import React from "react";
 import Markdown from "markdown-to-jsx";
 import "./Vergleich.css";
-import Footer from "../Footer/Footer";
 
 class Vergleich extends React.Component {
   state = {

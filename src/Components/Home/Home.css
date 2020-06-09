@@ -2,7 +2,10 @@
   margin: 15% 15% 5%;
   display: flex;
 }
-
+.home-page-second-container {
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
 .hcc-home p {
   font-size: medium;
   font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",

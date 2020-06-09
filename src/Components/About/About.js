@@ -1,7 +1,6 @@
 import React from "react";
 import { Icon } from "@blueprintjs/core";
 import "./About.css";
-import Footer from "../Footer/Footer";
 
 class About extends React.Component {
   componentDidMount() {

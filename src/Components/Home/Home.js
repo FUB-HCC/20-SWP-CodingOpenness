@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 
 class Home extends React.Component {
@@ -14,9 +13,7 @@ class Home extends React.Component {
     return (
       <>
         <div className={"home-page-container"}>
-          <div
-            style={{ width: "-webkit-fill-available", width: "-moz-available" }}
-          >
+          <div className={"home-page-second-container"}>
             <div style={{ fontWeight: 800, fontSize: 50 }}>
               Coding Openness -
               <br />

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Kontakt.css";
-import Footer from "../Footer/Footer";
 
 class Kontakt extends React.Component {
   componentDidMount() {

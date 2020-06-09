@@ -1,6 +1,5 @@
 import React from "react";
 import "./Ansaetze.css";
-import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 
 class Ansaetze extends React.Component {
