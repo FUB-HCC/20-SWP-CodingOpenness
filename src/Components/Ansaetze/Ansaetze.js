@@ -1,6 +1,7 @@
 import React from "react";
 import "./Ansaetze.css";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 class Ansaetze extends React.Component {
   componentDidMount() {
@@ -42,13 +43,9 @@ class Ansaetze extends React.Component {
               </p>
               <div className={"ansaetze-vergleich"}>
                 Einen detaillierten Vergleich der Ansätze finden Sie unter dem
-                <a
-                  className={"home-fragebogen-link"}
-                  href="/comparison"
-                  rel="noopener noreferrer"
-                >
+                <Link className={"home-fragebogen-link"} to="/comparison">
                   Vergleich der Ansätze Tab
-                </a>
+                </Link>
               </div>
             </div>
           </div>

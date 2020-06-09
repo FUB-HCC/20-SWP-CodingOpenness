@@ -72,13 +72,9 @@ class Home extends React.Component {
               Befragungen durch und untersuchen die Tracing-App. Um die
               Perspektive von Nutzer|innen an einer solchen App zu
               berücksichtigen haben wir einen
-              <a
-                className={"home-fragebogen-link"}
-                href="/fragebogen"
-                rel="noopener noreferrer"
-              >
+              <Link className={"home-fragebogen-link"} to="/fragebogen">
                 Fragebogen
-              </a>
+              </Link>
               erstellt.
             </div>
           </div>
