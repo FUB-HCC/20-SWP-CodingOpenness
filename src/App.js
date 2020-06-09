@@ -34,7 +34,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router history={history}>
+      <Router basename={process.env.PUBLIC_URL} history={history}>
         <Navbar id={"navbar-menu"} className={"navbar-menu"} fixedToTop>
           <Navbar.Group
             style={{
