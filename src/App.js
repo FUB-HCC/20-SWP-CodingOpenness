@@ -135,8 +135,6 @@ class App extends React.Component {
           </Route>
           <Redirect from="/" to="/20-SWP-CodingOpenness" />
         </Switch>
-
-        {/* <Footer /> */}
       </Router>
     );
   }

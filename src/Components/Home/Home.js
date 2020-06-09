@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 class Home extends React.Component {
   componentDidMount() {
@@ -48,21 +49,21 @@ class Home extends React.Component {
               <ul>
                 <li>
                   Pan European Privacy Preserving Proximity Tracing -
-                  <a className={"ansatz-link"} href={"/approaches#PEPP-PT"}>
+                  <Link className={"ansatz-link"} to={"/approaches#PEPP-PT"}>
                     PEPP-PT
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   Decentralized Privacy Preserving Proximity Tracing protocol -
-                  <a className={"ansatz-link"} href={"/approaches#DP-3T"}>
+                  <Link className={"ansatz-link"} to={"/approaches#DP-3T"}>
                     DP3T
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   Digital Contact Tracing Service -
-                  <a className={"ansatz-link"} href={"/approaches#DCTS"}>
+                  <Link className={"ansatz-link"} to={"/approaches#DCTS"}>
                     DCTS
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
