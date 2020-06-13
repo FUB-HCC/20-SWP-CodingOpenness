@@ -1,5 +1,5 @@
 .home-page-container {
-  margin: 15% 15% 5%;
+  padding: 15%;
   display: flex;
 }
 .home-page-second-container {
@@ -42,7 +42,7 @@
 
 @media only screen and (max-width: 768px) {
   .home-page-container {
-    margin: 20% 5%;
+    padding: 20% 5%;
     display: block;
   }
   .hcc-home {

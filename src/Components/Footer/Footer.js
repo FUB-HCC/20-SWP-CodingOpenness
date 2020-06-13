@@ -7,10 +7,7 @@ class Footer extends React.Component {
   render() {
     return (
       <>
-        <div
-          className="footer"
-          style={{ position: this.props.position, backgroundColor: "#333" }}
-        >
+        <div className="footer">
           <Divider
             style={{
               margin: 0,
@@ -42,7 +39,7 @@ class Footer extends React.Component {
             <img src={require("../../Assets/fub.png")} alt={"fu-berlin-logo"} />
           </div>
           <div className="footer-text">
-            © 2020 - Human-Ceneterd Computing - FU Berlin
+            © 2020 - Human-Centered Computing - FU Berlin
           </div>
         </div>
       </>
