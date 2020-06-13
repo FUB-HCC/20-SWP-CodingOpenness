@@ -108,7 +108,7 @@ class About extends React.Component {
                     "Omer Hod",
                   ])}
                 </ul>
-                <div className={"team-title"}>{"Team Fragenbogen"}</div>
+                <div className={"team-title"}>{"Team Fragebogen"}</div>
                 <ul>
                   {this.getGroupMemberList([
                     "Ingrid Tchilibou",
