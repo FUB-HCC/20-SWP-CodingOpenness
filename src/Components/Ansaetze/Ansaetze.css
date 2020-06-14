@@ -9,24 +9,16 @@
   align-items: center;
 }
 
-p {
-  font-size: 1rem;
-  margin: 30px;
-}
-
-h2 {
+.approach-title {
   font-size: 1.5rem;
   margin: 50px;
   text-align: center;
+  align-items: center;
 }
 
-h3 {
+.approach-name {
   margin: 30px;
   display: inline-block;
-}
-
-h4 {
-  font-size: 1rem;
 }
 
 .topnav {
@@ -109,37 +101,6 @@ h4 {
 
 #member {
   padding: 50px;
-}
-
-table {
-  border-collapse: collapse;
-  width: 70%;
-  text-align: center;
-  padding: 50px;
-  margin: 0 auto;
-  table-layout: fixed;
-}
-
-table,
-th,
-td {
-  border: 1px solid lightgray;
-}
-
-th {
-  font-size: large;
-  height: 50px;
-  background-color: #6b9e1f;
-  color: white;
-}
-
-th,
-td {
-  padding: 15px;
-}
-
-tr:nth-child(even) {
-  background-color: #f5f5f5;
 }
 
 .ansaetze-github-link {
