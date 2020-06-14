@@ -19,9 +19,11 @@ class Vergleich extends React.Component {
 
   render() {
     return (
-      <div className={"vergleich-container"}>
-        <Markdown children={this.state.markdown} />
-      </div>
+      <>
+        <div className={"vergleich-container"}>
+          <Markdown children={this.state.markdown} />
+        </div>
+      </>
     );
   }
 }

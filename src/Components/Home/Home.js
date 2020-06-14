@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 class Home extends React.Component {
   componentDidMount() {
@@ -12,7 +13,7 @@ class Home extends React.Component {
     return (
       <>
         <div className={"home-page-container"}>
-          <div style={{ width: "-webkit-fill-available" }}>
+          <div className={"home-page-second-container"}>
             <div style={{ fontWeight: 800, fontSize: 50 }}>
               Coding Openness -
               <br />
@@ -36,41 +37,46 @@ class Home extends React.Component {
               identifizieren, zu vergleichen und zu bewerten.
             </p>
             <p>
-              Letztlich besteht die Hoffnung, dass wir im Sommersemester die
-              M&ouml;glichkeit erhalten, die eine oder andere App zu
-              installieren und zu erweitern.
-            </p>
-            <p>
               In dem Softwareprojekt wollen wir uns vor allem auf
               Erklärungsmechanismen fokussieren. Das primäre Ziel besteht darin,
               dass Bürger|innen vom App-Betreiber|innen genügend Informationen
               erhalten, um die Ursachen eines Ereignisses oder einer
               Entscheidung zu verstehen.
             </p>
-            <p>
-              Im Rahmen des Softwareprojekts fokussieren wir vor allem auf
-              Vorschläge aus Deutschland:
-            </p>
+            <p>Wir fokussieren uns vor allem auf Vorschläge aus Deutschland:</p>
             <div className={"home-ansaetze-list"}>
               <ul>
                 <li>
-                  Pan European Privacy Preserving Proximity Tracing (PEPP-PT)
+                  Pan European Privacy Preserving Proximity Tracing -
+                  <Link className={"ansatz-link"} to={"/approaches#PEPP-PT"}>
+                    PEPP-PT
+                  </Link>
                 </li>
                 <li>
-                  Decentralized Privacy Preserving Proximity Tracing protocol
-                  (DP3T)
+                  Decentralized Privacy Preserving Proximity Tracing protocol -
+                  <Link className={"ansatz-link"} to={"/approaches#DP-3T"}>
+                    DP3T
+                  </Link>
                 </li>
-                <li>Digital Contact Tracing Service (DCTS)</li>
+                <li>
+                  Digital Contact Tracing Service -
+                  <Link className={"ansatz-link"} to={"/approaches#DCTS"}>
+                    DCTS
+                  </Link>
+                </li>
               </ul>
             </div>
+            <div className={"home-fragebogen"}>
+              Außerdem führen wir im Rahmen des Softwareprojekts notwendige
+              Befragungen durch und untersuchen die Tracing-App. Um die
+              Perspektive von Nutzer|innen an einer solchen App zu
+              berücksichtigen haben wir einen
+              <Link className={"home-fragebogen-link"} to="/fragebogen">
+                Fragebogen
+              </Link>
+              erstellt.
+            </div>
           </div>
-        </div>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <img
-            style={{ marginRight: 30 }}
-            src={require("../../Assets/fu-logo.png")}
-            alt={"fu-logo"}
-          />
         </div>
       </>
     );

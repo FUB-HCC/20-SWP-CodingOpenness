@@ -1,8 +1,11 @@
 .home-page-container {
-  margin: 15% 15% 5% 15%;
+  padding: 15%;
   display: flex;
 }
-
+.home-page-second-container {
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
 .hcc-home p {
   font-size: medium;
   font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
@@ -22,10 +25,24 @@
 .home-ansaetze-list {
   padding-left: 40px;
 }
+.home-ansaetze-list ul {
+  padding: 0;
+}
+.ansatz-link {
+  color: rgb(107, 158, 31);
+  margin-left: 3px;
+}
+.home-fragebogen {
+  padding-left: 30px;
+}
+.home-fragebogen-link {
+  color: rgb(107, 158, 31);
+  margin: 0 3px;
+}
 
 @media only screen and (max-width: 768px) {
   .home-page-container {
-    margin: 20% 5%;
+    padding: 20% 5%;
     display: block;
   }
   .hcc-home {
@@ -37,7 +54,7 @@
   .home-ansaetze-list {
     padding: 0;
   }
-  .home-ansaetze-list ul {
+  .home-fragebogen {
     padding: 0;
   }
 }

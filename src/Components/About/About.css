@@ -1,5 +1,5 @@
 .about-container {
-  padding: 70px;
+  padding: 30px;
 }
 .about-second-container {
   display: flex;
@@ -11,11 +11,11 @@
   padding: 40px;
 }
 .team {
-  padding-top: 150px;
+  padding-top: 40px;
   width: 33%;
 }
 .abschnitt {
-  padding: 20px;
+  padding: 5px 20px;
 }
 
 .team-title {

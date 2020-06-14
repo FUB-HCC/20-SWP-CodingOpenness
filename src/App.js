@@ -7,9 +7,11 @@ import Ansaetze from "./Components/Ansaetze/Ansaetze";
 import About from "./Components/About/About";
 import Kontakt from "./Components/Kontakt/Kontakt";
 import Vergleich from "./Components/Vergleich/Vergleich";
+import Fragebogen from "./Components/Fragebogen/Fragebogen";
 
 import { Navbar, Button } from "@blueprintjs/core";
 import "./App.css";
+import Footer from "./Components/Footer/Footer";
 
 //content values are used as the URLs for routing
 export const Content = {
@@ -18,6 +20,7 @@ export const Content = {
   ANSAETZE: "/approaches",
   VERGLEICH: "/comparison",
   KONTAKT: "/contact",
+  FRAGENBOGEN: "/fragebogen",
 };
 
 class App extends React.Component {
@@ -32,7 +35,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router history={history}>
+      <Router basename={process.env.PUBLIC_URL} history={history}>
         <Navbar id={"navbar-menu"} className={"navbar-menu"} fixedToTop>
           <Navbar.Group
             style={{
@@ -68,6 +71,12 @@ class App extends React.Component {
               />
               <Button
                 className="bp3-minimal navbar-button navbar-button-content"
+                text="Fragebogen"
+                active={this.state.activeContent === Content.FRAGENBOGEN}
+                onClick={() => this.handleNavbarClick(Content.FRAGENBOGEN)}
+              />
+              <Button
+                className="bp3-minimal navbar-button navbar-button-content"
                 text="Über uns"
                 active={this.state.activeContent === Content.ABOUT}
                 onClick={() => this.handleNavbarClick(Content.ABOUT)}
@@ -81,6 +90,7 @@ class App extends React.Component {
             </div>
           </Navbar.Group>
         </Navbar>
+
         <Switch>
           <Route path={Content.HOME} exact>
             <Home
@@ -117,8 +127,16 @@ class App extends React.Component {
               }
             />
           </Route>
+          <Route path={Content.FRAGENBOGEN} exact>
+            <Fragebogen
+              handleNavbarClick={() =>
+                this.setState({ activeContent: Content.FRAGENBOGEN })
+              }
+            />
+          </Route>
           <Redirect from="/" to="/20-SWP-CodingOpenness" />
         </Switch>
+        <Footer />
       </Router>
     );
   }
