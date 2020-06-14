@@ -50,11 +50,13 @@ class Ansaetze extends React.Component {
           </div>
 
           <div className="PEPP-PT" id="PEPP-PT">
-            <h2>PEPP-PT</h2>
+            <h2 className="approach-title">PEPP-PT</h2>
 
             <div className="paragraph">
               <div className={"project-title"}>
-                <h3>Pan European Privacy Preserving Proximity Tracing</h3>
+                <h3 className="approach-name">
+                  Pan European Privacy Preserving Proximity Tracing
+                </h3>
               </div>
 
               <p>
@@ -91,11 +93,11 @@ class Ansaetze extends React.Component {
             </div>
 
             <div className="DP-3T" id="DP-3T">
-              <h2>DP-3T</h2>
+              <h2 className="approach-title">DP-3T</h2>
 
               <div className="paragraph">
                 <div className={"project-title"}>
-                  <h3>
+                  <h3 className="approach-name">
                     Decentralized Privacy Preserving Proximity Tracing protocol{" "}
                   </h3>
                 </div>
@@ -142,11 +144,13 @@ class Ansaetze extends React.Component {
             </div>
 
             <div className="DCTS" id="DCTS">
-              <h2>DCTS</h2>
+              <h2 className="approach-title">DCTS</h2>
 
               <div className="paragraph">
                 <div className={"project-title"}>
-                  <h3>Digital Contact Tracing Service</h3>
+                  <h3 className="approach-name">
+                    Digital Contact Tracing Service
+                  </h3>
                 </div>
                 <p>Kontaktverfolgungsdienst von der TU München.</p>
               </div>

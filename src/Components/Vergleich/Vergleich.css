@@ -2,7 +2,35 @@
   padding: 90px 30px;
 }
 .vergleich-container table {
+  border-collapse: collapse;
   width: 97%;
+  text-align: center;
+  padding: 50px;
+  margin: 0 auto;
+  table-layout: fixed;
+  border: 1px solid lightgray;
+}
+.vergleich-container h2 {
+  text-align: center;
+}
+.vergleich-container h3 {
+  margin: 30px;
+}
+.vergleich-container th {
+  border: 1px solid lightgray;
+  font-size: large;
+  height: 50px;
+  background-color: #6b9e1f;
+  color: white;
+}
+
+.vergleich-container td {
+  padding: 15px;
+  border: 1px solid lightgray;
+}
+
+.vergleich-container tr:nth-child(even) {
+  background-color: #f5f5f5;
 }
 
 @media only screen and (max-width: 768px) {
@@ -31,5 +59,8 @@
   }
   b > p {
     font-size: smaller;
+  }
+  .vergleich-container h3 {
+    margin: 10px 0;
   }
 }
