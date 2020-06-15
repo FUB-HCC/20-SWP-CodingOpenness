@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8bb1dd88fe79fa6a3809a838467f0a0b",
+    "revision": "ccd0f6c91b2b1e0cb4f2ac641091d08a",
     "url": "/20-SWP-CodingOpenness/index.html"
   },
   {
-    "revision": "896dbb4f86ab15ee70bf",
+    "revision": "e17234557db0cb33f4d3",
     "url": "/20-SWP-CodingOpenness/static/css/2.75c2aa79.chunk.css"
   },
   {
-    "revision": "bd3a4a64a477f0e63ccf",
-    "url": "/20-SWP-CodingOpenness/static/css/main.34edc490.chunk.css"
+    "revision": "d14934f4326c09cae819",
+    "url": "/20-SWP-CodingOpenness/static/css/main.61bda5bf.chunk.css"
   },
   {
-    "revision": "896dbb4f86ab15ee70bf",
-    "url": "/20-SWP-CodingOpenness/static/js/2.0d32b0a2.chunk.js"
+    "revision": "e17234557db0cb33f4d3",
+    "url": "/20-SWP-CodingOpenness/static/js/2.d7877170.chunk.js"
   },
   {
     "revision": "b578178f33e8b4baed76c7b8f7ce2e07",
-    "url": "/20-SWP-CodingOpenness/static/js/2.0d32b0a2.chunk.js.LICENSE.txt"
+    "url": "/20-SWP-CodingOpenness/static/js/2.d7877170.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bd3a4a64a477f0e63ccf",
-    "url": "/20-SWP-CodingOpenness/static/js/main.a132f81d.chunk.js"
+    "revision": "d14934f4326c09cae819",
+    "url": "/20-SWP-CodingOpenness/static/js/main.a069a229.chunk.js"
   },
   {
     "revision": "fc223838ad78f9650572",
     "url": "/20-SWP-CodingOpenness/static/js/runtime-main.e005725f.js"
   },
   {
-    "revision": "8d99f741eb0eea4b6d64182e899f059a",
-    "url": "/20-SWP-CodingOpenness/static/media/Vergleich.8d99f741.md"
+    "revision": "3052a67650b37ab6860e0e9021aa03a8",
+    "url": "/20-SWP-CodingOpenness/static/media/Vergleich.3052a676.md"
   },
   {
     "revision": "0047a2e41687ebc5211228569fdaa29f",
@@ -38,6 +38,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e0055d583bf5f40838664b14ea81cf76",
     "url": "/20-SWP-CodingOpenness/static/media/dcts.e0055d58.png"
+  },
+  {
+    "revision": "28f15e7561b5cc50225942d3e6c097ce",
+    "url": "/20-SWP-CodingOpenness/static/media/fu_berlin_logo.28f15e75.png"
+  },
+  {
+    "revision": "af89d7400d69d8bbb4191aa96f50deef",
+    "url": "/20-SWP-CodingOpenness/static/media/fub-blk.af89d740.png"
+  },
+  {
+    "revision": "9ebb4e11c4bda5033e846cfeeb97c095",
+    "url": "/20-SWP-CodingOpenness/static/media/fub.9ebb4e11.png"
+  },
+  {
+    "revision": "b610d3080d227f6e211f9fd47d0c4db1",
+    "url": "/20-SWP-CodingOpenness/static/media/fub.jpeg.b610d308.jpg"
   },
   {
     "revision": "9407832cc361117fb3da5e61f8881ce1",
