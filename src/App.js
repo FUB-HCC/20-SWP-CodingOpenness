@@ -1,6 +1,9 @@
 import React from "react";
 import history from "./history";
-import { Router, Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+
+import NavBarTextButton from "./Components/Layout/NavBarTextButton";
+import NavBarImgButton from "./Components/Layout/NavBarImgButton";
 
 import Home from "./Components/Home/Home";
 import Ansaetze from "./Components/Ansaetze/Ansaetze";
@@ -15,7 +18,9 @@ import Footer from "./Components/Footer/Footer";
 
 //content values are used as the URLs for routing
 export const Content = {
-  HOME: "/20-SWP-CodingOpenness",
+  BAD: "bad_path",
+
+  HOME: "/",
   ABOUT: "/about",
   ANSAETZE: "/approaches",
   VERGLEICH: "/comparison",
@@ -35,7 +40,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL} history={history}>
+      <>
         <Navbar id={"navbar-menu"} className={"navbar-menu"} fixedToTop>
           <Navbar.Group
             style={{
@@ -44,48 +49,38 @@ class App extends React.Component {
               placeContent: "space-between",
             }}
           >
-            <Button
-              className={"bp3-minimal navbar-button hcc-button"}
-              active={this.state.activeContent === Content.HOME}
-              onClick={() => this.handleNavbarClick(Content.HOME)}
-            >
-              <img
-                className={"menu-hcc-logo"}
-                alt="hcc"
-                src={require("./Assets/hcc-logo-white.png")}
-              />
-              {"Coding Openness"}
-            </Button>
+            <NavBarImgButton 
+              name="Coding Openness"
+              content={Content.HOME}
+              activeContent={this.state.activeContent}
+              imgName="hcc-logo-white.png"
+            />
+
             <div className={"menu-button-group"}>
-              <Button
-                className="bp3-minimal navbar-button navbar-button-content"
-                text={"Ansätze"}
-                active={this.state.activeContent === Content.ANSAETZE}
-                onClick={() => this.handleNavbarClick(Content.ANSAETZE)}
+              <NavBarTextButton 
+                name="Ansätze"
+                content={Content.ANSAETZE}
+                activeContent={this.state.activeContent}
               />
-              <Button
-                className="bp3-minimal navbar-button navbar-button-content"
-                text={"Vergleich der Ansätze"}
-                active={this.state.activeContent === Content.VERGLEICH}
-                onClick={() => this.handleNavbarClick(Content.VERGLEICH)}
+              <NavBarTextButton
+                name="Vergleich der Ansätze"
+                content={Content.VERGLEICH}
+                activeContent={this.state.activeContent}
               />
-              <Button
-                className="bp3-minimal navbar-button navbar-button-content"
-                text="Fragebogen"
-                active={this.state.activeContent === Content.FRAGENBOGEN}
-                onClick={() => this.handleNavbarClick(Content.FRAGENBOGEN)}
+              <NavBarTextButton
+                name="Fragebogen"
+                content={Content.FRAGENBOGEN}
+                activeContent={this.state.activeContent}
               />
-              <Button
-                className="bp3-minimal navbar-button navbar-button-content"
-                text="Über uns"
-                active={this.state.activeContent === Content.ABOUT}
-                onClick={() => this.handleNavbarClick(Content.ABOUT)}
+              <NavBarTextButton
+                name="Über uns"
+                content={Content.ABOUT}
+                activeContent={this.state.activeContent}
               />
-              <Button
-                className="bp3-minimal navbar-button navbar-button-content"
-                text="Kontakt"
-                active={this.state.activeContent === Content.KONTAKT}
-                onClick={() => this.handleNavbarClick(Content.KONTAKT)}
+              <NavBarTextButton
+                name="Kontak"
+                content={Content.KONTAKT}
+                activeContent={this.state.activeContent}
               />
             </div>
           </Navbar.Group>
@@ -134,10 +129,12 @@ class App extends React.Component {
               }
             />
           </Route>
-          <Redirect from="/" to="/20-SWP-CodingOpenness" />
+          <Route>
+            {/* BAD ROUTE */}
+          </Route>
         </Switch>
         <Footer />
-      </Router>
+      </>
     );
   }
 }
