@@ -11,6 +11,7 @@ import About from "./Components/About/About";
 import Kontakt from "./Components/Kontakt/Kontakt";
 import Vergleich from "./Components/Vergleich/Vergleich";
 import Fragebogen from "./Components/Fragebogen/Fragebogen";
+import BadRoute from "./Components/BadRoute/BadRoute";
 
 import { Navbar, Button } from "@blueprintjs/core";
 import "./App.css";
@@ -130,7 +131,7 @@ class App extends React.Component {
             />
           </Route>
           <Route>
-            {/* BAD ROUTE */}
+            <BadRoute />
           </Route>
         </Switch>
         <Footer />

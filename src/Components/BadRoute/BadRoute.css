@@ -1,0 +1,33 @@
+.kontakt-container {
+  padding: 280px;
+  display: flex;
+}
+p {
+  font-size: 1rem;
+  margin: 30px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 50px;
+  text-align: center;
+}
+
+.info {
+  width: 75%;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.kontakt-links {
+  color: #6b9e1f;
+}
+@media only screen and (max-width: 768px) {
+  .kontakt-container {
+    padding: 80px 20px 120px;
+    display: block;
+  }
+  .kontakt-container p {
+    margin: 10px 0;
+  }
+}
