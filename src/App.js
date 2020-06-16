@@ -13,7 +13,7 @@ import Vergleich from "./Components/Vergleich/Vergleich";
 import Fragebogen from "./Components/Fragebogen/Fragebogen";
 import BadRoute from "./Components/BadRoute/BadRoute";
 
-import { Navbar, Button } from "@blueprintjs/core";
+import { Navbar } from "@blueprintjs/core";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
 
@@ -50,7 +50,7 @@ class App extends React.Component {
               placeContent: "space-between",
             }}
           >
-            <NavBarImgButton 
+            <NavBarImgButton
               name="Coding Openness"
               content={Content.HOME}
               activeContent={this.state.activeContent}
@@ -58,7 +58,7 @@ class App extends React.Component {
             />
 
             <div className={"menu-button-group"}>
-              <NavBarTextButton 
+              <NavBarTextButton
                 name="Ansätze"
                 content={Content.ANSAETZE}
                 activeContent={this.state.activeContent}
@@ -79,7 +79,7 @@ class App extends React.Component {
                 activeContent={this.state.activeContent}
               />
               <NavBarTextButton
-                name="Kontak"
+                name="Kontakt"
                 content={Content.KONTAKT}
                 activeContent={this.state.activeContent}
               />
