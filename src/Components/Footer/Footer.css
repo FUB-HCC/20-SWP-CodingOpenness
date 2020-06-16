@@ -52,9 +52,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .footer {
-    position: relative !important;
-  }
   .footer-logo {
     padding-right: 5px;
   }
