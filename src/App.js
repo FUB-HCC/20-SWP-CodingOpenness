@@ -16,8 +16,10 @@ import BadRoute from "./Components/BadRoute/BadRoute";
 import { Navbar } from "@blueprintjs/core";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
+import TeamContribution from "./Components/TeamContribution/TeamContribution";
+import CoronaWarnApp from "./Components/CoronaWarnApp/CoronaWarnApp";
 
-//content values are used as the URLs for routing
+// content values are used as the URLs for routing
 export const Content = {
   BAD: "bad_path",
 
@@ -27,6 +29,8 @@ export const Content = {
   VERGLEICH: "/comparison",
   KONTAKT: "/contact",
   FRAGENBOGEN: "/fragebogen",
+  CORONA_WARN_APP: "/corona-warn-app",
+  TEAM_CONTRIBUTION: "/team-beitraege",
 };
 
 class App extends React.Component {
@@ -58,6 +62,16 @@ class App extends React.Component {
             />
 
             <div className={"menu-button-group"}>
+              <NavBarTextButton
+                name="Corona-Warn-App"
+                content={Content.CORONA_WARN_APP}
+                activeContent={this.state.activeContent}
+              />
+              <NavBarTextButton
+                name="Team Beiträge"
+                content={Content.TEAM_CONTRIBUTION}
+                activeContent={this.state.activeContent}
+              />
               <NavBarTextButton
                 name="Ansätze"
                 content={Content.ANSAETZE}
@@ -127,6 +141,20 @@ class App extends React.Component {
             <Fragebogen
               handleNavbarClick={() =>
                 this.setState({ activeContent: Content.FRAGENBOGEN })
+              }
+            />
+          </Route>
+          <Route path={Content.TEAM_CONTRIBUTION} exact>
+            <TeamContribution
+              handleNavbarClick={() =>
+                this.setState({ activeContent: Content.TEAM_CONTRIBUTION })
+              }
+            />
+          </Route>
+          <Route path={Content.CORONA_WARN_APP} exact>
+            <CoronaWarnApp
+              handleNavbarClick={() =>
+                this.setState({ activeContent: Content.CORONA_WARN_APP })
               }
             />
           </Route>
