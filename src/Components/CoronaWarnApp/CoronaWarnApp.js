@@ -8,7 +8,20 @@ class CoronaWarnApp extends React.Component {
     }
   }
   render() {
-    return <>hey</>;
+    return (
+    <div className="page-container">
+      <div style={{ fontSize: 50, fontWeight: 800 }}>
+
+        <img
+          className="page-title-img"
+          src={require("../../Assets/corona_warn_app_title_img.png")}
+          alt="corona_warn_app_title_img"
+        />
+
+
+      </div>
+    </div>
+    );
   }
 }
 export default CoronaWarnApp;

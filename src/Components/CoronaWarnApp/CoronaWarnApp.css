@@ -1,2 +1,30 @@
+.page-container {
+  padding-top: 120px;
+  text-align: center;
+}
+
+.page-title-img {
+    width:854px;
+    height:381px;
+}
+
+.download-img {
+    width:854px;
+    height:381px;
+}
+
 @media only screen and (max-width: 768px) {
+    .page-container {
+    padding: 80px 20px 170px;
+    display: block;
+    }
+
+    .page-title-img {
+        width:257px;
+        height:115px;
+    }
+
+    .page-container p {
+        margin: 10px 0;
+    }
 }
