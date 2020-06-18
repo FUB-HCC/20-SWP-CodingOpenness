@@ -8,10 +8,18 @@
     height:381px;
 }
 
-.download-img {
-    width:854px;
-    height:381px;
+.download-img-row {
 }
+
+.download-img-column-left {
+    width:277px;
+    height:83px;
+}
+.download-img-column-right {
+    width:282px;
+    height:84px;
+}
+
 
 @media only screen and (max-width: 768px) {
     .page-container {
@@ -22,6 +30,15 @@
     .page-title-img {
         width:257px;
         height:115px;
+    }
+
+    .download-img-column-left {
+        width:167px;
+        height:50px;
+    }
+    .download-img-column-right {
+        width:170px;
+        height:51px;
     }
 
     .page-container p {
