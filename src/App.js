@@ -78,11 +78,6 @@ class App extends React.Component {
                 activeContent={this.state.activeContent}
               />
               <NavBarTextButton
-                name="Vergleich der Ansätze"
-                content={Content.VERGLEICH}
-                activeContent={this.state.activeContent}
-              />
-              <NavBarTextButton
                 name="Fragebogen"
                 content={Content.FRAGENBOGEN}
                 activeContent={this.state.activeContent}
