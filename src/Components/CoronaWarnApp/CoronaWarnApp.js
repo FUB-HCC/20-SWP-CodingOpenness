@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./CoronaWarnApp.css";
 
 class CoronaWarnApp extends React.Component {
@@ -10,7 +11,8 @@ class CoronaWarnApp extends React.Component {
   render() {
     return (
     <div className="page-container">
-      <div style={{ fontSize: 50, fontWeight: 800 }}>
+
+      <div className="intro">
 
         <img
           className="page-title-img"
@@ -36,6 +38,31 @@ class CoronaWarnApp extends React.Component {
         </div>
 
       </div>
+
+      <div className="description">
+        <div className="paragraph">
+          <p>
+Die Architektur der offiziellen Corona-Warn-App basiert auf der <Link to="/approaches#DP-3T">DP-3T Architektur</Link>. Jede App speichert gesendete und empfangene IDs nur lokal und überträgt nur im Falle eines positiven Tests und Einwilligung des Users auf einen Server. Die IDs werden von einem täglich wechselnden Temporary Exposure Key abgeleitet. Die App downloadet regelmäßig die auf dem Server gespeicherten Keys um lokal das Risiko des Users zu berechnen und ihn ggf. zu informieren.
+          </p>
+        </div>
+      </div>
+
+      <div className="workflow">
+        <div className="paragraph">
+
+          <div className={"section-title"}>
+            <h3 className="section-name">
+              Wie funktioniert die App?
+            </h3>
+          </div>
+
+          <p>
+            Workflow and Flow-Chart go here.
+          </p>
+        </div>
+      </div>
+
+
     </div>
     );
   }

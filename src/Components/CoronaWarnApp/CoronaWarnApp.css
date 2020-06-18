@@ -1,5 +1,25 @@
 .page-container {
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+}
+
+.section-name {
+  margin: 30px;
+  display: inline-block;
+}
+
+.paragraph {
+  width: 75%;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.intro {
   padding-top: 120px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -20,11 +40,43 @@
     height:84px;
 }
 
+.description {
+  background-color: #e8e8e8;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.workflow {
+  padding-top: 20px;
+  padding-bottom: 200px;
+  background-color: white;
+}
+
 
 @media only screen and (max-width: 768px) {
     .page-container {
-    padding: 80px 20px 170px;
-    display: block;
+    }
+
+    .paragraph {
+        padding: 0;
+        width: 90%;
+    }
+    .paragraph p {
+        margin: 0;
+    }
+    .paragraph h3 {
+        margin: 5px 0;
+    }
+
+    .intro {
+        padding-top: 80px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: block;
+    }
+    .intro p {
+        margin: 5px 0;
     }
 
     .page-title-img {
@@ -43,5 +95,15 @@
 
     .page-container p {
         margin: 10px 0;
+    }
+
+    .description {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .workflow {
+        padding-top: 20px;
+        padding-bottom: 200px;
     }
 }
