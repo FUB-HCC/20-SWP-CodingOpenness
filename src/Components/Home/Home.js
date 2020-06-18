@@ -27,51 +27,29 @@ class Home extends React.Component {
             </div>
           </div>
           <div className={"hcc-home"} style={{ fontSize: "medium" }}>
-            <p>
-              Die Corona-App kann nur ein Baustein von einer Vielzahl
-              Ma&szlig;nahmen sein, mit dem wir versuchen, die
-              SARS-CoV-2-Epidemie einzud&auml;mmen. Leider gibt es nicht
-              &quot;die Corona-App&quot;, sondern eine Vielzahl
-              unterschiedlicher, teilweise konfligierende Ans&auml;tze, daher
-              ist zun&auml;chst unsere Aufgabe, diese Ans&auml;tze zu
-              identifizieren, zu vergleichen und zu bewerten.
-            </p>
-            <p>
-              In dem Softwareprojekt wollen wir uns vor allem auf
-              Erklärungsmechanismen fokussieren. Das primäre Ziel besteht darin,
-              dass Bürger|innen vom App-Betreiber|innen genügend Informationen
-              erhalten, um die Ursachen eines Ereignisses oder einer
-              Entscheidung zu verstehen.
-            </p>
-            <p>Wir fokussieren uns vor allem auf Vorschläge aus Deutschland:</p>
-            <div className={"home-ansaetze-list"}>
-              <ul>
-                <li>
-                  Pan European Privacy Preserving Proximity Tracing -
-                  <Link className={"ansatz-link"} to={"/approaches#PEPP-PT"}>
-                    PEPP-PT
-                  </Link>
-                </li>
-                <li>
-                  Decentralized Privacy Preserving Proximity Tracing protocol -
-                  <Link className={"ansatz-link"} to={"/approaches#DP-3T"}>
-                    DP3T
-                  </Link>
-                </li>
-                <li>
-                  Digital Contact Tracing Service -
-                  <Link className={"ansatz-link"} to={"/approaches#DCTS"}>
-                    DCTS
-                  </Link>
-                </li>
-              </ul>
+            <div className={"home-div"}>
+              Die
+              <Link className={"home-div-link"} to="/corona-warn-app">
+                Corona-Warn-App
+              </Link>
+              ist seit Mitte Juni im Google und Apple Store zum Download bereit.
+              Ihr Ziel ist es Infektionsketten in der Corona Pandemie zu
+              frühzeitig zu erkennen und zu stoppen.
             </div>
-            <div className={"home-fragebogen"}>
+            <div className={"home-div"}>
+              Auf unserer Webseite stellen wir zusätzliche Informationen zu
+              ihrer Funktionsweise zur Verfügung und dokumentieren außerdem
+              <Link className={"home-div-link"} to="/team-beitraege">
+                unsere Beiträge
+              </Link>
+              , die wir zur deutschen Corona-Warn-App geleistet haben.
+            </div>
+            <div className={"home-div"}>
               Außerdem führen wir im Rahmen des Softwareprojekts notwendige
               Befragungen durch und untersuchen die Tracing-App. Um die
               Perspektive von Nutzer|innen an einer solchen App zu
               berücksichtigen haben wir einen
-              <Link className={"home-fragebogen-link"} to="/fragebogen">
+              <Link className={"home-div-link"} to="/fragebogen">
                 Fragebogen
               </Link>
               erstellt.

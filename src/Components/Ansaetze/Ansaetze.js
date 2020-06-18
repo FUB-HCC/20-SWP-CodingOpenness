@@ -43,7 +43,7 @@ class Ansaetze extends React.Component {
               </p>
               <div className={"ansaetze-vergleich"}>
                 Einen detaillierten Vergleich der Ansätze finden Sie unter dem
-                <Link className={"home-fragebogen-link"} to="/comparison">
+                <Link className={"home-div-link"} to="/comparison">
                   Vergleich der Ansätze Tab
                 </Link>
               </div>
