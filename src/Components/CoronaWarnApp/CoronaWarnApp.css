@@ -1,109 +1,82 @@
 .page-container {
+  padding: 180px 140px 180px 140px;
+  display: flex;
 }
 
-.section-title {
+.page-title-img {
+    width:552px;
+    height:187px;
+}
+
+.link {
+  font-size: medium;
+  color: #6b9e1f;
+}
+
+.github-link {
   display: flex;
   align-items: center;
 }
 
-.section-name {
-  margin: 30px;
-  display: inline-block;
-}
-
-.paragraph {
-  width: 75%;
-  padding: 0px;
-  margin: 0 auto;
-}
-
-.intro {
-  padding-top: 120px;
-  padding-bottom: 60px;
-  text-align: center;
-}
-
-.page-title-img {
-    width:854px;
-    height:381px;
+.img-responsive {
+  width: 30px;
+  height: 30px;
+  border: 0;
 }
 
 .download-img-row {
+    text-align: center;
+    margin-top: 5px;
 }
 
 .download-img-column-left {
-    width:277px;
-    height:83px;
+    width:221px;
+    height:66px;
+    margin-right: 10px;
 }
 .download-img-column-right {
-    width:282px;
-    height:84px;
-}
-
-.description {
-  background-color: #e8e8e8;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-.workflow {
-  padding-top: 20px;
-  padding-bottom: 200px;
-  background-color: white;
+    width:225px;
+    height:67px;
+    margin-left: 10px;
 }
 
 
 @media only screen and (max-width: 768px) {
     .page-container {
-    }
-
-    .paragraph {
-        padding: 0;
-        width: 90%;
-    }
-    .paragraph p {
-        margin: 0;
-    }
-    .paragraph h3 {
-        margin: 5px 0;
-    }
-
-    .intro {
-        padding-top: 80px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 80px 20px 170px;
         display: block;
-    }
-    .intro p {
-        margin: 5px 0;
-    }
-
-    .page-title-img {
-        width:257px;
-        height:115px;
-    }
-
-    .download-img-column-left {
-        width:167px;
-        height:50px;
-    }
-    .download-img-column-right {
-        width:170px;
-        height:51px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .page-container p {
         margin: 10px 0;
     }
 
-    .description {
-        padding-top: 20px;
-        padding-bottom: 30px;
+    .page-title-img {
+        width:250px;
+        height:84px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .workflow {
-        padding-top: 20px;
-        padding-bottom: 200px;
+    .link {
+        margin-left: 0;
+    }
+
+    .github-link {
+        padding: 5px 0;
+    }
+
+    .download-img-column-left {
+        width:167px;
+        height:50px;
+        margin: 0px;
+    }
+    .download-img-column-right {
+        width:170px;
+        height:51px;
+        margin: 0px;
     }
 }
