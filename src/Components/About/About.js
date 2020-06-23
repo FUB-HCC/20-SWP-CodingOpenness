@@ -9,9 +9,31 @@ class About extends React.Component {
     }
   }
 
-  getGroupMemberList(members) {
-    return members.map((member) => <li key={member}>{member}</li>);
+  getMember(link, name, groups) {
+    return (
+      <>
+        <a
+          className={"about-link"}
+          href={`https://github.com/${link}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {name}
+        </a>
+        <span>{` - ${groups}`}</span>
+      </>
+    );
   }
+
+  getGroupMemberList(members) {
+    return members.map((member) => (
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <Icon iconSize={10} icon={"minus"} />
+        {this.getMember(member.githubLink, member.name, member.groups)}
+      </div>
+    ));
+  }
+
   render() {
     return (
       <>
@@ -22,333 +44,134 @@ class About extends React.Component {
                 style={{ fontSize: 50, fontWeight: 800 }}
                 className={"abschnitt"}
               >
-                Wer sind wir
+                Wer sind <span style={{ color: "#6b9e1f" }}>wir</span>
               </div>
-            </div>
 
-            <div className={"about-links"} style={{ fontWeight: 10 }}>
               <div className={"abschnitt"}>
                 {`Wir sind Studenten am Institut für Informatik an der Freien Universität 
                 Berlin und beschäftigen uns im Modul Softwareprojekt - Coding Openness 
                 mit der deutschen Corona App.`}
               </div>
-              
+
               <div className={"abschnitt"}>
                 {`Die Beiträge jeder Person werden aufgelistet und jeweils  
                 die persönliche Github-Seite verlinkt.`}
               </div>
 
               <div className={"abschnitt"}>
-                {`Letztlich besteht die Vorhaben, die deutsche Corona App zu installieren 
+                {`Letztlich besteht das Vorhaben, die deutsche Corona App zu installieren 
                 und zu erweitern.`}
               </div>
-              <br />
-
-                <strong style={{ textDecoration: "underline" }}>
-                  {"Links:"}
-                </strong>
-                <br /><br />
-                <div>
-                  <a
-                    style={{ margin: 5, color: "#6b9e1f" }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/FUB-HCC/20-SWP-CodingOpenness"
-                  >
-                    <Icon icon="link" />
-                    <span
-                      style={{
-                        fontWeight: 400,
-                        color: "black",
-                        paddingLeft: 2,
-                      }}
-                    >
-                      {"20-SWP-CodingOpenness official GitHub Repository"}
-                    </span>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    style={{ margin: 5, color: "#6b9e1f" }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.fu-berlin.de/campusleben/forschen/2020/200512-corona-interview-mueller-birn/index.html"
-                  >
-                    <Icon icon="link" />
-                    <span
-                      style={{
-                        fontWeight: 400,
-                        color: "black",
-                        paddingLeft: 2,
-                      }}
-                    >{"Interview with Prof. Claudia Müller Birn on the tracing app"}
-                    </span>
-                  </a>
-                </div>
             </div>
           </div>
-
-          <div class="about-list"> 
-            <p style={{textAlign: 'center'}}>Namen sind alphabetisch nach Nachnamen sortiert.</p>          
-                      
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/OussamaBouanani"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Oussama Bouanani </a>
-                </span>
-              <p>
-                Team Webseite <br />
-                DP-3T Ansatz
-              </p>
+          <div className={"about-member-container"}>
+            <div>
+              {this.getGroupMemberList([
+                {
+                  name: "Oussama Bouanani",
+                  groups: "Team Webseite, DP-3T",
+                  githubLink: "OussamaBouanani",
+                },
+                {
+                  name: "Johannes Brose",
+                  groups: "Team Technik, PEPP-PT",
+                  githubLink: "JohBrose",
+                },
+                {
+                  name: "Julius Brose",
+                  groups: "Team Technik, DCTS, Corona-Warn-App: Risk",
+                  githubLink: "JuliusBro",
+                },
+                {
+                  name: "Keno Wilhelm Budde",
+                  groups: "Team Organisation, DP-3T",
+                  githubLink: "Clearwood",
+                },
+                {
+                  name: "Son Tung Duong",
+                  groups: "Team Webseite, DP-3T",
+                  githubLink: "sontungg",
+                },
+                {
+                  name: "Claas Fandre",
+                  groups: "Team Vergleich, DCTS, Corona Warn App: Data Privacy",
+                  githubLink: "erdanf",
+                },
+                {
+                  name: "Linus Helfmann",
+                  groups:
+                    "Team Vergleich, PEPP-PT, Corona Warn App: Data Privacy",
+                  githubLink: "linuxhelf",
+                },
+                {
+                  name: "Long Dang Pham Hoang",
+                  groups: "Team Technik, PEPP-PT, Corona Warn App: Risk",
+                  githubLink: "DPHLong",
+                },
+                {
+                  name: "Omer Hod",
+                  groups: "Team Webseite, DP-3T",
+                  githubLink: "Hod04",
+                },
+                {
+                  name: "Torben Knaak",
+                  groups: "Team Fragebogen, DCTS",
+                  githubLink: "eagle-seagull",
+                },
+              ])}
             </div>
 
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/JohBrose"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Johannes Brose </a>
-              </span>
-              <p>
-                Team Technik <br />
-                PEPP-PT Ansatz
-              </p>
+            <div>
+              {this.getGroupMemberList([
+                {
+                  name: "Viktoriya Kraleva",
+                  groups: "Team Vergleich, PEPP-PT, Corona-Warn-App: UI Design",
+                  githubLink: "kraleva",
+                },
+                {
+                  name: "Adriana Pinto Diaz Luz",
+                  groups: "Team Organisation, DP-3T",
+                  githubLink: "adrianapintod",
+                },
+                {
+                  name: "Dennis Nikolaus Natusch",
+                  groups: "Team Technik, DP-3T",
+                  githubLink: "dennisn00",
+                },
+                {
+                  name: "David Paulini",
+                  groups: "Team Fragebogen, PEPP-PT",
+                  githubLink: "pada1015",
+                },
+                {
+                  name: "Bernd Sahre",
+                  groups: "Team Vergleich, DCTS",
+                  githubLink: "bernd961",
+                },
+                {
+                  name: "Felix Sekul",
+                  groups: "Team Fragebogen, PEPP-PT",
+                  githubLink: "molpremotone",
+                },
+                {
+                  name: "Ingrid Tchilibou",
+                  groups: "Team Fragebogen, PEPP-PT, Corona-Warn-App: Exposure",
+                  githubLink: "gancia-kiss",
+                },
+                {
+                  name: "Di Wang",
+                  groups: "Team Webseite, PEPP-PT",
+                  githubLink: "tratond01",
+                },
+                {
+                  name: "Julia Zimmermann",
+                  groups:
+                    "Team Vergleich, DP-3T, Corona-Warn-App: Data Privacy",
+                  githubLink: "julizet",
+                },
+              ])}
             </div>
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/JuliusBro"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Julius Brose </a>
-                </span>
-              <p>
-                Team Technik<br />
-                DCTS Ansatz (Leiter)<br />
-                Corona Warn App: Risk
-              </p>
-            </div>
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/Clearwood"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Keno Wilhelm Budde </a>
-              </span>
-              <p>
-                Team Organisation<br />
-                DP-3T Ansatz      
-              </p>
-            </div>
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/sontungg"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Son Tung Duong </a>
-                </span>
-              <p>
-                Team Webseite<br />
-                DP-3T Ansatz
-              </p>
-            </div>
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/erdanf"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Claas Fandre </a>
-                </span>
-              <p>
-                Team Vergleich<br />
-                DCTS Ansatz<br />
-                Corona Warn App: Data Privacy
-              </p>
-            </div>          
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/linuxhelf"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Linus Helfmann </a>
-              </span>
-              <p>
-                Team Vergleich<br />
-                PEPP-PT Ansatz (Leiter)<br />
-                Corona Warn App: Data Privacy
-              </p>
-            </div>           
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/DPHLong"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Long Dang Pham Hoang </a>
-              </span>
-              <p>
-                Team Technik<br />
-                PEPP-PT Ansatz<br />
-                Corona Warn App: Risk
-              </p>
-            </div>
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/Hod04"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Omer Hod </a>
-              </span>
-              <p>
-                Team Webseite<br />
-                DP-3T Ansatz
-              </p>
-            </div>
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/eagle-seagull"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Torben Knaak </a>
-                </span>
-              <p>
-                Team Fragebogen<br />
-                DCTS Ansatz
-              </p>
-            </div>          
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/kraleva"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Viktoriya Kraleva </a>
-              </span>
-              <p>
-                Team Vergleich<br />
-                PEPP-PT Ansatz<br />
-                Corona Warn App: UI Design
-              </p>
-            </div>          
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/adrianapintod"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Adriana Pinto Diaz Luz </a>
-              </span>
-              <p>
-                Team Organisation<br />
-                DP-3T Ansatz
-              </p>
-            </div>            
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/dennisn00"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Dennis Nikolaus Natusch </a>
-              </span>
-              <p>
-                Team Technik<br />
-                DP-3T Ansatz
-              </p>
-            </div>
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/pada1015"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >David Paulini </a>
-              </span>
-              <p>
-                Team Fragebogen<br />
-                PEPP-PT Ansatz
-              </p>
-            </div>
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/bernd961"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Bernd Sahre </a>
-                </span>
-              <p>
-                Team Vergleich<br />
-                DCTS Ansatz
-              </p>
-            </div>          
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/molpremotone"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Felix Sekul </a>
-                </span>
-              <p>
-                Team Fragebogen<br />
-                PEPP-PT Ansatz<br />
-                Corona Warn App: Exposure
-              </p>
-            </div>          
-
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/gancia-kiss"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Ingrid Tchilibou </a>
-              </span>
-              <p>
-                Team Fragebogen<br />
-                PEPP-PT Ansatz<br />
-                Corona Warn App: Exposure
-              </p>
-            </div>
-                      
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/tratond01"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Di Wang </a>
-              </span>
-              <p>
-                Team Webseite<br />
-                PEPP-PT Ansatz
-              </p>
-            </div>          
-              
-            <div class="member-box">
-              <span style={{fontWeight: 'bold'}}>
-                <a href="https://github.com/julizet"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                >Julia Zimmermann </a>
-                </span>
-              <p>
-                Team Vergleich<br />
-                DP-3T Ansatz (Leiterin)<br />
-                Corona Warn App: Data Privacy
-              </p>
-            </div>  
-             
-          </div>   
-          <div class="end">
-          </div> 
+          </div>
         </div>
       </>
     );
