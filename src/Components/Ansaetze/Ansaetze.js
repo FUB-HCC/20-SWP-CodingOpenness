@@ -17,6 +17,7 @@ class Ansaetze extends React.Component {
             <a href="#PEPP-PT">PEPP-PT</a>
             <a href="#DP-3T">DP-3T</a>
             <a href="#DCTS">DCTS</a>
+            <Link to={"/comparison"}>Vergleich der Ansätze</Link>
           </div>
 
           <div className={"ansaetze-intro"}>
@@ -26,12 +27,12 @@ class Ansaetze extends React.Component {
             </div>
             <div>
               <p>
-                Es gibt mittlerweile eine Vielzahl von Ansätzen, wie eine solche
-                Corona-App umgesetzt werden kann.
+                Es gab eine Vielzahl von Ansätzen, wie solch eine Corona-App
+                umgesetzt werden kann.
               </p>
               <p>
-                Nach Wochen der Diskussion scheint sich die Bundesregierung für
-                den dezentralen Ansatz entschieden zu haben.
+                Nach Wochen der Diskussion hat sich die Bundesregierung für den
+                dezentralen Ansatz entschieden.
               </p>
               <p>
                 Im Folgenden sehen Sie eine Auswahl der Ansätze für die
@@ -42,7 +43,7 @@ class Ansaetze extends React.Component {
               </p>
               <div className={"ansaetze-vergleich"}>
                 Einen detaillierten Vergleich der Ansätze finden Sie unter dem
-                <Link className={"home-fragebogen-link"} to="/comparison">
+                <Link className={"home-div-link"} to="/comparison">
                   Vergleich der Ansätze Tab
                 </Link>
               </div>

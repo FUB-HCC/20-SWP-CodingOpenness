@@ -1,0 +1,48 @@
+.contributon-container {
+  padding-top: 70px;
+}
+
+.contribution-intro {
+  padding: 220px 280px 100px 280px;
+  display: flex;
+}
+
+.contri-about-link {
+  color: rgb(107, 158, 31);
+  margin: 0 3px;
+}
+
+.boxed {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #f5f5f5;
+  margin-bottom: 25px;
+}
+
+.boxhead {
+  display: inline;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contribution-list {
+  padding-bottom: 25px;
+}
+
+.end {
+  padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contribution-intro {
+    padding: 80px 20px;
+    display: block;
+  }
+
+  .contribution-intro p {
+    margin: 5px 0;
+  }
+}

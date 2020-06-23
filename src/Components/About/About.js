@@ -9,9 +9,31 @@ class About extends React.Component {
     }
   }
 
-  getGroupMemberList(members) {
-    return members.map((member) => <li key={member}>{member}</li>);
+  getMember(link, name, groups) {
+    return (
+      <>
+        <a
+          className={"about-link"}
+          href={`https://github.com/${link}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {name}
+        </a>
+        <span>{` - ${groups}`}</span>
+      </>
+    );
   }
+
+  getGroupMemberList(members) {
+    return members.map((member) => (
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <Icon iconSize={10} icon={"minus"} />
+        {this.getMember(member.githubLink, member.name, member.groups)}
+      </div>
+    ));
+  }
+
   render() {
     return (
       <>
@@ -22,114 +44,132 @@ class About extends React.Component {
                 style={{ fontSize: 50, fontWeight: 800 }}
                 className={"abschnitt"}
               >
-                Wer sind wir
+                Wer sind <span style={{ color: "#6b9e1f" }}>wir</span>
               </div>
+
               <div className={"abschnitt"}>
-                {`Wir sind Studenten am Institut für Informatik an der Freien Universität Berlin und beschäftigen uns im 
-            Modul Softwareprojekt - Coding Openness mit der deutschen Corona App.`}
+                {`Wir sind Studenten am Institut für Informatik an der Freien Universität 
+                Berlin und beschäftigen uns im Modul Softwareprojekt - Coding Openness 
+                mit der deutschen Corona App.`}
               </div>
+
               <div className={"abschnitt"}>
-                {`Letztlich besteht die Hoffnung, dass wir die Möglichkeit erhalten, die deutsche Corona App zu installieren und 
-              zu erweitern. Zur Umsetzung haben wir uns in Folgende Teams aufgeteilt.`}
+                {`Die Beiträge jeder Person werden aufgelistet und jeweils  
+                die persönliche Github-Seite verlinkt.`}
               </div>
-              <div className={"abschnitt"} style={{ fontWeight: 10 }}>
-                <strong style={{ textDecoration: "underline" }}>
-                  {"Links:"}
-                </strong>
-                <br />
-                <div>
-                  <a
-                    style={{ margin: 5, color: "#6b9e1f" }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/FUB-HCC/20-SWP-CodingOpenness"
-                  >
-                    <Icon icon="link" />
-                    <span
-                      style={{
-                        fontWeight: 400,
-                        color: "black",
-                        paddingLeft: 2,
-                      }}
-                    >
-                      {"20-SWP-CodingOpenness official GitHub Repository"}
-                    </span>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    style={{ margin: 5, color: "#6b9e1f" }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.fu-berlin.de/campusleben/forschen/2020/200512-corona-interview-mueller-birn/index.html"
-                  >
-                    <Icon icon="link" />
-                    <span
-                      style={{
-                        fontWeight: 400,
-                        color: "black",
-                        paddingLeft: 2,
-                      }}
-                    >
-                      {
-                        "Interview with Prof. Claudia Müller Birn on the tracing app"
-                      }
-                    </span>
-                  </a>
-                </div>
+
+              <div className={"abschnitt"}>
+                {`Letztlich besteht das Vorhaben, die deutsche Corona App zu installieren 
+                und zu erweitern.`}
               </div>
             </div>
-            <div style={{ display: "flex" }}>
-              <div className={"team"}>
-                <div className={"team-title"}>{"Team Technik"}</div>
-                <ul>
-                  {this.getGroupMemberList([
-                    "Julius Brose",
-                    "Long Dang Pham Hoang",
-                    "Dennis Nikolaus Natusch",
-                    "Johannes Brose",
-                  ])}
-                </ul>
-                <div className={"team-title"}>{"Team Organisation"}</div>
-                <ul>
-                  {this.getGroupMemberList([
-                    "Keno Wilhelm Budde",
-                    "Adriana Pinto Diaz Luz",
-                  ])}
-                </ul>
-              </div>
-              <div className={"team"}>
-                <div className={"team-title"}>{"Team Webseite"}</div>
-                <ul>
-                  {this.getGroupMemberList([
-                    "Di Wang",
-                    "Oussama Bouanani",
-                    "Son Tung Duong",
-                    "Omer Hod",
-                  ])}
-                </ul>
-                <div className={"team-title"}>{"Team Fragebogen"}</div>
-                <ul>
-                  {this.getGroupMemberList([
-                    "Ingrid Tchilibou",
-                    "Felix Sekul",
-                    "David Paulini",
-                    "Torben Knaak",
-                  ])}
-                </ul>
-              </div>
-              <div className={"team"}>
-                <div className={"team-title"}>{"Team Vergleich"}</div>
-                <ul>
-                  {this.getGroupMemberList([
-                    "Claas Fandre",
-                    "Linus Helfmann",
-                    "Bernd Sahre",
-                    "Viktoriya Kraleva",
-                    "Julia Zimmermann",
-                  ])}
-                </ul>
-              </div>
+          </div>
+          <div className={"about-member-container"}>
+            <div>
+              {this.getGroupMemberList([
+                {
+                  name: "Oussama Bouanani",
+                  groups: "Team Webseite, DP-3T",
+                  githubLink: "OussamaBouanani",
+                },
+                {
+                  name: "Johannes Brose",
+                  groups: "Team Technik, PEPP-PT",
+                  githubLink: "JohBrose",
+                },
+                {
+                  name: "Julius Brose",
+                  groups: "Team Technik, DCTS, Corona-Warn-App: Risk",
+                  githubLink: "JuliusBro",
+                },
+                {
+                  name: "Keno Wilhelm Budde",
+                  groups: "Team Organisation, DP-3T",
+                  githubLink: "Clearwood",
+                },
+                {
+                  name: "Son Tung Duong",
+                  groups: "Team Webseite, DP-3T",
+                  githubLink: "sontungg",
+                },
+                {
+                  name: "Claas Fandre",
+                  groups: "Team Vergleich, DCTS, Corona Warn App: Data Privacy",
+                  githubLink: "erdanf",
+                },
+                {
+                  name: "Linus Helfmann",
+                  groups:
+                    "Team Vergleich, PEPP-PT, Corona Warn App: Data Privacy",
+                  githubLink: "linuxhelf",
+                },
+                {
+                  name: "Long Dang Pham Hoang",
+                  groups: "Team Technik, PEPP-PT, Corona Warn App: Risk",
+                  githubLink: "DPHLong",
+                },
+                {
+                  name: "Omer Hod",
+                  groups: "Team Webseite, DP-3T",
+                  githubLink: "Hod04",
+                },
+                {
+                  name: "Torben Knaak",
+                  groups: "Team Fragebogen, DCTS",
+                  githubLink: "eagle-seagull",
+                },
+              ])}
+            </div>
+
+            <div>
+              {this.getGroupMemberList([
+                {
+                  name: "Viktoriya Kraleva",
+                  groups: "Team Vergleich, PEPP-PT, Corona-Warn-App: UI Design",
+                  githubLink: "kraleva",
+                },
+                {
+                  name: "Adriana Pinto Diaz Luz",
+                  groups: "Team Organisation, DP-3T",
+                  githubLink: "adrianapintod",
+                },
+                {
+                  name: "Dennis Nikolaus Natusch",
+                  groups: "Team Technik, DP-3T",
+                  githubLink: "dennisn00",
+                },
+                {
+                  name: "David Paulini",
+                  groups: "Team Fragebogen, PEPP-PT",
+                  githubLink: "pada1015",
+                },
+                {
+                  name: "Bernd Sahre",
+                  groups: "Team Vergleich, DCTS",
+                  githubLink: "bernd961",
+                },
+                {
+                  name: "Felix Sekul",
+                  groups: "Team Fragebogen, PEPP-PT",
+                  githubLink: "molpremotone",
+                },
+                {
+                  name: "Ingrid Tchilibou",
+                  groups: "Team Fragebogen, PEPP-PT, Corona-Warn-App: Exposure",
+                  githubLink: "gancia-kiss",
+                },
+                {
+                  name: "Di Wang",
+                  groups: "Team Webseite, PEPP-PT",
+                  githubLink: "tratond01",
+                },
+                {
+                  name: "Julia Zimmermann",
+                  groups:
+                    "Team Vergleich, DP-3T, Corona-Warn-App: Data Privacy",
+                  githubLink: "julizet",
+                },
+              ])}
             </div>
           </div>
         </div>

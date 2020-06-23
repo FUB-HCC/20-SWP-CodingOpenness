@@ -32,10 +32,10 @@
   color: rgb(107, 158, 31);
   margin-left: 3px;
 }
-.home-fragebogen {
-  padding-left: 30px;
+.home-div {
+  padding: 20px 15px;
 }
-.home-fragebogen-link {
+.home-div-link {
   color: rgb(107, 158, 31);
   margin: 0 3px;
 }
