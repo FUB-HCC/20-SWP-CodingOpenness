@@ -1,12 +1,47 @@
 import React from "react";
+
+import GithubAPI from "../API/GithubAPI";
+
 import { Icon } from "@blueprintjs/core";
+
 import "./About.css";
+
+const REPO_ID = 254040556;
 
 class About extends React.Component {
   componentDidMount() {
     if (this.props.handleNavbarClick != null) {
       this.props.handleNavbarClick();
     }
+  }
+
+  getSum = (lastSum, json) => {
+    return (
+      lastSum !== undefined
+        ? lastSum 
+        : 0)
+      + json.length;
+  };
+
+  getRepoWatchers = (lastStars, json) => {
+    return this.getRepoCountStats(lastStars, json, "watchers_count")
+  }
+
+  getRepoStars = (lastStars, json) => {
+    return this.getRepoCountStats(lastStars, json, "stargazers_count")
+  }
+
+  getRepoCountStats = (lastCount, json, type) => {
+    for(let key in json)
+    {
+      if(json[key]["id"] == REPO_ID)
+      {
+        return json[key][type];
+      }
+    }
+
+    return lastCount !== undefined ? lastCount : 0;
+
   }
 
   getMember(link, name, groups) {
@@ -53,6 +88,15 @@ class About extends React.Component {
                 mit der deutschen Corona App.`}
               </div>
 
+              <div className="abschnitt">
+
+                {`Github repo link: Stars - watchers
+                X: contributors
+                X: commits (master)
+                X: commits (website/master)`}
+              </div>
+
+
               <div className={"abschnitt"}>
                 {`Die Beiträge jeder Person werden aufgelistet und jeweils  
                 die persönliche Github-Seite verlinkt.`}
@@ -62,6 +106,58 @@ class About extends React.Component {
                 {`Letztlich besteht das Vorhaben, die deutsche Corona App zu installieren 
                 und zu erweitern.`}
               </div>
+            </div>
+
+            <div className={"about-main"}>
+              <div
+                style={{ fontSize: 50, fontWeight: 800 }}
+                className={"abschnitt"}
+              >
+                Github Repo <span style={{ color: "#6b9e1f" }}>Stats</span>
+              </div>
+
+              <div className="abschnitt">
+                <a
+                  href="https://github.com/FUB-HCC/20-SWP-CodingOpenness"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={"github-repo"}
+                >
+                  <img
+                    className="img-responsive"
+                    src={require("../../Assets/github.svg")}
+                    alt="20-SWP-CodingOpenness Repo"
+                  />
+                  20-SWP-CodingOpenness
+                </a>
+              </div>
+
+              <div className="abschnitt">
+                <GithubAPI 
+                repoFetch={false}
+                subLink='repos?'
+                title="Stars"
+                parseFunction={this.getRepoStars} />
+
+                <GithubAPI 
+                repoFetch={true}
+                subLink='contributors?' 
+                title="Contributors"
+                parseFunction={this.getSum} />
+
+                <GithubAPI 
+                repoFetch={true}
+                subLink='commits?'
+                title="Commits (master)"
+                parseFunction={this.getSum} />
+
+                <GithubAPI 
+                repoFetch={true}
+                subLink='commits?sha=website/master'
+                title="Commits (website/master)"
+                parseFunction={this.getSum} />
+              </div>
+
             </div>
           </div>
           <div className={"about-member-container"}>
