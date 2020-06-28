@@ -1,3 +1,7 @@
+# Webseite
+
+Zur Dokumentation unseres Softwareprojects haben wir eine Webseite erstellt - https://fub-hcc.github.io/20-SWP-CodingOpenness/
+
 # Hintergrund
 
 Das Ziel unseres Open-Source Softwareprojekt im Sommersemester 2020 ist es, uns an der Entwicklung der Corona-App zu beteiligen. Wie das genau erfolgen kann, hängt von der weiteren Entwicklung ab, aber es geht vor allem darum, die Perspektive der Nutzer_innen dieser App geeignet zu berücksichtigen. 
