@@ -48,8 +48,16 @@ class About extends React.Component {
               </div>
 
               <div className={"abschnitt"}>
-                {`Wir sind Studenten am Institut für Informatik an der Freien Universität 
-                Berlin und beschäftigen uns im Modul Softwareprojekt - Coding Openness 
+                {`Wir sind Studierende am`}
+                <a
+                  className={"about-inst-link"}
+                  href={`https://www.mi.fu-berlin.de/`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Institut für Informatik an der Freien Universität Berlin
+                </a>
+                {`und beschäftigen uns im Modul Softwareprojekt - Coding Openness 
                 mit der deutschen Corona App.`}
               </div>
 

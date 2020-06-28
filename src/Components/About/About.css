@@ -14,7 +14,7 @@
 .about-member-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 210px;
+  padding: 0px 210px 200px;
 }
 .abschnitt {
   padding: 5px 20px;
@@ -29,6 +29,11 @@
 }
 .about-link {
   margin-left: 10px;
+  font-size: medium;
+  color: #6b9e1f;
+}
+.about-inst-link {
+  margin: 0 5px;
   font-size: medium;
   color: #6b9e1f;
 }

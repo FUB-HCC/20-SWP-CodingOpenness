@@ -19,8 +19,8 @@ class TeamContribution extends React.Component {
             </div>
             <div>
               <p>
-                Beiträge der Lehrveranstaltungsteilnehmer zur Corona-Warn-App
-                sind hier dokumentiert.
+                Beiträge der Lehrveranstaltungsteilnehmer|innen zur
+                Corona-Warn-App sind hier dokumentiert.
               </p>
               <p>
                 Um auf die entsprechende Github-Seite zu kommen, folgen Sie

@@ -20,7 +20,16 @@ class Fragebogen extends React.Component {
             <p>
               Diese Umfrage wurde von Studierenden im Softwareprojekt Coding
               Openness: Open Source Software Development unter
-              wissenschaftlicher Leitung von Prof. C. Müller-Birn entwickelt.
+              wissenschaftlicher Leitung von
+              <a
+                className={"about-inst-link"}
+                href={"https://clmb.de"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Prof. C. Müller-Birn
+              </a>
+              entwickelt.
             </p>
             <p>
               Das Ziel ist es, die Perspektive der potenziellen Nutzer|innen an
