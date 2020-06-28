@@ -22,8 +22,7 @@ class Home extends React.Component {
             <br />
             <div style={{ paddingTop: 20, fontSize: 20 }}>
               Das Ziel unseres Open-Source Softwareprojekt im Sommersemester
-              2020 ist es, <br />
-              uns an der Entwicklung der Corona-App zu beteiligen.
+              2020 ist es, uns an der Entwicklung der Corona-App zu beteiligen.
             </div>
           </div>
           <div className={"hcc-home"} style={{ fontSize: "medium" }}>
