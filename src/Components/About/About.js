@@ -48,8 +48,16 @@ class About extends React.Component {
               </div>
 
               <div className={"abschnitt"}>
-                {`Wir sind Studenten am Institut für Informatik an der Freien Universität 
-                Berlin und beschäftigen uns im Modul Softwareprojekt - Coding Openness 
+                {`Wir sind Studierende am`}
+                <a
+                  className={"about-inst-link"}
+                  href={`https://www.mi.fu-berlin.de/`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Institut für Informatik an der Freien Universität Berlin
+                </a>
+                {`und beschäftigen uns im Modul Softwareprojekt - Coding Openness 
                 mit der deutschen Corona App.`}
               </div>
 
@@ -74,12 +82,13 @@ class About extends React.Component {
                 },
                 {
                   name: "Johannes Brose",
-                  groups: "Team Technik, PEPP-PT",
+                  groups: "Team Technik, PEPP-PT, Corona-Warn-App: UI Design",
                   githubLink: "JohBrose",
                 },
                 {
                   name: "Julius Brose",
-                  groups: "Team Technik, DCTS, Corona-Warn-App: Risk",
+                  groups:
+                    "Team Technik, DCTS, Corona-Warn-App: Risk of Infection",
                   githubLink: "JuliusBro",
                 },
                 {
@@ -94,18 +103,20 @@ class About extends React.Component {
                 },
                 {
                   name: "Claas Fandre",
-                  groups: "Team Vergleich, DCTS, Corona Warn App: Data Privacy",
+                  groups:
+                    "Team Vergleich, Team Fragebogen, DCTS, Corona Warn App: Data Privacy Information",
                   githubLink: "erdanf",
                 },
                 {
                   name: "Linus Helfmann",
                   groups:
-                    "Team Vergleich, PEPP-PT, Corona Warn App: Data Privacy",
+                    "Team Vergleich, Team Fragebogen, PEPP-PT, Corona Warn App: Data Privacy Information",
                   githubLink: "linuxhelf",
                 },
                 {
                   name: "Long Dang Pham Hoang",
-                  groups: "Team Technik, PEPP-PT, Corona Warn App: Risk",
+                  groups:
+                    "Team Technik, PEPP-PT, Corona-Warn-App: Risk of Infection",
                   githubLink: "DPHLong",
                 },
                 {
@@ -135,7 +146,7 @@ class About extends React.Component {
                 },
                 {
                   name: "Dennis Nikolaus Natusch",
-                  groups: "Team Technik, DP-3T",
+                  groups: "Team Technik, DP-3T, Corona-Warn-App: UI Design",
                   githubLink: "dennisn00",
                 },
                 {
@@ -145,17 +156,19 @@ class About extends React.Component {
                 },
                 {
                   name: "Bernd Sahre",
-                  groups: "Team Vergleich, DCTS",
+                  groups: "Team Vergleich, Team Fragebogen, DCTS",
                   githubLink: "bernd961",
                 },
                 {
                   name: "Felix Sekul",
-                  groups: "Team Fragebogen, PEPP-PT",
+                  groups:
+                    "Team Fragebogen, PEPP-PT, Corona-Warn-App: Exposure Logging",
                   githubLink: "molpremotone",
                 },
                 {
                   name: "Ingrid Tchilibou",
-                  groups: "Team Fragebogen, PEPP-PT, Corona-Warn-App: Exposure",
+                  groups:
+                    "Team Fragebogen, PEPP-PT, Corona-Warn-App: Exposure Logging",
                   githubLink: "gancia-kiss",
                 },
                 {
@@ -166,7 +179,7 @@ class About extends React.Component {
                 {
                   name: "Julia Zimmermann",
                   groups:
-                    "Team Vergleich, DP-3T, Corona-Warn-App: Data Privacy",
+                    "Team Vergleich, Team Fragebogen, DP-3T, Corona-Warn-App: Data Privacy Information",
                   githubLink: "julizet",
                 },
               ])}

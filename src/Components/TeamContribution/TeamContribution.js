@@ -19,8 +19,8 @@ class TeamContribution extends React.Component {
             </div>
             <div>
               <p>
-                Beiträge der Lehrveranstaltungsteilnehmer zur Corona-Warn-App
-                sind hier dokumentiert.
+                Beiträge der Lehrveranstaltungsteilnehmer|innen zur
+                Corona-Warn-App sind hier dokumentiert.
               </p>
               <p>
                 Um auf die entsprechende Github-Seite zu kommen, folgen Sie
@@ -34,6 +34,59 @@ class TeamContribution extends React.Component {
           </div>
 
           <div className={"contribution-list"}>
+            <div className="boxed">
+              <div className="boxhead">
+                <p>
+                  <a
+                    className="fragebogen-link"
+                    href="https://github.com/corona-warn-app/cwa-wishlist/issues/16"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Improve Readability of Privacy Policy
+                  </a>
+                  <br /> by Julia Zimmermann, Class Fandre, Linus Helfmann
+                </p>
+              </div>
+              <div>
+                <p>
+                  Make the the dry text of privacy policy more appealing in
+                  order to gain more transparency, trust and understanding from
+                  users.
+                </p>
+              </div>
+            </div>
+
+            <div className="boxed">
+              <div className="boxhead">
+                <p>
+                  <a
+                    className="fragebogen-link"
+                    href="https://github.com/corona-warn-app/cwa-app-android/pull/589"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Fixed Formating in German Data Privacy Document
+                  </a>
+                  <br /> by Linus Helfmann
+                </p>
+              </div>
+              <div>
+                <p>
+                  Fixes typos and use same html tag for headlines. See also
+                  <a
+                    className="fragebogen-link"
+                    href="https://github.com/corona-warn-app/cwa-app-android/issues/332"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    referenced issue
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+
             <div className="boxed">
               <div className="boxhead">
                 <p>
