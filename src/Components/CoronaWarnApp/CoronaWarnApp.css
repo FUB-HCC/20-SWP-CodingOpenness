@@ -1,8 +1,10 @@
 .page-container {
-  padding: 180px 140px 180px 140px;
+  padding: 270px 220px;
   display: flex;
 }
-
+.corona-abstand {
+  padding-top: 100px;
+}
 .page-title-img {
   width: 552px;
   height: 187px;
@@ -15,6 +17,8 @@
 }
 
 .github-link {
+  color: #6b9e1f;
+
   display: flex;
   align-items: center;
 }
@@ -78,5 +82,8 @@
     width: 170px;
     height: 51px;
     margin: 0px;
+  }
+  .corona-abstand {
+    padding-top: 40px;
   }
 }
