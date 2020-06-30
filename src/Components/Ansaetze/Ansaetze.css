@@ -99,6 +99,8 @@
 }
 
 .ansaetze-github-link {
+  color: #6b9e1f;
+
   padding-left: 25px;
   display: flex;
   align-items: center;
