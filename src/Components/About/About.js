@@ -1,12 +1,45 @@
 import React from "react";
+import GithubAPI from "../API/GithubAPI";
+
 import { Icon } from "@blueprintjs/core";
 import "./About.css";
+
+const REPO_ID = 254040556;
 
 class About extends React.Component {
   componentDidMount() {
     if (this.props.handleNavbarClick != null) {
       this.props.handleNavbarClick();
     }
+  }
+
+  getSum = (lastSum, json) => {
+    return (
+      lastSum !== undefined
+        ? lastSum 
+        : 0)
+      + json.length;
+  };
+
+  getRepoWatchers = (lastStars, json) => {
+    return this.getRepoCountStats(lastStars, json, "watchers_count")
+  }
+
+  getRepoStars = (lastStars, json) => {
+    return this.getRepoCountStats(lastStars, json, "stargazers_count")
+  }
+
+  getRepoCountStats = (lastCount, json, type) => {
+    for(let key in json)
+    {
+      if(json[key]["id"] === REPO_ID)
+      {
+        return json[key][type];
+      }
+    }
+
+    return lastCount !== undefined ? lastCount : 0;
+
   }
 
   getMember(link, name, groups) {
@@ -71,6 +104,56 @@ class About extends React.Component {
                 und zu erweitern.`}
               </div>
             </div>
+
+            <div className={"about-main"}>
+              <br />
+              <br />
+              <br />
+              <div className="abschnitt">
+                <a
+                  href="https://github.com/FUB-HCC/20-SWP-CodingOpenness"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={"github-repo"}
+                >
+                  <img
+                    className="img-responsive"
+                    src={require("../../Assets/github.svg")}
+                    alt="20-SWP-CodingOpenness Repo"
+                  />
+                  20-SWP-CodingOpenness
+                </a>
+              </div>
+
+              <div className="abschnitt">
+                <GithubAPI 
+                repoFetch={false}
+                subLink='repos?'
+                title="Stars"
+                parseFunction={this.getRepoStars} />
+
+                <GithubAPI 
+                repoFetch={true}
+                subLink='contributors?' 
+                title="Contributors"
+                parseFunction={this.getSum} />
+
+                <GithubAPI 
+                repoFetch={true}
+                subLink='commits?'
+                title="Commits (master)"
+                parseFunction={this.getSum} />
+
+                <GithubAPI 
+                repoFetch={true}
+                subLink='commits?sha=website/master'
+                title="Commits (website/master)"
+                parseFunction={this.getSum} />
+              </div>
+
+            </div>
+
+
           </div>
           <div className={"about-member-container"}>
             <div>
