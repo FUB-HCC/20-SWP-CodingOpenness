@@ -164,4 +164,7 @@
   .ansaetze-vergleich {
     padding: 0;
   }
+  .topnav a {
+    font-size: 13px;
+  }
 }
