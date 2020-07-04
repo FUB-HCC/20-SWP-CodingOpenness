@@ -112,6 +112,123 @@ class CoronaWarnApp extends React.Component {
             {`zum Thema Lesbarkeit der Datenschutzerklärung erstellt.`}
           </p>
         </div>
+        <div style={{ paddingTop: 0 }} className={"page-container"}>
+          <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
+            <p style={{ fontSize: 50, fontWeight: 800 }}>
+              <span style={{ color: "#6b9e1f" }}>Risk of Infection</span>
+            </p>
+            <p>
+              {`In der Corona-Warn-App wird nicht im Detail gezeigt wie das Infektionsrisiko berechnet wird.
+              Im Folgenden analysieren wir diesen Sachverhalt.`}
+            </p>
+
+            <p style={{ whiteSpace: "pre-line" }}>
+              {`Aus den gesammelten Daten der App berechnet sich der Risk Score wie folgt:
+            `}
+              <div
+                className={"code-block-container"}
+                style={{ whiteSpace: "normal", fontSize: 14 }}
+              >
+                <code>
+                  {`val riskScore = (maximumRiskScore / normalizationDivisor) *
+  weightedAttenuationDuration
+`}
+                </code>
+              </div>
+              {`Wobei:
+            `}
+              <ul>
+                <li>
+                  <code>maximumRiskScore</code>
+                  {`: die Zeit mit dem höchsten Risiko ist, aus dem Datensatz, der für diese Berechnung verwendet wird.`}
+                </li>
+                <li>
+                  <code>normalizationDivisor</code>
+                  {`: eine Konstante ist, die bei Division mit dem maximumRiskScore der Einstufung des maximumRiskScores 
+              nach die berechnete Zeit noch verändert:`}
+                  <ul>
+                    <li>{`Ist das Risiko des maximumRiskScores durchschnittlich, bleibt die berechnete Zeit konstant`}</li>
+                    <li>{`Ist das Risiko des maximumRiskScores überdurchscnittlich, wird die Zeit mit 1,5 multipliziert`}</li>
+                    <li>{`Ist das Risiko des maximumRiskScores unter dem Durchschnitt, wird die Zeit auf 1/6 reduziert`}</li>
+                  </ul>
+                </li>
+                <li>
+                  <code>weightedAttenuationDuration</code>
+                  {`: eine Summe der Zeiten ist, die die Person in niedrigen/mittel/hohen Risikobereichen war, nachdem diese Zeit mit konstanten Gewichten multipliziert wurden`}
+                </li>
+              </ul>
+            </p>
+          </div>
+          <div>
+            <div className={"code-block-container secondary-block"}>
+              <code>
+                <div>
+                  {`val weightedAttenuationDuration =
+  weightedAttenuationLow
+    .plus(weightedAttenuationMid)
+    .plus(weightedAttenuationHigh)
+    .plus(defaultBucketOffset)
+`}
+                </div>
+                <div>
+                  {`
+val weightedAttenuationLow =
+  attenuationParameters.weights.low.capped()
+    .times(exposureSummary.attenuationDurationsInMinutes[0])
+`}
+                </div>
+                <div>
+                  {`
+val weightedAttenuationMid =
+  attenuationParameters.weights.mid.capped()
+    .times(exposureSummary.attenuationDurationsInMinutes[1])
+`}
+                </div>
+                <div>
+                  {`
+val weightedAttenuationHigh =
+  attenuationParameters.weights.high.capped()
+    .times(exposureSummary.attenuationDurationsInMinutes[2])
+`}
+                </div>
+              </code>
+            </div>
+            {`Diesen Code findet man in der Klasse `}
+            <code>RiskLevelCalculation</code> {` im package risk.`}
+            <p style={{ whiteSpace: "pre-line", margin: "30px 0" }}>
+              {`Die Unterscheidung, ob die Zeiten als low, mid oder high gelten, sind abhängig davon, ob die Distanz bei diesen Zeiten zwischen 8-3 Meter(low), 3-1,5 Meter(mid) oder näher als 1,5 Meter(high) waren. Zeiten, die geringer als 10 Minuten sind, werden unabhängig von der Distanz verworfen. Ebenso werden Zeiten verworfen, die mehr als 10 Meter Distanz hatten, unabhängig von der Länge der Zeit.
+
+Es gibt des Weiteren, keine Abstufungen beim Ergebnis: Der Risk Score ist am Ende nichts weiteres, als eine gewichtete Zeit. Liegt diese über 15 Minuten, wird der Benutzer als ein Benutzer mit erhöhtem Risiko eingestuft, er wird benachrichtigt und weitere Handlungen werden ihm nahgelegt.
+
+Diese Informationen finden sich in der offiziellen`}
+
+              <a
+                className={"about-inst-link"}
+                href={
+                  "https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Doku
+              </a>
+
+              {`.
+              Weitere Dokumentation über`}
+              <a
+                className={"about-inst-link"}
+                href={
+                  "https://github.com/corona-warn-app/cwa-documentation/blob/master/transmission_risk.pdf"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Transmission risk level
+              </a>
+              {`.`}
+            </p>
+          </div>
+        </div>
       </>
     );
   }
