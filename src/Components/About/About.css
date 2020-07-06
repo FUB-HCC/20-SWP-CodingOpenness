@@ -1,10 +1,16 @@
 .about-container {
   padding: 30px;
 }
-.about-second-container {
+.about-first-container {
   display: flex;
   padding: 150px;
   padding-bottom: 0;
+}
+.about-second-container {
+  display: flex;
+  padding-left: 150px;
+  padding-bottom: 150px;
+  padding-right:150px;
 }
 .about-main {
   font-size: medium;
