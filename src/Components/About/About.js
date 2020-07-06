@@ -72,7 +72,7 @@ class About extends React.Component {
       <>
         <div className={"about-container"}>
           <div className={"about-first-container"}>
-            <div className={"about-main"}>
+            <div className={"about-first-main"}>
               <div
                 style={{ fontSize: 50, fontWeight: 800 }}
                 className={"abschnitt"}
@@ -105,7 +105,7 @@ class About extends React.Component {
               </div>
             </div>
 
-            <div className={"about-main"}>
+            <div className={"about-first-main"}>
               <br />
               <br />
               <br />
@@ -156,7 +156,7 @@ class About extends React.Component {
 
           </div>
           <div className={"about-second-container"}>
-            <div className={"about-main"}>
+            <div className={"about-second-main"}>
               <div className="abschnitt">
                 {this.getGroupMemberList([
                   {
@@ -217,7 +217,7 @@ class About extends React.Component {
               </div>
             </div>
 
-            <div className={"about-main"}>
+            <div className={"about-second-main"}>
               <div className="abschnitt">
                 {this.getGroupMemberList([
                   {

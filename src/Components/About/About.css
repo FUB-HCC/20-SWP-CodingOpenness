@@ -8,20 +8,26 @@
 }
 .about-second-container {
   display: flex;
-  padding-left: 150px;
-  padding-bottom: 150px;
-  padding-right:150px;
+  padding: 0px 150px 150px 150px;
 }
-.about-main {
+.about-first-main {
   font-size: medium;
   width: 50%;
   padding: 40px;
 }
+
+.about-second-main {
+  font-size: medium;
+  width: 50%;
+  padding: 0px 40px 40px 40px;
+}
+
 .about-member-container {
   display: flex;
   justify-content: space-between;
   padding: 0px 210px 200px;
 }
+
 .abschnitt {
   padding: 5px 20px;
   font-weight: 500;
