@@ -105,7 +105,7 @@ class About extends React.Component {
               </div>
             </div>
 
-            <div className={"about-first-main"}>
+            <div className={"about-first-main-stats"}>
               <br />
               <br />
               <br />
