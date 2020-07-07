@@ -10,6 +10,11 @@
   height: 187px;
 }
 
+.secondary-block {
+  margin-top: 150px !important;
+  height: fit-content;
+  overflow: auto;
+}
 .corona-link {
   font-size: medium;
   color: #6b9e1f;
@@ -20,6 +25,24 @@
   color: #6b9e1f;
   display: flex;
   align-items: center;
+}
+.page-container ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.cwa-diagram {
+  max-width: 100%;
+}
+.page-container li::before {
+  color: #6b9e1f;
+  content: "\2022";
+  padding: 10px;
+}
+.code-block-container {
+  padding: 5px;
+  margin: 10px 0;
+  background-color: #e8e8e8;
+  white-space: pre;
 }
 
 .img-responsive {
@@ -84,5 +107,8 @@
   }
   .corona-abstand {
     padding-top: 40px;
+  }
+  .secondary-block {
+    margin-top: 20px !important;
   }
 }
