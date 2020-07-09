@@ -74,43 +74,49 @@ class CoronaWarnApp extends React.Component {
           className={"page-container"}
         >
           <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
-            <p style={{ fontSize: 50, fontWeight: 800 }}>
-              <span style={{ color: "#6b9e1f" }}>Data Privacy</span>
-            </p>
-            <p>
+            <iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} width="450" height="900" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsopIMcNqDFLYZ6sf3rVtbt%2FColapsibile-Icons%3Fnode-id%3D79%253A1%26scaling%3Dscale-down&chrome=DOCUMENTATION"></iframe>
+          </div>
+          <div>
+            <p
+              className={"corona-abstand"}
+              style={{
+                whiteSpace: "pre-line",
+              }}
+            >
+              <p style={{ fontSize: 50, fontWeight: 800 }}>
+                <span style={{ color: "#6b9e1f" }}>Data Privacy</span>
+              </p>
               {`Ein Problem der App ist die Darstellung der Datenschutzerklärung.
-                Wie man diese besser gestalten kann, führen wir im Folgenden auf.`}
+                Wie man diese besser gestalten kann, führen wir im Folgenden auf.
+
+                Die Datenschutzerklärung erscheint einmal zum Start der App und danach kann man sie über das Menu aufrufen. Doch sie ist nicht einladend gestaltet. Vielmehr muss man bis zur gesuchten Stelle sehr weit scrollen und auch dann noch viel Text durcharbeiten, der in "Juristendeutsch" geschrieben ist.
+
+                Wir wollen erreichen, dass die Erklärung von mehr Nutzern verstanden wird, sodass diese Selbstbestimmt über die Instalation der App entscheiden können.
+                Konkret möchten wir eine bessere Darstellung des Textes, mithilfe von aufklappbaren Inhalten, Icons, Diagrammen und/oder Tabellen zu erarbeiten und diese in die Anroid App zu implementieren.
+
+                Diese Mittel haben wir unter anderem aus`}
+              <span
+                style={{ fontStyle: "italic" }}
+              >{`"Clarke, N., Furnell, S., Angulo, J., Fischer‐Hübner, S., Wästlund, E. and Pulls, T., 2012. Towards usable privacy policy display and management. Information Management & Computer Security".
+
+              `}</span>
+              {`Wir haben ein`}
+              <a
+                className={"about-inst-link"}
+                href={"https://github.com/corona-warn-app/cwa-wishlist/issues/16"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Issue im offiziellen Repo
+              </a>
+              {`zum Thema Lesbarkeit der Datenschutzerklärung erstellt.
+
+                Daraufhin ist der linke Prototyp entstanden, wo man sieht, wie die Verwndung von Icons (Seite 1) und aufklappbaren Inhalten (Seite 2-5) die Datenschutzerklärung aufwertet.
+
+                Ideen zur Implementierung finden sich auch im offiziellen Issue.
+                `}
             </p>
           </div>
-
-          <p
-            className={"corona-abstand"}
-            style={{
-              whiteSpace: "pre-line",
-            }}
-          >
-            {`Die Datenschutzerklärung erscheint einmal zum Start der App und danach kann man sie über das Menu aufrufen. Doch sie ist nicht einladend gestaltet. Vielmehr muss man bis zur gesuchten Stelle sehr weit scrollen und auch dann noch viel Text durcharbeiten, der in "Juristendeutsch" geschrieben ist.
-
-              Wir wollen erreichen, dass die Erklärung von mehr Nutzern verstanden wird, sodass diese Selbstbestimmt über die Instalation der App entscheiden können.
-              Konret möchten wir eine bessere Darstellung des Textes, mithilfe von aufklappbaren Inhalten, Icons, Diagrammen und/oder Tabellen zu erarbeiten und diese in die Anroid App zu implementieren.
-
-              Diese Mittel haben wir unter anderem aus`}
-            <span
-              style={{ fontStyle: "italic" }}
-            >{`"Clarke, N., Furnell, S., Angulo, J., Fischer‐Hübner, S., Wästlund, E. and Pulls, T., 2012. Towards usable privacy policy display and management. Information Management & Computer Security".
-            
-            `}</span>
-            {`Wir haben ein`}
-            <a
-              className={"about-inst-link"}
-              href={"https://github.com/corona-warn-app/cwa-wishlist/issues/16"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Issue im offiziellen Repo
-            </a>
-            {`zum Thema Lesbarkeit der Datenschutzerklärung erstellt.`}
-          </p>
         </div>
         <div style={{ paddingTop: 0 }} className={"page-container"}>
           <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
@@ -144,7 +150,7 @@ class CoronaWarnApp extends React.Component {
                 </li>
                 <li>
                   <code>normalizationDivisor</code>
-                  {`: eine Konstante ist, die bei Division mit dem maximumRiskScore der Einstufung des maximumRiskScores 
+                  {`: eine Konstante ist, die bei Division mit dem maximumRiskScore der Einstufung des maximumRiskScores
               nach die berechnete Zeit noch verändert:`}
                   <ul>
                     <li>{`Ist das Risiko des maximumRiskScores durchschnittlich, bleibt die berechnete Zeit konstant`}</li>
@@ -257,12 +263,12 @@ Diese Informationen finden sich in der offiziellen`}
               whiteSpace: "pre-line",
             }}
           >
-            {`Exposure Logging ist ein Feature der Exposure Notification API, das vom Nutzer im Betriebssystem des Smartphones aktiviert werden muss. 
-            Nach Aktivierung kann das Smartphone zufällige IDs, die alle 10 bis 20 Minuten neu erzeugt werden und die ohne weitere Informationen den Nutzern nicht zugeordnet werden können, mit anderen Smartphones, die sich mindestens für 5 Minuten in der Nähe befinden, über Bluetooth Low Energy austauschen. 
-            Die IDs werden für 14 Tage in einer Datei auf dem Smartphone gespeichert. Nutzer, die wissen, dass sie infiziert sind, können ihre zufälligen IDs auf einen zentralen Server hochladen. 
-            Diese werden täglich von allen Nutzern auf ihr Smartphone heruntergeladen und die auf dem Smartphone gespeicherten zufälligen IDs werden mit den heruntergeladenen zufälligen IDs von infizierten Nutzern verglichen. 
-            Bei Übereinstimmung von 2 IDs erhält der Nutzer eine Benachrichtigung und Informationen zum weiteren Ablauf. Die Identität der Nutzer bleibt dabei theoretisch anonym und Nutzer können nur unter außergewöhnlichen Umständen identifiziert werden: 
-            Zum Beispiel durch eine Überwachungsanlage mit Gesichtserkennung, die Nutzer erfasst, während sie ihre zufälligen IDs austauschen und diese beiden Informationen von einer weiteren Instanz verknüpft werden. 
+            {`Exposure Logging ist ein Feature der Exposure Notification API, das vom Nutzer im Betriebssystem des Smartphones aktiviert werden muss.
+            Nach Aktivierung kann das Smartphone zufällige IDs, die alle 10 bis 20 Minuten neu erzeugt werden und die ohne weitere Informationen den Nutzern nicht zugeordnet werden können, mit anderen Smartphones, die sich mindestens für 5 Minuten in der Nähe befinden, über Bluetooth Low Energy austauschen.
+            Die IDs werden für 14 Tage in einer Datei auf dem Smartphone gespeichert. Nutzer, die wissen, dass sie infiziert sind, können ihre zufälligen IDs auf einen zentralen Server hochladen.
+            Diese werden täglich von allen Nutzern auf ihr Smartphone heruntergeladen und die auf dem Smartphone gespeicherten zufälligen IDs werden mit den heruntergeladenen zufälligen IDs von infizierten Nutzern verglichen.
+            Bei Übereinstimmung von 2 IDs erhält der Nutzer eine Benachrichtigung und Informationen zum weiteren Ablauf. Die Identität der Nutzer bleibt dabei theoretisch anonym und Nutzer können nur unter außergewöhnlichen Umständen identifiziert werden:
+            Zum Beispiel durch eine Überwachungsanlage mit Gesichtserkennung, die Nutzer erfasst, während sie ihre zufälligen IDs austauschen und diese beiden Informationen von einer weiteren Instanz verknüpft werden.
             Ein weiteres Beispiel für eine Deanonymisierung ist, dass eine Person innerhalb eines Tages oder mehrerer Tage nur Kontakt zu einer Person hatte und die Benachrichtigung erhält, dass sie Kontakt mit einer infizierten Person hatte. Standortinformationen werden nicht verwendet.`}
           </p>
         </div>
