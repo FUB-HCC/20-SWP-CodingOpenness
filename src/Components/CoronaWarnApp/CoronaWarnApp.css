@@ -33,6 +33,10 @@
 .cwa-diagram {
   max-width: 100%;
 }
+.data-privacy-prototype {
+  max-width: 100%;
+}
+
 .page-container li::before {
   color: #6b9e1f;
   content: "\2022";

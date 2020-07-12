@@ -3,12 +3,28 @@ import { Link } from "react-router-dom";
 import "./CoronaWarnApp.css";
 
 class CoronaWarnApp extends React.Component {
+  state = {
+    loadPrototype: false,
+  };
+
   componentDidMount() {
     if (this.props.handleNavbarClick != null) {
       this.props.handleNavbarClick();
     }
   }
   render() {
+    var prototype = <img
+        className={"data-privacy-prototype"}
+        src={require("../../Assets/data_privacy_prototype.png")}
+        alt="data_privacy_prototype_img"
+        onClick={() => this.setState({ loadPrototype: true })}
+      />;
+
+    if (this.state.loadPrototype) {
+      prototype = <iframe className={"data-privacy-prototype"} style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} width="450" height="900" 
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsopIMcNqDFLYZ6sf3rVtbt%2FColapsibile-Icons%3Fnode-id%3D79%253A1%26scaling%3Dscale-down&chrome=DOCUMENTATION" />
+    }
+
     return (
       <>
         <div className={"page-container"}>
@@ -74,7 +90,7 @@ class CoronaWarnApp extends React.Component {
           className={"page-container"}
         >
           <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
-            <iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} width="450" height="900" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsopIMcNqDFLYZ6sf3rVtbt%2FColapsibile-Icons%3Fnode-id%3D79%253A1%26scaling%3Dscale-down&chrome=DOCUMENTATION"></iframe>
+            {prototype}
           </div>
           <div>
             <p
