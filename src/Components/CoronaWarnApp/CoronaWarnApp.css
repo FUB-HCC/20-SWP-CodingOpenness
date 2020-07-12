@@ -2,6 +2,7 @@
   padding: 270px 220px;
   display: flex;
 }
+
 .corona-abstand {
   padding-top: 100px;
 }
@@ -67,6 +68,36 @@
   margin-left: 10px;
 }
 
+.cwanav {
+  padding: 0;
+  margin: 0;
+
+  position: fixed;
+  display: flex;
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+}
+
+.cwanav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.cwanav a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.cwanav a.active {
+  background-color: #6b9e1f;
+  color: white;
+}
+
 @media only screen and (max-width: 768px) {
   .page-container {
     padding: 80px 20px 170px;
@@ -77,6 +108,10 @@
 
   .page-container p {
     margin: 10px 0;
+  }
+
+  .page-container-pad {
+    padding-top: 80px !important;
   }
 
   .page-title-img {
@@ -110,5 +145,8 @@
   }
   .secondary-block {
     margin-top: 20px !important;
+  }
+  .cwanav a {
+    font-size: 13px;
   }
 }
