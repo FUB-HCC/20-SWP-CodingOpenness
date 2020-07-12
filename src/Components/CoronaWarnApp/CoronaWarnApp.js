@@ -13,13 +13,12 @@ class CoronaWarnApp extends React.Component {
       <>
         <div style={{ paddingTop: 70 }}>
           <div className="cwanav" id="cwanav">
-            <a href="#CWA">Corona Warn App</a>
             <a href="#Privacy">Data Privacy</a>
             <a href="#Risk">Risk of Infection</a>
             <a href="#Exposure">Exposure Logging</a>
           </div>
         </div>
-        <div className={"page-container"} id={"CWA"}>
+        <div className={"page-container"}>
           <div style={{ fontSize: 50, fontWeight: 800 }}>
             <img
               className="page-title-img"
@@ -79,7 +78,8 @@ class CoronaWarnApp extends React.Component {
         </div>
         <div
           style={{ backgroundColor: "#e8e8e8", paddingTop: 0 }}
-          className={"page-container"} id={"Privacy"}
+          className={"page-container page-container-pad"}
+          id={"Privacy"}
         >
           <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
             <p style={{ fontSize: 50, fontWeight: 800 }}>
@@ -120,7 +120,11 @@ class CoronaWarnApp extends React.Component {
             {`zum Thema Lesbarkeit der Datenschutzerklärung erstellt.`}
           </p>
         </div>
-        <div style={{ paddingTop: 0 }} className={"page-container"} id={"Risk"}>
+        <div
+          style={{ paddingTop: 0 }}
+          className={"page-container page-container-pad"}
+          id={"Risk"}
+        >
           <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
             <p style={{ fontSize: 50, fontWeight: 800 }}>
               <span style={{ color: "#6b9e1f" }}>Risk of Infection</span>
@@ -241,7 +245,8 @@ val weightedAttenuationHigh =
         </div>
         <div
           style={{ backgroundColor: "#e8e8e8", paddingTop: 0 }}
-          className={"page-container"} id={"Exposure"}
+          className={"page-container page-container-pad"}
+          id={"Exposure"}
         >
           <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
             <p style={{ fontSize: 50, fontWeight: 800 }}>
