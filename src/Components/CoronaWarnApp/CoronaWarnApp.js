@@ -111,10 +111,17 @@ class CoronaWarnApp extends React.Component {
               </a>
               {`zum Thema Lesbarkeit der Datenschutzerklärung erstellt.
 
-                Daraufhin ist der linke Prototyp entstanden, wo man sieht, wie die Verwndung von Icons (Seite 1) und aufklappbaren Inhalten (Seite 2-5) die Datenschutzerklärung aufwertet.
+                Daraufhin ist der linke Prototyp entstanden, wo man sieht, wie die Verwendung von Icons (Seite 1) und aufklappbaren Inhalten (Seite 2-5) die Datenschutzerklärung aufwertet.
 
-                Ideen zur Implementierung finden sich auch im offiziellen Issue.
-                `}
+                Eine detailierte Darstellung des Arbeitsprozesses und Ideen zur Implementierung finden sie`}
+              <a
+                className={"about-inst-link"}
+                href={"https://github.com/FUB-HCC/20-SWP-CodingOpenness/wiki/Data-Privacy:-Prototype"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              auf der entsprecheneden Wiki Seite
+              </a>
             </p>
           </div>
         </div>
