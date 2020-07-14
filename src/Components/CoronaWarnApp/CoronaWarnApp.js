@@ -201,7 +201,6 @@ val weightedAttenuationHigh =
 Es gibt des Weiteren, keine Abstufungen beim Ergebnis: Der Risk Score ist am Ende nichts weiteres, als eine gewichtete Zeit. Liegt diese über 15 Minuten, wird der Benutzer als ein Benutzer mit erhöhtem Risiko eingestuft, er wird benachrichtigt und weitere Handlungen werden ihm nahgelegt.
 
 Diese Informationen finden sich in der offiziellen`}
-
               <a
                 className={"about-inst-link"}
                 href={
@@ -212,7 +211,6 @@ Diese Informationen finden sich in der offiziellen`}
               >
                 Doku
               </a>
-
               {`.
               Weitere Dokumentation über`}
               <a
@@ -226,6 +224,18 @@ Diese Informationen finden sich in der offiziellen`}
                 Transmission risk level
               </a>
               {`.`}
+              Mehr Informationen zu unserer technischen Dokumentation finden Sie
+              auf unserer
+              <a
+                className={"about-inst-link"}
+                href={
+                  "https://github.com/FUB-HCC/20-SWP-CodingOpenness/wiki/Technik"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github WikiSeite.
+              </a>
             </p>
           </div>
         </div>
