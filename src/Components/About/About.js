@@ -248,7 +248,7 @@ class About extends React.Component {
                   {
                     name: "Felix Sekul",
                     groups:
-                      "Team Fragebogen, PEPP-PT, Corona-Warn-App: Exposure Logging",
+                      "Team Fragebogen, PEPP-PT, Corona-Warn-App: Exposure Logging, Data Privacy Information",
                     githubLink: "molpremotone",
                   },
                   {
