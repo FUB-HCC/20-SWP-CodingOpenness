@@ -237,7 +237,8 @@ Diese Informationen finden sich in der offiziellen`}
               >
                 Transmission risk level
               </a>
-              {`.`}
+              {`.
+`}
               Mehr Informationen zu unserer technischen Dokumentation finden Sie
               auf unserer
               <a
