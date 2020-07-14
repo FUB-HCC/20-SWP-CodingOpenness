@@ -38,6 +38,10 @@ class App extends React.Component {
     activeContent: Content.HOME,
   };
 
+  componentDidUpdate() {
+    window.scrollTo(0, 0)
+  }
+
   handleNavbarClick = (activeContent) => {
     this.setState({ activeContent });
     history.push(activeContent);

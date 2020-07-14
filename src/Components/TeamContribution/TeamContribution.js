@@ -75,7 +75,7 @@ class TeamContribution extends React.Component {
                 <p>
                   Fixes typos and use same html tag for headlines. See also
                   <a
-                    className="fragebogen-link"
+                    className="contri-about-link"
                     href="https://github.com/corona-warn-app/cwa-app-android/issues/332"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -106,6 +106,27 @@ class TeamContribution extends React.Component {
                   Makes it easier for people new to the project/code to find the
                   critical files quickly and gain an understanding of how things
                   work.
+                </p>
+              </div>
+            </div>
+            <div className="boxed">
+              <div className="boxhead">
+                <p>
+                  <a
+                    className="fragebogen-link"
+                    href="https://github.com/adrianapintod/open-source-project-guidelines"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Open-Source Project Guidelines
+                  </a>
+                  <br /> by Keno Wilhelm Budde and Adriana Pinto Diaz Luz
+                </p>
+              </div>
+              <div>
+                <p>
+                  Open-Source Project Guidelines Richtlinien und Best Practices
+                  zur Arbeit an einem Open-Source Softwareprojekt.
                 </p>
               </div>
             </div>

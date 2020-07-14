@@ -1,21 +1,40 @@
 .about-container {
   padding: 30px;
 }
-.about-second-container {
+.about-first-container {
   display: flex;
   padding: 150px;
   padding-bottom: 0;
 }
-.about-main {
+.about-second-container {
+  display: flex;
+  padding: 0px 150px 150px 150px;
+}
+.about-first-main {
   font-size: medium;
   width: 50%;
   padding: 40px;
 }
+
+.about-first-main-stats {
+  font-size: medium;
+  width: 50%;
+  padding: 40px;
+}
+
+
+.about-second-main {
+  font-size: medium;
+  width: 50%;
+  padding: 0px 40px 40px 40px;
+}
+
 .about-member-container {
   display: flex;
   justify-content: space-between;
   padding: 0px 210px 200px;
 }
+
 .abschnitt {
   padding: 5px 20px;
   font-weight: 500;
@@ -42,15 +61,27 @@
   .about-container {
     padding: 0;
   }
-  .about-second-container {
+  .about-first-container {
     display: block;
     padding: 0;
+  }
+  .about-second-container {
+    display: block;
+    padding: 0 0 100px 0;
   }
   .about-member-container {
     display: block;
     padding: 10px 20px 100px 20px;
   }
-  .about-main {
+  .about-second-main {
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+  .about-first-main-stats {
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+  .about-first-main {
     width: 100%;
     padding: 80px 0 0 0;
   }
