@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/20-SWP-CodingOpenness/precache-manifest.33998302965ab54c9f8cf157ab4e50db.js"
+  "/20-SWP-CodingOpenness/precache-manifest.d3f8110e3106b17fb2a2f85cd24c060f.js"
 );
 
 self.addEventListener('message', (event) => {
