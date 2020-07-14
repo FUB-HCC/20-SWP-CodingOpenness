@@ -25,6 +25,7 @@ class CoronaWarnApp extends React.Component {
     if (this.state.loadPrototype) {
       prototype = (
         <iframe
+          title={"data-privacy-prototype"}
           className={"data-privacy-prototype"}
           style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
           width="450"
