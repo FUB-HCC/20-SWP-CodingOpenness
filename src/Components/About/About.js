@@ -14,33 +14,26 @@ class About extends React.Component {
   }
 
   getSum = (lastSum, json) => {
-    return (
-      lastSum !== undefined
-        ? lastSum 
-        : 0)
-      + json.length;
+    return (lastSum !== undefined ? lastSum : 0) + json.length;
   };
 
   getRepoWatchers = (lastStars, json) => {
-    return this.getRepoCountStats(lastStars, json, "watchers_count")
-  }
+    return this.getRepoCountStats(lastStars, json, "watchers_count");
+  };
 
   getRepoStars = (lastStars, json) => {
-    return this.getRepoCountStats(lastStars, json, "stargazers_count")
-  }
+    return this.getRepoCountStats(lastStars, json, "stargazers_count");
+  };
 
   getRepoCountStats = (lastCount, json, type) => {
-    for(let key in json)
-    {
-      if(json[key]["id"] === REPO_ID)
-      {
+    for (let key in json) {
+      if (json[key]["id"] === REPO_ID) {
         return json[key][type];
       }
     }
 
     return lastCount !== undefined ? lastCount : 0;
-
-  }
+  };
 
   getMember(link, name, groups) {
     return (
@@ -121,39 +114,42 @@ class About extends React.Component {
                     src={require("../../Assets/github.svg")}
                     alt="20-SWP-CodingOpenness Repo"
                   />
-                  20-SWP-CodingOpenness
+                  <span style={{ color: "rgb(107, 158, 31)" }}>
+                    20-SWP-CodingOpenness
+                  </span>
                 </a>
               </div>
 
               <div className="abschnitt">
-                <GithubAPI 
-                repoFetch={false}
-                subLink='repos?'
-                title="Stars"
-                parseFunction={this.getRepoStars} />
+                <GithubAPI
+                  repoFetch={false}
+                  subLink="repos?"
+                  title="Stars"
+                  parseFunction={this.getRepoStars}
+                />
 
-                <GithubAPI 
-                repoFetch={true}
-                subLink='contributors?' 
-                title="Contributors"
-                parseFunction={this.getSum} />
+                <GithubAPI
+                  repoFetch={true}
+                  subLink="contributors?"
+                  title="Contributors"
+                  parseFunction={this.getSum}
+                />
 
-                <GithubAPI 
-                repoFetch={true}
-                subLink='commits?'
-                title="Commits (master)"
-                parseFunction={this.getSum} />
+                <GithubAPI
+                  repoFetch={true}
+                  subLink="commits?"
+                  title="Commits (master)"
+                  parseFunction={this.getSum}
+                />
 
-                <GithubAPI 
-                repoFetch={true}
-                subLink='commits?sha=website/master'
-                title="Commits (website/master)"
-                parseFunction={this.getSum} />
+                <GithubAPI
+                  repoFetch={true}
+                  subLink="commits?sha=website/master"
+                  title="Commits (website/master)"
+                  parseFunction={this.getSum}
+                />
               </div>
-
             </div>
-
-
           </div>
           <div className={"about-second-container"}>
             <div className={"about-second-main"}>
@@ -222,7 +218,8 @@ class About extends React.Component {
                 {this.getGroupMemberList([
                   {
                     name: "Viktoriya Kraleva",
-                    groups: "Team Vergleich, PEPP-PT, Corona-Warn-App: UI Design",
+                    groups:
+                      "Team Vergleich, PEPP-PT, Corona-Warn-App: UI Design",
                     githubLink: "kraleva",
                   },
                   {

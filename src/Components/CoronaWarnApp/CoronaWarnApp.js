@@ -215,7 +215,6 @@ val weightedAttenuationHigh =
               Es gibt des Weiteren, keine Abstufungen beim Ergebnis: Der Risk Score ist am Ende nichts weiteres, als eine gewichtete Zeit. Liegt diese über 15 Minuten, wird der Benutzer als ein Benutzer mit erhöhtem Risiko eingestuft, er wird benachrichtigt und weitere Handlungen werden ihm nahgelegt.
 
 Diese Informationen finden sich in der offiziellen`}
-
               <a
                 className={"about-inst-link"}
                 href={
