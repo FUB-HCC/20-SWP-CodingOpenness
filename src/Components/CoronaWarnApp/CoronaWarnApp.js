@@ -13,16 +13,25 @@ class CoronaWarnApp extends React.Component {
     }
   }
   render() {
-    var prototype = <img
+    var prototype = (
+      <img
         className={"data-privacy-prototype"}
         src={require("../../Assets/data_privacy_prototype.png")}
         alt="data_privacy_prototype_img"
         onClick={() => this.setState({ loadPrototype: true })}
-      />;
+      />
+    );
 
     if (this.state.loadPrototype) {
-      prototype = <iframe className={"data-privacy-prototype"} style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} width="450" height="900" 
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsopIMcNqDFLYZ6sf3rVtbt%2FColapsibile-Icons%3Fnode-id%3D79%253A1%26scaling%3Dscale-down&chrome=DOCUMENTATION" />
+      prototype = (
+        <iframe
+          className={"data-privacy-prototype"}
+          style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+          width="450"
+          height="900"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsopIMcNqDFLYZ6sf3rVtbt%2FColapsibile-Icons%3Fnode-id%3D79%253A1%26scaling%3Dscale-down&chrome=DOCUMENTATION"
+        />
+      );
     }
 
     return (
@@ -119,7 +128,9 @@ class CoronaWarnApp extends React.Component {
               {`Wir haben ein`}
               <a
                 className={"about-inst-link"}
-                href={"https://github.com/corona-warn-app/cwa-wishlist/issues/16"}
+                href={
+                  "https://github.com/corona-warn-app/cwa-wishlist/issues/16"
+                }
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -132,11 +143,13 @@ class CoronaWarnApp extends React.Component {
                 Eine detailierte Darstellung des Arbeitsprozesses und Ideen zur Implementierung finden sie`}
               <a
                 className={"about-inst-link"}
-                href={"https://github.com/FUB-HCC/20-SWP-CodingOpenness/wiki/Data-Privacy:-Prototype"}
+                href={
+                  "https://github.com/FUB-HCC/20-SWP-CodingOpenness/wiki/Data-Privacy:-Prototype"
+                }
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              auf der entsprecheneden Wiki Seite
+                auf der entsprecheneden Wiki Seite
               </a>
             </p>
           </div>
