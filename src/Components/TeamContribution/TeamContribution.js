@@ -75,7 +75,7 @@ class TeamContribution extends React.Component {
                 <p>
                   Fixes typos and use same html tag for headlines. See also
                   <a
-                    className="fragebogen-link"
+                    className="contri-about-link"
                     href="https://github.com/corona-warn-app/cwa-app-android/issues/332"
                     target="_blank"
                     rel="noopener noreferrer"

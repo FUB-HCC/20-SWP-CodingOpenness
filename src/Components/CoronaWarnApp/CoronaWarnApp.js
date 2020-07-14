@@ -11,6 +11,13 @@ class CoronaWarnApp extends React.Component {
   render() {
     return (
       <>
+        <div style={{ paddingTop: 70 }}>
+          <div className="cwanav" id="cwanav">
+            <a href="#Privacy">Data Privacy</a>
+            <a href="#Risk">Risk of Infection</a>
+            <a href="#Exposure">Exposure Logging</a>
+          </div>
+        </div>
         <div className={"page-container"}>
           <div style={{ fontSize: 50, fontWeight: 800 }}>
             <img
@@ -71,7 +78,8 @@ class CoronaWarnApp extends React.Component {
         </div>
         <div
           style={{ backgroundColor: "#e8e8e8", paddingTop: 0 }}
-          className={"page-container"}
+          className={"page-container page-container-pad"}
+          id={"Privacy"}
         >
           <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
             <p style={{ fontSize: 50, fontWeight: 800 }}>
@@ -112,7 +120,11 @@ class CoronaWarnApp extends React.Component {
             {`zum Thema Lesbarkeit der Datenschutzerklärung erstellt.`}
           </p>
         </div>
-        <div style={{ paddingTop: 0 }} className={"page-container"}>
+        <div
+          style={{ paddingTop: 0 }}
+          className={"page-container page-container-pad"}
+          id={"Risk"}
+        >
           <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
             <p style={{ fontSize: 50, fontWeight: 800 }}>
               <span style={{ color: "#6b9e1f" }}>Risk of Infection</span>
@@ -196,11 +208,14 @@ val weightedAttenuationHigh =
             {`Diesen Code findet man in der Klasse `}
             <code>RiskLevelCalculation</code> {` im package risk.`}
             <p style={{ whiteSpace: "pre-line", margin: "30px 0" }}>
-              {`Die Unterscheidung, ob die Zeiten als low, mid oder high gelten, sind abhängig davon, ob die Distanz bei diesen Zeiten zwischen 8-3 Meter(low), 3-1,5 Meter(mid) oder näher als 1,5 Meter(high) waren. Zeiten, die geringer als 10 Minuten sind, werden unabhängig von der Distanz verworfen. Ebenso werden Zeiten verworfen, die mehr als 10 Meter Distanz hatten, unabhängig von der Länge der Zeit.
+              {`Die Unterscheidung, ob die Zeiten als low, mid oder high gelten, sind abhängig davon, ob die Distanz bei diesen Zeiten zwischen 8-3 Meter(low), 3-1,5 Meter(mid) oder näher als 1,5 Meter(high) waren. 
+              
+              Zeiten, die geringer als 10 Minuten sind, werden unabhängig von der Distanz verworfen. Ebenso werden Zeiten verworfen, die mehr als 10 Meter Distanz hatten, unabhängig von der Länge der Zeit.
 
-Es gibt des Weiteren, keine Abstufungen beim Ergebnis: Der Risk Score ist am Ende nichts weiteres, als eine gewichtete Zeit. Liegt diese über 15 Minuten, wird der Benutzer als ein Benutzer mit erhöhtem Risiko eingestuft, er wird benachrichtigt und weitere Handlungen werden ihm nahgelegt.
+              Es gibt des Weiteren, keine Abstufungen beim Ergebnis: Der Risk Score ist am Ende nichts weiteres, als eine gewichtete Zeit. Liegt diese über 15 Minuten, wird der Benutzer als ein Benutzer mit erhöhtem Risiko eingestuft, er wird benachrichtigt und weitere Handlungen werden ihm nahgelegt.
 
 Diese Informationen finden sich in der offiziellen`}
+
               <a
                 className={"about-inst-link"}
                 href={
@@ -241,7 +256,8 @@ Diese Informationen finden sich in der offiziellen`}
         </div>
         <div
           style={{ backgroundColor: "#e8e8e8", paddingTop: 0 }}
-          className={"page-container"}
+          className={"page-container page-container-pad"}
+          id={"Exposure"}
         >
           <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
             <p style={{ fontSize: 50, fontWeight: 800 }}>
@@ -268,11 +284,15 @@ Diese Informationen finden sich in der offiziellen`}
             }}
           >
             {`Exposure Logging ist ein Feature der Exposure Notification API, das vom Nutzer im Betriebssystem des Smartphones aktiviert werden muss. 
-            Nach Aktivierung kann das Smartphone zufällige IDs, die alle 10 bis 20 Minuten neu erzeugt werden und die ohne weitere Informationen den Nutzern nicht zugeordnet werden können, mit anderen Smartphones, die sich mindestens für 5 Minuten in der Nähe befinden, über Bluetooth Low Energy austauschen. 
-            Die IDs werden für 14 Tage in einer Datei auf dem Smartphone gespeichert. Nutzer, die wissen, dass sie infiziert sind, können ihre zufälligen IDs auf einen zentralen Server hochladen. 
-            Diese werden täglich von allen Nutzern auf ihr Smartphone heruntergeladen und die auf dem Smartphone gespeicherten zufälligen IDs werden mit den heruntergeladenen zufälligen IDs von infizierten Nutzern verglichen. 
+            
+            Nach Aktivierung kann das Smartphone zufällige IDs, die alle 10 bis 20 Minuten neu erzeugt werden und die ohne weitere Informationen den Nutzern nicht zugeordnet werden können, mit anderen Smartphones, die sich mindestens für 5 Minuten in der Nähe befinden, über Bluetooth Low Energy austauschen. Die IDs werden für 14 Tage in einer Datei auf dem Smartphone gespeichert. 
+            
+            Nutzer, die wissen, dass sie infiziert sind, können ihre zufälligen IDs auf einen zentralen Server hochladen. Diese werden täglich von allen Nutzern auf ihr Smartphone heruntergeladen und die auf dem Smartphone gespeicherten zufälligen IDs werden mit den heruntergeladenen zufälligen IDs von infizierten Nutzern verglichen. 
+            
             Bei Übereinstimmung von 2 IDs erhält der Nutzer eine Benachrichtigung und Informationen zum weiteren Ablauf. Die Identität der Nutzer bleibt dabei theoretisch anonym und Nutzer können nur unter außergewöhnlichen Umständen identifiziert werden: 
+            
             Zum Beispiel durch eine Überwachungsanlage mit Gesichtserkennung, die Nutzer erfasst, während sie ihre zufälligen IDs austauschen und diese beiden Informationen von einer weiteren Instanz verknüpft werden. 
+            
             Ein weiteres Beispiel für eine Deanonymisierung ist, dass eine Person innerhalb eines Tages oder mehrerer Tage nur Kontakt zu einer Person hatte und die Benachrichtigung erhält, dass sie Kontakt mit einer infizierten Person hatte. Standortinformationen werden nicht verwendet.`}
           </p>
         </div>
