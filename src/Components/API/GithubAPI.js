@@ -15,7 +15,7 @@ class GithubAPI extends Component {
 
   async load ()
   {
-    if(DATA_CACHE[this.props.subLink] !== undefined)
+    if(DATA_CACHE[this.props.subLink] != null)
     {
         this.setState({data: DATA_CACHE[this.props.subLink]})
     }
@@ -28,7 +28,7 @@ class GithubAPI extends Component {
             const response = await fetch(fetchLink);
             const json = await response.json();
 
-            if(json === undefined || json.length === undefined)
+            if(json == null || json.length == null)
             {
                 DATA_CACHE[this.props.subLink] = 0;
                 break;
