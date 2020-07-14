@@ -108,7 +108,7 @@ class CoronaWarnApp extends React.Component {
                 whiteSpace: "pre-line",
               }}
             >
-              <p style={{ fontSize: 50, fontWeight: 800 }}>
+              <p style={{ fontSize: 50, fontWeight: 800, marginLeft: 0 }}>
                 <span style={{ color: "#6b9e1f" }}>Data Privacy</span>
               </p>
               {`Ein Problem der App ist die Darstellung der Datenschutzerklärung.
