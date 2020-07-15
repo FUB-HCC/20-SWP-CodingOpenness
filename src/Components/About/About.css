@@ -22,7 +22,10 @@
   padding: 40px;
 }
 
-
+.about-name {
+  min-width: 150px;
+  margin: 5px 0;
+}
 .about-second-main {
   font-size: medium;
   width: 50%;
@@ -87,5 +90,8 @@
   }
   .about-container ul {
     padding-left: 30px;
+  }
+  .about-name {
+    min-width: 100px;
   }
 }

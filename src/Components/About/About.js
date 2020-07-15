@@ -39,7 +39,7 @@ class About extends React.Component {
     return (
       <>
         <a
-          className={"about-link"}
+          className={"about-link about-name"}
           href={`https://github.com/${link}`}
           target="_blank"
           rel="noopener noreferrer"
