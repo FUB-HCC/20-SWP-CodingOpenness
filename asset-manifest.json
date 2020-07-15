@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/20-SWP-CodingOpenness/static/css/main.5b5f8735.chunk.css",
-    "main.js": "/20-SWP-CodingOpenness/static/js/main.e527b09a.chunk.js",
-    "main.js.map": "/20-SWP-CodingOpenness/static/js/main.e527b09a.chunk.js.map",
+    "main.js": "/20-SWP-CodingOpenness/static/js/main.f043a76a.chunk.js",
+    "main.js.map": "/20-SWP-CodingOpenness/static/js/main.f043a76a.chunk.js.map",
     "runtime-main.js": "/20-SWP-CodingOpenness/static/js/runtime-main.e005725f.js",
     "runtime-main.js.map": "/20-SWP-CodingOpenness/static/js/runtime-main.e005725f.js.map",
     "static/css/2.75c2aa79.chunk.css": "/20-SWP-CodingOpenness/static/css/2.75c2aa79.chunk.css",
     "static/js/2.bec702e6.chunk.js": "/20-SWP-CodingOpenness/static/js/2.bec702e6.chunk.js",
     "static/js/2.bec702e6.chunk.js.map": "/20-SWP-CodingOpenness/static/js/2.bec702e6.chunk.js.map",
     "index.html": "/20-SWP-CodingOpenness/index.html",
-    "precache-manifest.8e577610060dafec47e2ada418e927e7.js": "/20-SWP-CodingOpenness/precache-manifest.8e577610060dafec47e2ada418e927e7.js",
+    "precache-manifest.95028f7163b74258f3a56cffe5f5aff2.js": "/20-SWP-CodingOpenness/precache-manifest.95028f7163b74258f3a56cffe5f5aff2.js",
     "service-worker.js": "/20-SWP-CodingOpenness/service-worker.js",
     "static/css/2.75c2aa79.chunk.css.map": "/20-SWP-CodingOpenness/static/css/2.75c2aa79.chunk.css.map",
     "static/css/main.5b5f8735.chunk.css.map": "/20-SWP-CodingOpenness/static/css/main.5b5f8735.chunk.css.map",
@@ -36,6 +36,6 @@
     "static/css/2.75c2aa79.chunk.css",
     "static/js/2.bec702e6.chunk.js",
     "static/css/main.5b5f8735.chunk.css",
-    "static/js/main.e527b09a.chunk.js"
+    "static/js/main.f043a76a.chunk.js"
   ]
 }
