@@ -282,7 +282,8 @@ Diese Informationen finden sich in der offiziellen`}
         </div>
         <div
           style={{ backgroundColor: "#e8e8e8", paddingTop: 0 }}
-          className={"page-container"}
+          className={"page-container page-container-pad"}
+          id={"Exposure"}
         >
           <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
             <p style={{ fontSize: 50, fontWeight: 800 }}>
@@ -308,12 +309,16 @@ Diese Informationen finden sich in der offiziellen`}
               whiteSpace: "pre-line",
             }}
           >
-            {`Exposure Logging ist ein Feature der Exposure Notification API, das vom Nutzer im Betriebssystem des Smartphones aktiviert werden muss.
-            Nach Aktivierung kann das Smartphone zufällige IDs, die alle 10 bis 20 Minuten neu erzeugt werden und die ohne weitere Informationen den Nutzern nicht zugeordnet werden können, mit anderen Smartphones, die sich mindestens für 5 Minuten in der Nähe befinden, über Bluetooth Low Energy austauschen.
-            Die IDs werden für 14 Tage in einer Datei auf dem Smartphone gespeichert. Nutzer, die wissen, dass sie infiziert sind, können ihre zufälligen IDs auf einen zentralen Server hochladen.
-            Diese werden täglich von allen Nutzern auf ihr Smartphone heruntergeladen und die auf dem Smartphone gespeicherten zufälligen IDs werden mit den heruntergeladenen zufälligen IDs von infizierten Nutzern verglichen.
-            Bei Übereinstimmung von 2 IDs erhält der Nutzer eine Benachrichtigung und Informationen zum weiteren Ablauf. Die Identität der Nutzer bleibt dabei theoretisch anonym und Nutzer können nur unter außergewöhnlichen Umständen identifiziert werden:
-            Zum Beispiel durch eine Überwachungsanlage mit Gesichtserkennung, die Nutzer erfasst, während sie ihre zufälligen IDs austauschen und diese beiden Informationen von einer weiteren Instanz verknüpft werden.
+            {`Exposure Logging ist ein Feature der Exposure Notification API, das vom Nutzer im Betriebssystem des Smartphones aktiviert werden muss. 
+            
+            Nach Aktivierung kann das Smartphone zufällige IDs, die alle 10 bis 20 Minuten neu erzeugt werden und die ohne weitere Informationen den Nutzern nicht zugeordnet werden können, mit anderen Smartphones, die sich mindestens für 5 Minuten in der Nähe befinden, über Bluetooth Low Energy austauschen. Die IDs werden für 14 Tage in einer Datei auf dem Smartphone gespeichert. 
+            
+            Nutzer, die wissen, dass sie infiziert sind, können ihre zufälligen IDs auf einen zentralen Server hochladen. Diese werden täglich von allen Nutzern auf ihr Smartphone heruntergeladen und die auf dem Smartphone gespeicherten zufälligen IDs werden mit den heruntergeladenen zufälligen IDs von infizierten Nutzern verglichen. 
+            
+            Bei Übereinstimmung von 2 IDs erhält der Nutzer eine Benachrichtigung und Informationen zum weiteren Ablauf. Die Identität der Nutzer bleibt dabei theoretisch anonym und Nutzer können nur unter außergewöhnlichen Umständen identifiziert werden: 
+            
+            Zum Beispiel durch eine Überwachungsanlage mit Gesichtserkennung, die Nutzer erfasst, während sie ihre zufälligen IDs austauschen und diese beiden Informationen von einer weiteren Instanz verknüpft werden. 
+            
             Ein weiteres Beispiel für eine Deanonymisierung ist, dass eine Person innerhalb eines Tages oder mehrerer Tage nur Kontakt zu einer Person hatte und die Benachrichtigung erhält, dass sie Kontakt mit einer infizierten Person hatte. Standortinformationen werden nicht verwendet.`}
           </p>
         </div>
@@ -450,48 +455,6 @@ Diese Informationen finden sich in der offiziellen`}
               </a>
             </p>
           </div>
-        </div>
-        <div
-          style={{ backgroundColor: "#e8e8e8", paddingTop: 0 }}
-          className={"page-container page-container-pad"}
-          id={"Exposure"}
-        >
-          <div className={"corona-abstand"} style={{ minWidth: "46%" }}>
-            <p style={{ fontSize: 50, fontWeight: 800 }}>
-              <span style={{ color: "#6b9e1f" }}>Exposure Logging</span>
-            </p>
-            <p>
-              {`Die Exposure Notification API ist ein technischer Ansatz, der an `}
-              <Link className={"about-inst-link"} to={"/comparison"}>
-                DP-3T
-              </Link>
-              {`angelehnt ist. Er dient zur Kontaktverfolgung sowie zur Benachrichtigung für möglicherweise durch COVID-19 infizierte Nutzer.`}
-            </p>
-            <img
-              className={"cwa-diagram"}
-              src={require("../../Assets/exp.jpg")}
-              alt="exp-diagram"
-            />
-          </div>
-
-          <p
-            className={"corona-abstand"}
-            style={{
-              whiteSpace: "pre-line",
-            }}
-          >
-            {`Exposure Logging ist ein Feature der Exposure Notification API, das vom Nutzer im Betriebssystem des Smartphones aktiviert werden muss. 
-            
-            Nach Aktivierung kann das Smartphone zufällige IDs, die alle 10 bis 20 Minuten neu erzeugt werden und die ohne weitere Informationen den Nutzern nicht zugeordnet werden können, mit anderen Smartphones, die sich mindestens für 5 Minuten in der Nähe befinden, über Bluetooth Low Energy austauschen. Die IDs werden für 14 Tage in einer Datei auf dem Smartphone gespeichert. 
-            
-            Nutzer, die wissen, dass sie infiziert sind, können ihre zufälligen IDs auf einen zentralen Server hochladen. Diese werden täglich von allen Nutzern auf ihr Smartphone heruntergeladen und die auf dem Smartphone gespeicherten zufälligen IDs werden mit den heruntergeladenen zufälligen IDs von infizierten Nutzern verglichen. 
-            
-            Bei Übereinstimmung von 2 IDs erhält der Nutzer eine Benachrichtigung und Informationen zum weiteren Ablauf. Die Identität der Nutzer bleibt dabei theoretisch anonym und Nutzer können nur unter außergewöhnlichen Umständen identifiziert werden: 
-            
-            Zum Beispiel durch eine Überwachungsanlage mit Gesichtserkennung, die Nutzer erfasst, während sie ihre zufälligen IDs austauschen und diese beiden Informationen von einer weiteren Instanz verknüpft werden. 
-            
-            Ein weiteres Beispiel für eine Deanonymisierung ist, dass eine Person innerhalb eines Tages oder mehrerer Tage nur Kontakt zu einer Person hatte und die Benachrichtigung erhält, dass sie Kontakt mit einer infizierten Person hatte. Standortinformationen werden nicht verwendet.`}
-          </p>
         </div>
       </>
     );
